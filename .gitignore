@@ -43,18 +43,15 @@ sync_curso.log
 03_Fase_III*/
 
 # ─── IDEs ────────────────────────────────────────────────────
-# IDEs
 .idea/
 .vscode/
 *.swp
 *.swo
 
-
 # OS
 .DS_Store
 
-# Logs locales
-.claude/logs/
-
-# Output generado (opcional — descomentar si no quieres versionar material)
-# cursos/*/output/
+# ─── LOGS Y TEMPORALES ──────────────────────────────────────
+*.log
+*.bak
+*~

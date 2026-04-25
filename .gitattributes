@@ -12,3 +12,5 @@
 *.pptx binary
 *.xlsx binary
 *.docx binary
+# Forzar LF en scripts para que funcionen en Linux/VM sin conversión
+*.sh text eol=lf

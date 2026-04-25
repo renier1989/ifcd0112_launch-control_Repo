@@ -71,4 +71,5 @@ Puedes usarlo y adaptarlo para fines educativos, citando la fuente.
 
 ---
 
-**Prof. Juan Marcelo Gutierrez Miranda**, 2026
+**Prof. Juan Marcelo Gutierrez Miranda**
+Amtigravity — Barcelona, 2026

@@ -1,0 +1,103 @@
+1 - ls /bin
+2 - ls /tmp
+3 - ls -r /etc/t*
+4 - ls /dev/tty??
+5 - ls /dev/tty*[1-4]
+6 - ls /dev/t*C1
+7 - ls -a /
+8 - ls -d /etc/[^t]*
+9 - ls -R /etc
+10 - cd /tmp 
+11 - pwd
+
+ejecicios de Dia3
+13 - cd /home && pwd && mkdir practica
+14 - cd practica && mkdir dir1 && mkdir dir2 && mkdir dir3
+15 - mkdir -p /home/practica/dir1/subdir1
+16 - mkdir -p /home/practica/dir3/subdir31 && mkdir -p /home/practica/dir3/subdir31/subdir311 && mkdir -p /home/practica/dir3/subdir31/subdir312
+17 - cp /etc/os-release /home/practica/mensaje.txt
+18 - for d in dir1 dir2 dir3; do cp mensaje.txt  /home/practica/$d/; done
+	 for d in dir1 dir2 dir3; do cat mensajeTest.txt > /home/practica/$d/mensaje$d.txt; done
+19 - tree
+20 - touch /home/practica/vacio.txt
+21 - touch datos.txt && echo "Primera Linea" >> datos.txt && echo "Segunda Linea" >> datos.txt && echo "Tercera Linea" >> datos.txt
+22 - head -3 /etc/passwd
+23 - tail -5 /var/log/dpkg.log
+		journalctl -n 5 --no-pager
+24 -  wc /etc/passwd
+25 - rm -rf /home/practica/dir1/
+26 - touch registro.log && date > registro.log
+27 - echo "Ejercicio completado" >> registro.log
+28 - cat registro.log
+29 - mv registro.log historial.log
+30 - mv historial.log /home/practica/dir2/
+
+31 - echo "Hola mundo" > /home/practica/original.txt
+32 - ln original.txt duro.txt
+33 - ln -s original.txt simbolico.txt
+37 - ln -s /etc/ /home/enlace_etc
+38 - ls /enlace_etc
+39 - find practica -type l
+
+43 - chmod 551 permisos_dir/
+
+76 - ls -l / > listado.txt 2> errores.txt
+77 - ls /ruta/inexistente 2> /dev/null
+78 - ps aux | grep bash | grep -v grep
+79 - ls /bin | wc -l
+80 - sort -t: -k3 -n /etc/passwd
+81 - cut -d: -f1 /etc/passwd | sort
+82 - cut -d: -f1,7 /etc/passwd
+83 - ps aux --sort=-%cpu | head -6
+84 - grep -c "error" /var/log/dpkg.log 2> /dev/null
+		journalctl --no-pager | grep -c "error" 2>/dev/null
+85 - find /etc -name "*.conf" -type f 2>/dev/null | xargs ls -l
+
+
+proceso del sistema
+86 - ps aux | grep "^root"
+87 - ps aux --sort=-%mem | head -10
+88 - sleep 100 &
+		jobs
+		fg %1
+89 - pstree
+90 - time find / -name "*.conf" 2>/dev/null
+91 - df -h
+92 - df -h
+93 - last reboot | head -5
+94 - yes > /dev/null &    (anotar el PID creado)
+95 - kill <PID>
+
+procesamiento de texto awk
+96 - awk -F: '{print$1}' /etc/passwd
+97 - awk -F: '{print $1,$7}' /etc/passwd
+98 - awk -F: '$7 == "/bin/bash"' /etc/passwd
+99 - awk -F: '$3 > 1000 {print $1,$3}' /etc/passwd
+100 - awk 'END {print NR}' /etc/passwd
+101 - awk '{prom=($2+$3+$4)/3; printf "%s: %.2f\n", $1, prom}' notas.txt
+102 - cat > numeros.txt << 'EOF'
+13
+45
+23
+65
+44
+22
+64
+EOF
+		awk '{sum+=$1} END {print "Suma:", sum}' numeros.txt
+
+103 - awk 'NR>=5 && NR<=10' /etc/passwd
+104 - awk -F: '{print $NF}' /etc/passwd
+105 - awk -F: '{if($1=="root") print "Usuario root:", $0}' /etc/passwd
+
+edicion de texto con sed
+106 - sed 's/a/o/g' texto.txt
+107 - sed '/^$/d' con_vacias.txt
+108 - sed -n '/error/p' /var/log/dpkg.log  2>/dev/null 
+109 - sed 's/^/>> /' con_vacias.txt 
+110 - sed 's/^[^ ]* //' con_vacias.txt
+111 - sed 's/[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}/[OCULTO]/g' logs_ips.txt 
+112 - sed '/fatal/a\\' con_vacias.txt 
+113 - sed 's/localhost/servidor.local/g' bk_hosts.txt
+114 - sed 's/:.*//' /etc/passwd
+115 - sed 's/./\u&/g' nombres.txt

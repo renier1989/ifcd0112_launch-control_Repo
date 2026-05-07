@@ -1,0 +1,113 @@
+EJEMPLO PRÁCTICO: EL PROCESO DE PENSAMIENTO QUE TUVIMOS PARA EL SCRIPT
+
+(Mi plan, paso a paso)
+Momento 1: Entender qué queremos hacer 
+
+Me pregunto "Quiero ordenar nombres alfabéticamente"
+
+Yo en mi cabeza: "Ordenar... como ordenar cartas. Comparas dos, la que va antes
+la pones adelante. Necesito un algoritmo. ¿Cuál conozco? El de burbuja es fácil."
+
+Momento 2: Pensar en datos (¿qué necesito tener?)
+
+¿Qué necesito?
+- Una lista de nombres → un ARRAY
+- Saber cuántos son → n = ${#array[@]}
+- Poder comparar dos nombres → operador > en [[ ]]
+- Poder intercambiarlos → variable temp
+
+
+Momento 3: Pensar en el flujo (¿qué pasa primero, qué después?)
+
+
+PASO 1: Leer el archivo (no puedo ordenar si no tengo los datos)
+PASO 2: Mostrar la lista original (para que el usuario vea el cambio)
+PASO 3: Ordenar (el algoritmo)
+PASO 4: Mostrar la lista final
+Momento 4: Pensar en el ordenamiento (la parte difícil)
+
+
+¿Cómo ordeno?
+- Idea: Mirar pares [0,1], [1,2], [2,3]...
+- Si [0] > [1] → intercambio
+- Al final de una pasada, el más grande está al final
+- Repito n veces
+
+Eso es EXACTAMENTE el algoritmo de burbuja.
+
+Momento 5: Pensar en cómo lo escribiría un humano vs cómo lo entiende la compu
+
+Humano dice:         		 Computadora necesita:
+"Mira desde el      		 while [ $j -lt $((n-i-1)) ]
+ principio hasta
+ antes del final"
+
+"Si está mayor"     		 if [[ "${nombres[j]}" > "${nombres[j+1]}" ]]
+
+"Cambialos"         		 temp=${nombres[j]}
+                    		 nombres[j]=${nombres[j+1]}
+                     		 nombres[j+1]=$temp
+
+ (EL "DIARIO DE PENSAMIENTO")
+
+Hagan esto antes de escribir código:
+
+Paso A: Escribir en español (como si le explicaran a un niño de 5 años)
+
+"Voy a ordenar nombres. Para ordenar, necesito mirar dos nombres a la vez.
+Si el primero es mayor (viene después en el abecedario), los cambio de lugar.
+Hago esto una y otra vez hasta que todos estén en orden."
+
+¿Puede un niño de 5 años entender esto? Si NO, está demasiado técnico.
+
+
+Paso B: Identificar las REPETICIONES (lo que la computadora hará muchas veces)
+
+¿Qué hago muchas veces?
+- Comparar dos nombres (MUCHAS veces)
+- Intercambiar nombres (algunas veces)
+- Avanzar al siguiente par (MUCHAS veces)
+- Hacer otra pasada completa (varias veces)
+
+Cada repetición = un bucle (while o for)
+
+Paso C: Identificar las DECISIONES (lo que la computadora decide en el momento)
+
+¿Qué decido en el momento?
+- ¿Este nombre es mayor que el siguiente? → decisión SÍ/NO
+- ¿Hago más pasadas o ya terminé? → decisión SÍ/NO
+Cada decisión = un if
+
+Paso D: Identificar los DATOS (lo que la computadora debe recordar)
+
+¿Qué necesita recordar la computadora?
+- La lista completa (array)
+- Dónde voy en la lista (i, j)
+- Un nombre temporal para intercambiar (temp)
+Cada dato = una variable
+
+#################################################################################
+LA METÁFORA DEL CHEF (para que lo entiendan mejor)
+
+Un chef no escribe la receta mientras cocina por primera vez.
+Lo que hace el chef (proceso de pensamiento):
+
+1.- Imagina el plato terminado → "Quiero una tortilla de patatas"
+2.- Recuerda los ingredientes → "Huevos, patatas, cebolla, aceite, sal"
+3.- Recuerda los pasos básicos → "Pelar, cortar, freír, batir, cuajar"
+4.- Primera vez: sigue una receta existente → "Miro cómo lo hizo mi abuela"
+5.- Ajusta a sus gustos → "Le pongo más cebolla"
+6.- Practica varias veces → "La quinta vez ya no miro la receta"
+7.- Inventa su propia versión → "¡Ahora le pongo chorizo!"
+
+##############################################################################
+
+Lo que hace el programador (proceso de pensamiento):
+
+1.- Imagina el programa funcionando → "Quiero ordenar una lista"
+2.- Recuerda las herramientas → "Arrays, bucles, condicionales"
+3.- Recuerda los pasos básicos → "Leer, comparar, intercambiar, mostrar"
+4.- Primera vez: sigue un algoritmo existente → "Miro cómo funciona burbuja"
+5.- Ajusta a Bash → "En Bash se usa [[ ]] para comparar strings"
+6.- Practica varias veces → "La quinta vez ya no miro el apunte"
+7.- Inventa su propia versión → "¡Ahora puedo mover Dario al principio!

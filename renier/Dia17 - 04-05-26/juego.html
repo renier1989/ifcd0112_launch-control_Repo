@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo Espacial: Resultados Detallados</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0b0d17;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        #game-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .player-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .p1-color { background-color: #4361ee; }
+        .p2-color { background-color: #f72585; }
+
+        h1 { color: #4cc9f0; }
+        #question-text { font-size: 1.4rem; margin: 30px 0; min-height: 60px; }
+
+        .btn-container { display: flex; gap: 1rem; justify-content: center; margin-bottom: 20px; }
+        button {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn-true { background-color: #4caf50; color: white; }
+        .btn-false { background-color: #f44336; color: white; }
+        button:hover { transform: scale(1.05); }
+
+        .hidden { display: none; }
+
+        /* Estilos de la Tabla de Resultados */
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .results-table th, .results-table td {
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .results-table th { background-color: rgba(76, 201, 240, 0.2); color: #4cc9f0; }
+        .check { color: #4caf50; font-weight: bold; }
+        .cross { color: #f44336; font-weight: bold; }
+        .winner-banner { font-size: 2rem; color: #ffbc0a; margin: 20px 0; text-shadow: 0 0 10px rgba(255,188,10,0.5); }
+    </style>
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- Pantalla Inicial -->
+        <div id="start-screen">
+            <h1>🚀 Trivia Espacial: El Duelo</h1>
+            <p>Respondan 10 preguntas cada uno para ver quién sabe más de la NASA.</p>
+            <button class="p1-color" style="color:white; margin-top:20px;" onclick="startQuiz()">INICIAR DUELO</button>
+        </div>
+
+        <!-- Pantalla de Juego -->
+        <div id="quiz-screen" class="hidden">
+            <div id="player-indicator" class="player-badge"></div>
+            <div id="question-text"></div>
+            <div class="btn-container">
+                <button class="btn-true" onclick="handleAnswer(true)">VERDADERO</button>
+                <button class="btn-false" onclick="handleAnswer(false)">FALSO</button>
+            </div>
+            <div id="step-counter" style="color: #888;"></div>
+        </div>
+
+        <!-- Pantalla de Resultados Finales -->
+        <div id="result-screen" class="hidden">
+            <div id="winner-text" class="winner-banner"></div>
+
+            <div style="display:flex; justify-content: space-around; margin-bottom: 20px;">
+                <h3 style="color:#4361ee">Jugador 1: <span id="total-p1"></span></h3>
+                <h3 style="color:#f72585">Jugador 2: <span id="total-p2"></span></h3>
+            </div>
+
+            <table class="results-table" id="details-table">
+                <thead>
+                    <tr>
+                        <th>Pregunta</th>
+                        <th>J1</th>
+                        <th>J2</th>
+                        <th>Real</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+
+            <button class="p1-color" style="color:white; margin-top:30px;" onclick="location.reload()">JUGAR OTRA VEZ</button>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            { text: "Júpiter es tan grande que todos los demás planetas cabrían dentro.", answer: true },
+            { text: "Los astronautas crecen unos centímetros en el espacio.", answer: true },
+            { text: "Las huellas en la Luna desaparecen en 10 años por el viento.", answer: false },
+            { text: "Un día en Venus dura más que un año en Venus.", answer: true },
+            { text: "La NASA tiene una oficina de 'Protección Planetaria'.", answer: true },
+            { text: "Marte es el lugar más caluroso del sistema solar.", answer: false },
+            { text: "En el espacio nadie puede oírte gritar.", answer: true },
+            { text: "Plutón es más pequeño que la Luna terrestre.", answer: true },
+            { text: "La Estación Espacial es del tamaño de un campo de fútbol.", answer: true },
+            { text: "Los agujeros negros succionan todo como aspiradoras.", answer: false }
+        ];
+
+        let currentPlayer = 1;
+        let currentIdx = 0;
+        let p1Answers = [];
+        let p2Answers = [];
+
+        function startQuiz() {
+            document.getElementById("start-screen").classList.add("hidden");
+            document.getElementById("quiz-screen").classList.remove("hidden");
+            updateUI();
+        }
+
+        function updateUI() {
+            const indicator = document.getElementById("player-indicator");
+            indicator.innerText = `TURNO: JUGADOR ${currentPlayer}`;
+            indicator.className = `player-badge ${currentPlayer === 1 ? 'p1-color' : 'p2-color'}`;
+            document.getElementById("question-text").innerText = questions[currentIdx].text;
+            document.getElementById("step-counter").innerText = `Pregunta ${currentIdx + 1} de 10`;
+        }
+
+        function handleAnswer(val) {
+            if (currentPlayer === 1) p1Answers.push(val);
+            else p2Answers.push(val);
+
+            currentIdx++;
+
+            if (currentIdx < questions.length) {
+                updateUI();
+            } else {
+                if (currentPlayer === 1) {
+                    currentPlayer = 2;
+                    currentIdx = 0;
+                    alert("¡Turno del Jugador 1 completado! Pase el dispositivo al Jugador 2.");
+                    updateUI();
+                } else {
+                    showResults();
+                }
+            }
+        }
+
+        function showResults() {
+            document.getElementById("quiz-screen").classList.add("hidden");
+            document.getElementById("result-screen").classList.remove("hidden");
+
+            let score1 = 0;
+            let score2 = 0;
+            const tbody = document.getElementById("results-body");
+
+            questions.forEach((q, i) => {
+                const res1 = p1Answers[i] === q.answer;
+                const res2 = p2Answers[i] === q.answer;
+                if (res1) score1++;
+                if (res2) score2++;
+
+                const row = `<tr>
+                    <td>${q.text}</td>
+                    <td class="${res1 ? 'check' : 'cross'}">${res1 ? '✓' : '✗'}</td>
+                    <td class="${res2 ? 'check' : 'cross'}">${res2 ? '✓' : '✗'}</td>
+                    <td>${q.answer ? 'V' : 'F'}</td>
+                </tr>`;
+                tbody.innerHTML += row;
+            });
+
+            document.getElementById("total-p1").innerText = `${score1}/10`;
+            document.getElementById("total-p2").innerText = `${score2}/10`;
+
+            const winTxt = document.getElementById("winner-text");
+            if (score1 > score2) winTxt.innerText = "¡GANADOR: JUGADOR 1! 🏅";
+            else if (score2 > score1) winTxt.innerText = "¡GANADOR: JUGADOR 2! 🏅";
+            else winTxt.innerText = "¡EMPATE TÉCNICO! 🤝";
+        }
+    </script>
+</body>
+</html>

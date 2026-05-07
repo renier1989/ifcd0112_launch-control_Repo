@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día 3 — Simuladores · IFCD0112 · @TodoEconometria</title>
+  <style>
+    :root {
+      --primary: #0A3D62;
+      --primary-lt: #1E5F8B;
+      --accent: #3498DB;
+      --accent-lt: #D6EAF8;
+      --bg: #FFFFFF;
+      --bg-soft: #F8FAFC;
+      --text: #1A202C;
+      --muted: #5A6C7D;
+      --border: #E2E8F0;
+      --success: #27AE60;
+      --warn: #E67E22;
+      --danger: #C0392B;
+      --code-bg: #1E2A3A;
+      --code-text: #E2E8F0;
+      --code-green: #6EE7B7;
+      --code-yellow: #F1C40F;
+      --code-muted: #95A5A6;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg-soft);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    /* ── Cabecera ── */
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2.5rem 2rem;
+      border-left: 8px solid var(--accent);
+    }
+    header .tag {
+      font-family: "Courier New", Consolas, monospace;
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+    header .subtitle {
+      margin-top: 0.5rem;
+      color: var(--accent-lt);
+      font-style: italic;
+    }
+    /* ── Barra de navegación de simuladores ── */
+    .nav {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      padding: 0 2rem;
+    }
+    .nav button {
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      padding: 1rem 1.5rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+    .nav button:hover { color: var(--primary); }
+    .nav button.active {
+      color: var(--primary);
+      border-bottom-color: var(--accent);
+      font-weight: 700;
+    }
+    /* ── Contenedor principal ── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .sim { display: none; }
+    .sim.active { display: block; animation: fadeIn 0.2s; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .sim h2 {
+      color: var(--primary);
+      font-size: 1.6rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      margin-top: 0;
+    }
+    .sim .intro {
+      background: var(--accent-lt);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.2rem;
+      margin: 1.2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .sim .intro strong { color: var(--primary); }
+
+    /* ── Terminal simulada ── */
+    .terminal {
+      background: var(--code-bg);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(10, 61, 98, 0.15);
+      margin: 1.2rem 0;
+    }
+    .terminal-header {
+      background: #2C3E50;
+      padding: 0.6rem 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .terminal-header .dot {
+      width: 12px; height: 12px; border-radius: 50%;
+    }
+    .terminal-header .dot.red { background: #E74C3C; }
+    .terminal-header .dot.yel { background: #F39C12; }
+    .terminal-header .dot.grn { background: #27AE60; }
+    .terminal-header .title {
+      margin-left: 0.8rem;
+      color: #BDC3C7;
+      font-family: "Courier New", Consolas, monospace;
+      font-size: 0.85rem;
+    }
+    .terminal-body {
+      font-family: "Courier New", Consolas, monospace;
+      color: var(--code-text);
+      padding: 1rem 1.2rem;
+      font-size: 0.9rem;
+      line-height: 1.55;
+      min-height: 220px;
+      max-height: 420px;
+      overflow-y: auto;
+    }
+    .terminal-body .prompt { color: var(--code-green); font-weight: bold; }
+    .terminal-body .user   { color: var(--code-yellow); }
+    .terminal-body .muted  { color: var(--code-muted); }
+    .terminal-body .ok     { color: var(--code-green); }
+    .terminal-body .err    { color: #E74C3C; }
+    .terminal-body .warn   { color: #F39C12; }
+    .terminal-body .accent { color: var(--accent); }
+    .terminal-body .cmd    { color: white; }
+
+    .input-row {
+      display: flex;
+      background: var(--code-bg);
+      padding: 0 1.2rem 1rem;
+      font-family: "Courier New", Consolas, monospace;
+      align-items: center;
+    }
+    .input-row .prompt {
+      color: var(--code-green);
+      font-weight: bold;
+      margin-right: 0.6rem;
+      white-space: nowrap;
+    }
+    .input-row input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: white;
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      caret-color: var(--code-green);
+    }
+
+    /* ── Botones de comandos sugeridos ── */
+    .hints {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .hints button {
+      background: white;
+      border: 1.5px solid var(--border);
+      padding: 0.45rem 0.8rem;
+      border-radius: 4px;
+      font-family: "Courier New", Consolas, monospace;
+      font-size: 0.82rem;
+      color: var(--primary);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .hints button:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .hints button.done {
+      background: var(--accent-lt);
+      border-color: var(--accent);
+      position: relative;
+    }
+    .hints button.done::before {
+      content: "✓ ";
+      color: var(--success);
+      font-weight: bold;
+    }
+
+    /* ── Panel lateral de estado ── */
+    .state-panel {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+    }
+    .state-panel h3 {
+      margin: 0 0 0.6rem 0;
+      font-size: 0.78rem;
+      letter-spacing: 3px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .state-panel .state-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3rem 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.9rem;
+    }
+    .state-panel .state-item:last-child { border: none; }
+    .state-panel .state-item .key {
+      color: var(--muted);
+      font-family: "Courier New", Consolas, monospace;
+    }
+    .state-panel .state-item .value {
+      font-family: "Courier New", Consolas, monospace;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* ── Tareas/desafíos ── */
+    .challenges {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.2rem;
+      margin: 1.2rem 0;
+    }
+    .challenges h3 {
+      margin: 0 0 0.8rem 0;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    .challenges ol {
+      margin: 0;
+      padding-left: 1.3rem;
+    }
+    .challenges li {
+      padding: 0.4rem 0;
+      line-height: 1.5;
+    }
+    .challenges li.done {
+      color: var(--success);
+      text-decoration: line-through;
+    }
+    .challenges li.done::after {
+      content: " ✓";
+      color: var(--success);
+      font-weight: bold;
+    }
+    .progress {
+      margin-top: 0.8rem;
+      background: var(--bg-soft);
+      border-radius: 4px;
+      height: 6px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      background: var(--success);
+      height: 100%;
+      transition: width 0.3s;
+    }
+
+    /* ── Dos columnas ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 820px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    footer {
+      background: var(--primary);
+      color: var(--accent-lt);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+    footer strong { color: white; }
+
+    .instructions {
+      background: #FEF5E7;
+      border-left: 4px solid var(--warn);
+      padding: 0.8rem 1rem;
+      margin: 1rem 0;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.9rem;
+    }
+    .instructions strong { color: var(--warn); }
+
+    .reset-btn {
+      background: var(--muted);
+      color: white;
+      border: none;
+      padding: 0.4rem 0.9rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .reset-btn:hover { background: var(--danger); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="tag">IFCD0112 · DÍA 3 · SIMULADORES</div>
+    <h1>Practica usuarios, grupos y permisos</h1>
+    <div class="subtitle">Sin miedo a romper nada real — todo es simulación en el navegador</div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <button class="tab-btn active" data-sim="sim1">① Identificar usuario</button>
+      <button class="tab-btn" data-sim="sim2">② Crear usuario</button>
+      <button class="tab-btn" data-sim="sim3">③ su vs sudo</button>
+      <button class="tab-btn" data-sim="sim4">④ Directorio de grupo + setgid</button>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- SIMULADOR 1 — IDENTIFICAR USUARIO                          -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="sim active" id="sim1">
+      <h2>① Identificar usuario — <code>whoami</code>, <code>id</code>, <code>groups</code></h2>
+
+      <div class="intro">
+        <strong>Objetivo:</strong> Aprender los comandos que te dicen <em>quién</em> eres para el sistema.
+        Completa los 4 retos de la derecha escribiendo los comandos en el prompt. Tienes sugerencias abajo.
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yel"></span><span class="dot grn"></span>
+              <span class="title">alumno@ubuntu:~$</span>
+            </div>
+            <div class="terminal-body" id="term1"><span class="muted"># Escribe un comando o usa los botones de abajo. Prueba: whoami</span></div>
+            <div class="input-row">
+              <span class="prompt">alumno@ubuntu:~$</span>
+              <input type="text" id="input1" autocomplete="off" spellcheck="false" placeholder="Escribe aquí...">
+            </div>
+          </div>
+
+          <div class="hints" id="hints1">
+            <button data-cmd="whoami">whoami</button>
+            <button data-cmd="id">id</button>
+            <button data-cmd="id dev_test">id dev_test</button>
+            <button data-cmd="groups">groups</button>
+            <button data-cmd="getent group sudo">getent group sudo</button>
+            <button data-cmd="cat /etc/passwd">cat /etc/passwd</button>
+            <button data-cmd="grep alumno /etc/passwd">grep alumno /etc/passwd</button>
+            <button data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="state-panel">
+            <h3>ESTADO ACTUAL</h3>
+            <div class="state-item"><span class="key">Usuario</span><span class="value">alumno</span></div>
+            <div class="state-item"><span class="key">UID</span><span class="value">1000</span></div>
+            <div class="state-item"><span class="key">GID</span><span class="value">1000</span></div>
+            <div class="state-item"><span class="key">Grupos</span><span class="value">alumno,sudo,adm</span></div>
+          </div>
+
+          <div class="challenges">
+            <h3>🎯 RETOS</h3>
+            <ol id="ch1">
+              <li data-ch="c1_1">Averigua tu nombre de usuario</li>
+              <li data-ch="c1_2">Lista tu UID, GID y todos los grupos</li>
+              <li data-ch="c1_3">Ver los miembros del grupo sudo</li>
+              <li data-ch="c1_4">Encuentra tu entrada en /etc/passwd</li>
+            </ol>
+            <div class="progress"><div class="progress-bar" id="prog1" style="width: 0%;"></div></div>
+          </div>
+
+          <button class="reset-btn" onclick="resetSim(1)">↻ Reiniciar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- SIMULADOR 2 — CREAR USUARIO                                -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="sim" id="sim2">
+      <h2>② Crear usuario — <code>adduser</code>, <code>usermod</code>, <code>deluser</code></h2>
+
+      <div class="intro">
+        <strong>Objetivo:</strong> Practica el ciclo completo de un usuario: crear → añadir a grupo → modificar → eliminar.
+        Como en este simulador <em>sí</em> tienes permisos, cualquier <code>sudo</code> lo acepta directamente.
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yel"></span><span class="dot grn"></span>
+              <span class="title">alumno@ubuntu:~$</span>
+            </div>
+            <div class="terminal-body" id="term2"><span class="muted"># Crea un usuario de prueba. Empieza con: sudo adduser dev_test</span></div>
+            <div class="input-row">
+              <span class="prompt">alumno@ubuntu:~$</span>
+              <input type="text" id="input2" autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+
+          <div class="hints" id="hints2">
+            <button data-cmd="sudo adduser dev_test">sudo adduser dev_test</button>
+            <button data-cmd="id dev_test">id dev_test</button>
+            <button data-cmd="grep dev_test /etc/passwd">grep dev_test /etc/passwd</button>
+            <button data-cmd="sudo usermod -aG sudo dev_test">sudo usermod -aG sudo dev_test</button>
+            <button data-cmd="sudo usermod -G sudo dev_test">⚠ sudo usermod -G sudo dev_test</button>
+            <button data-cmd="sudo passwd dev_test">sudo passwd dev_test</button>
+            <button data-cmd="sudo deluser dev_test">sudo deluser dev_test</button>
+            <button data-cmd="sudo deluser --remove-home dev_test">sudo deluser --remove-home dev_test</button>
+            <button data-cmd="ls /home/">ls /home/</button>
+            <button data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="state-panel" id="state2">
+            <h3>USUARIOS DEL SISTEMA</h3>
+            <div id="userList"></div>
+          </div>
+
+          <div class="challenges">
+            <h3>🎯 RETOS</h3>
+            <ol id="ch2">
+              <li data-ch="c2_1">Crea el usuario <code>dev_test</code></li>
+              <li data-ch="c2_2">Añádelo al grupo <code>sudo</code> (con -aG)</li>
+              <li data-ch="c2_3">Verifica sus grupos con <code>id dev_test</code></li>
+              <li data-ch="c2_4">Bórralo junto con su home</li>
+            </ol>
+            <div class="progress"><div class="progress-bar" id="prog2" style="width: 0%;"></div></div>
+          </div>
+
+          <button class="reset-btn" onclick="resetSim(2)">↻ Reiniciar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- SIMULADOR 3 — SU VS SUDO                                   -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="sim" id="sim3">
+      <h2>③ su vs sudo — escalada de privilegios</h2>
+
+      <div class="intro">
+        <strong>Objetivo:</strong> Entender la diferencia entre <em>cambiar de identidad</em> (su) y
+        <em>ejecutar como root un comando</em> (sudo). Observa quién eres en cada momento en el prompt.
+      </div>
+
+      <div class="instructions">
+        <strong>Pista:</strong> Después de <code>su - dev_test</code>, fíjate cómo cambia el nombre del prompt.
+        Prueba <code>sudo apt update</code> como <code>dev_test</code> para ver el error de "no está en sudoers".
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yel"></span><span class="dot grn"></span>
+              <span class="title" id="term3-title">alumno@ubuntu:~$</span>
+            </div>
+            <div class="terminal-body" id="term3"><span class="muted"># Empieza como 'alumno'. Prueba: sudo whoami</span></div>
+            <div class="input-row">
+              <span class="prompt" id="prompt3">alumno@ubuntu:~$</span>
+              <input type="text" id="input3" autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+
+          <div class="hints" id="hints3">
+            <button data-cmd="whoami">whoami</button>
+            <button data-cmd="sudo whoami">sudo whoami</button>
+            <button data-cmd="su - dev_test">su - dev_test</button>
+            <button data-cmd="su -">su -</button>
+            <button data-cmd="sudo -i">sudo -i</button>
+            <button data-cmd="sudo apt update">sudo apt update</button>
+            <button data-cmd="sudo cat /etc/shadow">sudo cat /etc/shadow</button>
+            <button data-cmd="cat /etc/shadow">cat /etc/shadow</button>
+            <button data-cmd="exit">exit</button>
+            <button data-cmd="sudo -l">sudo -l</button>
+            <button data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="state-panel">
+            <h3>SESIÓN ACTUAL</h3>
+            <div class="state-item"><span class="key">Usuario</span><span class="value" id="s3-user">alumno</span></div>
+            <div class="state-item"><span class="key">¿Es root?</span><span class="value" id="s3-root">no</span></div>
+            <div class="state-item"><span class="key">Stack de sesiones</span><span class="value" id="s3-stack">[alumno]</span></div>
+            <div class="state-item"><span class="key">¿En grupo sudo?</span><span class="value" id="s3-sudo">sí</span></div>
+          </div>
+
+          <div class="challenges">
+            <h3>🎯 RETOS</h3>
+            <ol id="ch3">
+              <li data-ch="c3_1">Ejecuta un comando como root con <code>sudo</code></li>
+              <li data-ch="c3_2">Cambia de sesión a <code>dev_test</code> con <code>su -</code></li>
+              <li data-ch="c3_3">Intenta <code>sudo apt update</code> como dev_test (fallará)</li>
+              <li data-ch="c3_4">Vuelve a tu sesión con <code>exit</code></li>
+              <li data-ch="c3_5">Lee <code>/etc/shadow</code> con sudo (solo root puede)</li>
+            </ol>
+            <div class="progress"><div class="progress-bar" id="prog3" style="width: 0%;"></div></div>
+          </div>
+
+          <button class="reset-btn" onclick="resetSim(3)">↻ Reiniciar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- SIMULADOR 4 — DIRECTORIO DE GRUPO + SETGID                 -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="sim" id="sim4">
+      <h2>④ Directorio de grupo + bit setgid</h2>
+
+      <div class="intro">
+        <strong>Objetivo:</strong> Construir desde cero un directorio compartido donde varios usuarios puedan
+        colaborar. Descubrirás por qué <strong>setgid es imprescindible</strong>.
+      </div>
+
+      <div class="instructions">
+        <strong>Experimento clave:</strong> Crea un fichero <em>sin</em> setgid, mira qué grupo tiene.
+        Activa setgid, crea otro, y compara. Esa diferencia es la razón de que todo equipo de desarrollo use setgid.
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yel"></span><span class="dot grn"></span>
+              <span class="title">alumno@ubuntu:~$</span>
+            </div>
+            <div class="terminal-body" id="term4"><span class="muted"># Sigue los 5 pasos. Empieza creando el grupo: sudo groupadd dev_clase</span></div>
+            <div class="input-row">
+              <span class="prompt">alumno@ubuntu:~$</span>
+              <input type="text" id="input4" autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+
+          <div class="hints" id="hints4">
+            <button data-cmd="sudo groupadd dev_clase">sudo groupadd dev_clase</button>
+            <button data-cmd="sudo mkdir /opt/proyecto_clase">sudo mkdir /opt/proyecto_clase</button>
+            <button data-cmd="sudo chown root:dev_clase /opt/proyecto_clase">sudo chown root:dev_clase /opt/proyecto_clase</button>
+            <button data-cmd="sudo chmod 770 /opt/proyecto_clase">sudo chmod 770 /opt/proyecto_clase</button>
+            <button data-cmd="sudo chmod 2770 /opt/proyecto_clase">sudo chmod 2770 /opt/proyecto_clase</button>
+            <button data-cmd="sudo usermod -aG dev_clase alumno">sudo usermod -aG dev_clase alumno</button>
+            <button data-cmd="newgrp dev_clase">newgrp dev_clase</button>
+            <button data-cmd="touch /opt/proyecto_clase/fichero1.txt">touch /opt/proyecto_clase/fichero1.txt</button>
+            <button data-cmd="ls -la /opt/proyecto_clase/">ls -la /opt/proyecto_clase/</button>
+            <button data-cmd="ls -la /opt/">ls -la /opt/</button>
+            <button data-cmd="stat /opt/proyecto_clase/fichero1.txt">stat fichero1.txt</button>
+            <button data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="state-panel">
+            <h3>ESTADO DEL PROYECTO</h3>
+            <div class="state-item"><span class="key">Grupo dev_clase</span><span class="value" id="s4-group">—</span></div>
+            <div class="state-item"><span class="key">Directorio</span><span class="value" id="s4-dir">—</span></div>
+            <div class="state-item"><span class="key">Permisos dir</span><span class="value" id="s4-perm">—</span></div>
+            <div class="state-item"><span class="key">setgid activo</span><span class="value" id="s4-setgid">no</span></div>
+            <div class="state-item"><span class="key">Alumno en dev_clase</span><span class="value" id="s4-member">no</span></div>
+            <div class="state-item"><span class="key">Ficheros creados</span><span class="value" id="s4-files">0</span></div>
+          </div>
+
+          <div class="challenges">
+            <h3>🎯 RETOS (5 pasos)</h3>
+            <ol id="ch4">
+              <li data-ch="c4_1">Crear grupo <code>dev_clase</code></li>
+              <li data-ch="c4_2">Crear <code>/opt/proyecto_clase</code></li>
+              <li data-ch="c4_3">Asignar grupo con <code>chown</code></li>
+              <li data-ch="c4_4">Activar permisos <code>2770</code> (setgid!)</li>
+              <li data-ch="c4_5">Añadir alumno al grupo</li>
+              <li data-ch="c4_6">Crear fichero y verificar grupo</li>
+            </ol>
+            <div class="progress"><div class="progress-bar" id="prog4" style="width: 0%;"></div></div>
+          </div>
+
+          <button class="reset-btn" onclick="resetSim(4)">↻ Reiniciar</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>IFCD0112 · MF0223_3 · UF1465</strong> — Día 3 — Juan Marcelo Gutiérrez Miranda · <em>@TodoEconometria</em>
+  </footer>
+
+<script>
+  // ═══════════════════════════════════════════════════════════════
+  // NAVEGACIÓN ENTRE SIMULADORES
+  // ═══════════════════════════════════════════════════════════════
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.sim').forEach(s => s.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.sim).classList.add('active');
+    });
+  });
+
+  // ═══════════════════════════════════════════════════════════════
+  // UTILIDADES DE TERMINAL
+  // ═══════════════════════════════════════════════════════════════
+  function esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function writeTerm(termId, html) {
+    const t = document.getElementById(termId);
+    if (t.innerHTML.includes('# ')) {
+      // Borrar hint inicial en la primera escritura
+      if (!t.dataset.cleared) {
+        t.innerHTML = '';
+        t.dataset.cleared = '1';
+      }
+    }
+    t.innerHTML += html;
+    t.scrollTop = t.scrollHeight;
+  }
+  function writePrompt(termId, prompt, cmd) {
+    writeTerm(termId,
+      `<div><span class="prompt">${esc(prompt)}</span> <span class="cmd">${esc(cmd)}</span></div>`
+    );
+  }
+  function writeOut(termId, lines) {
+    const html = lines.map(l => {
+      if (typeof l === 'string') return `<div>${esc(l)}</div>`;
+      return `<div class="${l.cls||''}">${esc(l.text)}</div>`;
+    }).join('');
+    writeTerm(termId, html);
+  }
+  function clearTerm(termId) {
+    document.getElementById(termId).innerHTML = '';
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // MARCAR RETOS COMPLETADOS
+  // ═══════════════════════════════════════════════════════════════
+  const completed = { 1: new Set(), 2: new Set(), 3: new Set(), 4: new Set() };
+  function markChallenge(simNum, chId) {
+    if (completed[simNum].has(chId)) return;
+    completed[simNum].add(chId);
+    const li = document.querySelector(`#ch${simNum} li[data-ch="${chId}"]`);
+    if (li) li.classList.add('done');
+    const total = document.querySelectorAll(`#ch${simNum} li`).length;
+    const pct = (completed[simNum].size / total) * 100;
+    document.getElementById(`prog${simNum}`).style.width = pct + '%';
+  }
+  function markHintDone(simNum, cmd) {
+    const btn = document.querySelector(`#hints${simNum} button[data-cmd="${cmd}"]`);
+    if (btn) btn.classList.add('done');
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // SIMULADOR 1 — whoami, id, groups
+  // ═══════════════════════════════════════════════════════════════
+  function handle1(cmd) {
+    const prompt = 'alumno@ubuntu:~$';
+    writePrompt('term1', prompt, cmd);
+    const c = cmd.trim();
+
+    if (c === '' ) return;
+    if (c === 'clear') return clearTerm('term1');
+
+    if (c === 'whoami') {
+      writeOut('term1', [{ text: 'alumno', cls: 'user' }]);
+      markChallenge(1, 'c1_1');
+      markHintDone(1, 'whoami');
+    }
+    else if (c === 'id') {
+      writeOut('term1', [{
+        text: 'uid=1000(alumno) gid=1000(alumno) groups=1000(alumno),4(adm),27(sudo)',
+        cls: 'ok'
+      }]);
+      markChallenge(1, 'c1_2');
+      markHintDone(1, 'id');
+    }
+    else if (c === 'id dev_test') {
+      writeOut('term1', [{ text: 'id: «dev_test»: no existe este usuario', cls: 'err' }]);
+      markHintDone(1, 'id dev_test');
+    }
+    else if (c === 'groups') {
+      writeOut('term1', [{ text: 'alumno adm sudo', cls: 'ok' }]);
+      markHintDone(1, 'groups');
+    }
+    else if (c === 'getent group sudo') {
+      writeOut('term1', [{ text: 'sudo:x:27:alumno', cls: 'ok' }]);
+      markChallenge(1, 'c1_3');
+      markHintDone(1, 'getent group sudo');
+    }
+    else if (c === 'cat /etc/passwd') {
+      writeOut('term1', [
+        'root:x:0:0:root:/root:/bin/bash',
+        'daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin',
+        'syslog:x:104:110::/home/syslog:/usr/sbin/nologin',
+        'sshd:x:108:65534::/run/sshd:/usr/sbin/nologin',
+        { text: 'alumno:x:1000:1000:Alumno IFCD0112:/home/alumno:/bin/bash', cls: 'user' },
+        { text: '# ...más líneas truncadas', cls: 'muted' }
+      ]);
+      markHintDone(1, 'cat /etc/passwd');
+    }
+    else if (c === 'grep alumno /etc/passwd') {
+      writeOut('term1', [
+        { text: 'alumno:x:1000:1000:Alumno IFCD0112:/home/alumno:/bin/bash', cls: 'user' }
+      ]);
+      markChallenge(1, 'c1_4');
+      markHintDone(1, 'grep alumno /etc/passwd');
+    }
+    else if (c.startsWith('pwd')) {
+      writeOut('term1', [{ text: '/home/alumno', cls: 'ok' }]);
+    }
+    else {
+      writeOut('term1', [{ text: `bash: ${c.split(' ')[0]}: orden no encontrada`, cls: 'err' }]);
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // SIMULADOR 2 — adduser, usermod, deluser
+  // ═══════════════════════════════════════════════════════════════
+  const state2 = {
+    users: new Map([
+      ['alumno', { uid: 1000, gid: 1000, groups: ['alumno', 'adm', 'sudo'], home: '/home/alumno' }],
+    ]),
+    nextUid: 1001,
+  };
+  function renderUserList() {
+    const el = document.getElementById('userList');
+    const items = [];
+    for (const [name, u] of state2.users) {
+      items.push(
+        `<div class="state-item"><span class="key">${esc(name)}</span>` +
+        `<span class="value">uid=${u.uid}</span></div>`
+      );
+    }
+    el.innerHTML = items.join('');
+  }
+  renderUserList();
+
+  function handle2(cmd) {
+    const prompt = 'alumno@ubuntu:~$';
+    writePrompt('term2', prompt, cmd);
+    const c = cmd.trim();
+    if (c === '') return;
+    if (c === 'clear') return clearTerm('term2');
+
+    // sudo adduser NOMBRE
+    let m = c.match(/^sudo\s+adduser\s+(\S+)$/);
+    if (m) {
+      const name = m[1];
+      if (state2.users.has(name)) {
+        writeOut('term2', [{ text: `adduser: El usuario «${name}» ya existe.`, cls: 'err' }]);
+      } else {
+        const uid = state2.nextUid++;
+        state2.users.set(name, { uid, gid: uid, groups: [name], home: `/home/${name}` });
+        writeOut('term2', [
+          { text: `Añadiendo el usuario «${name}» ...`, cls: 'muted' },
+          { text: `Añadiendo el nuevo grupo «${name}» (${uid}) ...`, cls: 'muted' },
+          { text: `Añadiendo el nuevo usuario «${name}» (${uid}) con grupo «${name}» ...`, cls: 'muted' },
+          { text: `Creando el directorio personal «/home/${name}» ...`, cls: 'muted' },
+          { text: `Copiando los ficheros desde «/etc/skel» ...`, cls: 'muted' },
+          { text: `Nueva contraseña: ●●●●●`, cls: 'warn' },
+          { text: `Retype password: ●●●●●`, cls: 'warn' },
+          { text: `passwd: contraseña actualizada correctamente`, cls: 'ok' },
+          { text: `¿Es correcta la información? [S/n] S`, cls: 'muted' },
+        ]);
+        if (name === 'dev_test') markChallenge(2, 'c2_1');
+        markHintDone(2, c);
+        renderUserList();
+      }
+      return;
+    }
+
+    // id NOMBRE
+    m = c.match(/^id\s+(\S+)$/);
+    if (m) {
+      const u = state2.users.get(m[1]);
+      if (!u) {
+        writeOut('term2', [{ text: `id: «${m[1]}»: no existe este usuario`, cls: 'err' }]);
+      } else {
+        const groupsStr = u.groups.map((g, i) => {
+          const gid = i === 0 ? u.gid : (g === 'sudo' ? 27 : g === 'adm' ? 4 : '?');
+          return `${gid}(${g})`;
+        }).join(',');
+        writeOut('term2', [
+          { text: `uid=${u.uid}(${m[1]}) gid=${u.gid}(${u.groups[0]}) groups=${groupsStr}`, cls: 'ok' }
+        ]);
+        if (m[1] === 'dev_test' && u.groups.includes('sudo')) markChallenge(2, 'c2_3');
+        markHintDone(2, c);
+      }
+      return;
+    }
+
+    // grep NOMBRE /etc/passwd
+    m = c.match(/^grep\s+(\S+)\s+\/etc\/passwd$/);
+    if (m) {
+      const u = state2.users.get(m[1]);
+      if (!u) {
+        writeOut('term2', [{ text: '(sin resultados)', cls: 'muted' }]);
+      } else {
+        writeOut('term2', [
+          { text: `${m[1]}:x:${u.uid}:${u.gid}::${u.home}:/bin/bash`, cls: 'user' }
+        ]);
+      }
+      markHintDone(2, c);
+      return;
+    }
+
+    // usermod -aG GR USR  (append)
+    m = c.match(/^sudo\s+usermod\s+-aG\s+(\S+)\s+(\S+)$/);
+    if (m) {
+      const grp = m[1], user = m[2];
+      const u = state2.users.get(user);
+      if (!u) {
+        writeOut('term2', [{ text: `usermod: el usuario «${user}» no existe`, cls: 'err' }]);
+      } else {
+        if (!u.groups.includes(grp)) u.groups.push(grp);
+        writeOut('term2', [{ text: '(sin salida — éxito)', cls: 'muted' }]);
+        if (user === 'dev_test' && grp === 'sudo') markChallenge(2, 'c2_2');
+        markHintDone(2, c);
+      }
+      return;
+    }
+
+    // usermod -G GR USR  (reemplaza — peligroso)
+    m = c.match(/^sudo\s+usermod\s+-G\s+(\S+)\s+(\S+)$/);
+    if (m) {
+      const grp = m[1], user = m[2];
+      const u = state2.users.get(user);
+      if (!u) {
+        writeOut('term2', [{ text: `usermod: el usuario «${user}» no existe`, cls: 'err' }]);
+      } else {
+        const before = u.groups.slice();
+        u.groups = [u.groups[0], grp];  // conservar primario, reemplazar el resto
+        writeOut('term2', [
+          { text: '(sin salida — pero acabas de borrar grupos)', cls: 'muted' },
+          { text: `⚠  Antes: ${before.join(',')}`, cls: 'warn' },
+          { text: `⚠  Ahora: ${u.groups.join(',')} — usaste -G sin -a`, cls: 'err' }
+        ]);
+        markHintDone(2, c);
+      }
+      return;
+    }
+
+    // passwd
+    m = c.match(/^sudo\s+passwd\s+(\S+)$/);
+    if (m) {
+      const u = state2.users.get(m[1]);
+      if (!u) {
+        writeOut('term2', [{ text: `passwd: el usuario «${m[1]}» no existe`, cls: 'err' }]);
+      } else {
+        writeOut('term2', [
+          { text: 'Nueva contraseña: ●●●●●', cls: 'warn' },
+          { text: 'passwd: contraseña actualizada correctamente', cls: 'ok' }
+        ]);
+        markHintDone(2, c);
+      }
+      return;
+    }
+
+    // deluser
+    m = c.match(/^sudo\s+deluser\s+(?:--remove-home\s+)?(\S+)$/);
+    if (m) {
+      const removeHome = c.includes('--remove-home');
+      const user = m[1];
+      if (!state2.users.has(user)) {
+        writeOut('term2', [{ text: `deluser: usuario «${user}» no existe`, cls: 'err' }]);
+      } else {
+        state2.users.delete(user);
+        const msgs = [
+          { text: `Eliminando al usuario «${user}» ...`, cls: 'muted' },
+          { text: `Advertencia: el grupo «${user}» no tiene más miembros.`, cls: 'muted' },
+          { text: `Listo.`, cls: 'ok' }
+        ];
+        if (!removeHome) {
+          msgs.push({ text: `Nota: /home/${user} NO se ha borrado → fichero huérfano`, cls: 'warn' });
+        } else {
+          msgs.push({ text: `Eliminando el directorio personal /home/${user} ...`, cls: 'muted' });
+          if (user === 'dev_test') markChallenge(2, 'c2_4');
+        }
+        writeOut('term2', msgs);
+        markHintDone(2, c);
+        renderUserList();
+      }
+      return;
+    }
+
+    // ls /home/
+    if (c === 'ls /home/') {
+      const homes = Array.from(state2.users.keys()).join('  ');
+      writeOut('term2', [{ text: homes || '(vacío)', cls: 'ok' }]);
+      markHintDone(2, 'ls /home/');
+      return;
+    }
+
+    writeOut('term2', [{ text: `bash: ${c.split(' ')[0]}: orden no encontrada`, cls: 'err' }]);
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // SIMULADOR 3 — su vs sudo
+  // ═══════════════════════════════════════════════════════════════
+  const state3 = {
+    sessionStack: ['alumno'],  // pila de sesiones
+    users: {
+      alumno:   { groups: ['alumno', 'sudo'] },
+      dev_test: { groups: ['dev_test'] },   // SIN sudo
+      root:     { groups: ['root'] },
+    },
+  };
+  function s3CurrentUser() {
+    return state3.sessionStack[state3.sessionStack.length - 1];
+  }
+  function s3UpdatePanel() {
+    const u = s3CurrentUser();
+    document.getElementById('s3-user').textContent = u;
+    document.getElementById('s3-root').textContent = (u === 'root') ? 'SÍ' : 'no';
+    document.getElementById('s3-stack').textContent = '[' + state3.sessionStack.join(' → ') + ']';
+    const inSudo = state3.users[u] && state3.users[u].groups.includes('sudo');
+    document.getElementById('s3-sudo').textContent = inSudo ? 'sí' : 'no';
+    // Actualizar prompt
+    const home = u === 'root' ? '/root' : `/home/${u}`;
+    const promptText = u === 'root' ? `${u}@ubuntu:~#` : `${u}@ubuntu:~$`;
+    document.getElementById('prompt3').textContent = promptText;
+    document.getElementById('term3-title').textContent = `${u}@ubuntu:~`;
+  }
+  s3UpdatePanel();
+
+  function handle3(cmd) {
+    const u = s3CurrentUser();
+    const prompt = u === 'root' ? `${u}@ubuntu:~#` : `${u}@ubuntu:~$`;
+    writePrompt('term3', prompt, cmd);
+    const c = cmd.trim();
+    if (c === '') return;
+    if (c === 'clear') return clearTerm('term3');
+
+    if (c === 'whoami') {
+      writeOut('term3', [{ text: u, cls: 'user' }]);
+      return;
+    }
+
+    if (c === 'sudo whoami') {
+      if (state3.users[u].groups.includes('sudo')) {
+        writeOut('term3', [
+          { text: '[sudo] contraseña para ' + u + ': ●●●●●', cls: 'muted' },
+          { text: 'root', cls: 'user' }
+        ]);
+        markChallenge(3, 'c3_1');
+        markHintDone(3, 'sudo whoami');
+      } else {
+        writeOut('term3', [
+          { text: `${u} is not in the sudoers file.  This incident will be reported.`, cls: 'err' }
+        ]);
+      }
+      return;
+    }
+
+    // su - USER
+    let m = c.match(/^su\s+-\s*(\S+)?$/);
+    if (m) {
+      const target = m[1] || 'root';
+      if (!state3.users[target]) {
+        writeOut('term3', [{ text: `su: el usuario ${target} no existe`, cls: 'err' }]);
+        return;
+      }
+      writeOut('term3', [
+        { text: `Contraseña de ${target}: ●●●●●`, cls: 'muted' },
+      ]);
+      state3.sessionStack.push(target);
+      s3UpdatePanel();
+      writeOut('term3', [{ text: `(sesión cambiada a ${target})`, cls: 'ok' }]);
+      if (target === 'dev_test') markChallenge(3, 'c3_2');
+      markHintDone(3, c);
+      return;
+    }
+
+    if (c === 'sudo -i') {
+      if (state3.users[u].groups.includes('sudo')) {
+        writeOut('term3', [{ text: '[sudo] contraseña para ' + u + ': ●●●●●', cls: 'muted' }]);
+        state3.sessionStack.push('root');
+        s3UpdatePanel();
+        writeOut('term3', [{ text: '(shell de root iniciado con TU contraseña)', cls: 'ok' }]);
+      } else {
+        writeOut('term3', [
+          { text: `${u} is not in the sudoers file.  This incident will be reported.`, cls: 'err' }
+        ]);
+      }
+      markHintDone(3, c);
+      return;
+    }
+
+    if (c === 'exit') {
+      if (state3.sessionStack.length > 1) {
+        const left = state3.sessionStack.pop();
+        s3UpdatePanel();
+        writeOut('term3', [{ text: `(saliste de la sesión de ${left})`, cls: 'muted' }]);
+        if (state3.sessionStack.length === 1 && state3.sessionStack[0] === 'alumno') {
+          markChallenge(3, 'c3_4');
+        }
+        markHintDone(3, c);
+      } else {
+        writeOut('term3', [{ text: '(no se puede salir de la sesión inicial)', cls: 'muted' }]);
+      }
+      return;
+    }
+
+    if (c === 'sudo apt update') {
+      if (state3.users[u].groups.includes('sudo')) {
+        writeOut('term3', [
+          { text: '[sudo] contraseña para ' + u + ': ●●●●●', cls: 'muted' },
+          { text: 'Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease', cls: 'ok' },
+          { text: 'Reading package lists... Done', cls: 'ok' },
+          { text: 'All packages are up to date.', cls: 'ok' }
+        ]);
+      } else {
+        writeOut('term3', [
+          { text: `[sudo] contraseña para ${u}: ●●●●●`, cls: 'muted' },
+          { text: `${u} is not in the sudoers file.  This incident will be reported.`, cls: 'err' },
+        ]);
+        if (u === 'dev_test') markChallenge(3, 'c3_3');
+      }
+      markHintDone(3, c);
+      return;
+    }
+
+    if (c === 'sudo cat /etc/shadow') {
+      if (state3.users[u].groups.includes('sudo')) {
+        writeOut('term3', [
+          { text: '[sudo] contraseña para ' + u + ': ●●●●●', cls: 'muted' },
+          { text: 'root:$6$salt$largohashseguroirreversible12345...:19460:0:99999:7:::', cls: 'ok' },
+          { text: 'alumno:$6$salt$otrohashigualdelargo12345...:19460:0:99999:7:::', cls: 'ok' },
+          { text: '# ...resto del fichero', cls: 'muted' }
+        ]);
+        markChallenge(3, 'c3_5');
+      } else {
+        writeOut('term3', [
+          { text: `${u} is not in the sudoers file.  This incident will be reported.`, cls: 'err' }
+        ]);
+      }
+      markHintDone(3, c);
+      return;
+    }
+
+    if (c === 'cat /etc/shadow') {
+      writeOut('term3', [
+        { text: 'cat: /etc/shadow: Permiso denegado', cls: 'err' },
+        { text: '# Solo root puede leer /etc/shadow — necesitas sudo', cls: 'muted' }
+      ]);
+      markHintDone(3, c);
+      return;
+    }
+
+    if (c === 'sudo -l') {
+      if (state3.users[u].groups.includes('sudo')) {
+        writeOut('term3', [
+          { text: `Entradas por defecto para ${u}:`, cls: 'muted' },
+          { text: '    env_reset, mail_badpass, secure_path=...', cls: 'muted' },
+          { text: '', cls: '' },
+          { text: `El usuario ${u} puede ejecutar los siguientes comandos en ubuntu:`, cls: 'muted' },
+          { text: '    (ALL : ALL) ALL', cls: 'ok' }
+        ]);
+      } else {
+        writeOut('term3', [
+          { text: `Lo sentimos, el usuario ${u} no puede ejecutar sudo en ubuntu.`, cls: 'err' }
+        ]);
+      }
+      markHintDone(3, c);
+      return;
+    }
+
+    writeOut('term3', [{ text: `bash: ${c.split(' ')[0]}: orden no encontrada`, cls: 'err' }]);
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // SIMULADOR 4 — directorio de grupo + setgid
+  // ═══════════════════════════════════════════════════════════════
+  const state4 = {
+    groups: new Set(['alumno', 'sudo', 'adm']),
+    memberships: { alumno: new Set(['alumno', 'sudo', 'adm']) },
+    dirs: new Map(),  // ruta → { owner, group, perm (como "2770"), files: [{name, owner, group}] }
+    activeGroup: 'alumno',  // grupo activo del usuario (cambia con newgrp)
+  };
+  function s4UpdatePanel() {
+    const dir = state4.dirs.get('/opt/proyecto_clase');
+    document.getElementById('s4-group').textContent = state4.groups.has('dev_clase') ? '✓ creado' : '—';
+    document.getElementById('s4-dir').textContent = dir ? '✓ creado' : '—';
+    document.getElementById('s4-perm').textContent = dir ? dir.perm : '—';
+    document.getElementById('s4-setgid').textContent = (dir && dir.perm.startsWith('2')) ? 'SÍ' : 'no';
+    document.getElementById('s4-member').textContent =
+      state4.memberships.alumno.has('dev_clase') ? 'SÍ' : 'no';
+    document.getElementById('s4-files').textContent = dir ? dir.files.length : '0';
+  }
+  s4UpdatePanel();
+
+  function permSymbolic(octal) {
+    if (!octal) return '';
+    // Admitir 3 o 4 dígitos
+    let setgid = false, setuid = false, sticky = false;
+    let perms = octal;
+    if (octal.length === 4) {
+      const s = parseInt(octal[0]);
+      setuid = (s & 4) !== 0;
+      setgid = (s & 2) !== 0;
+      sticky = (s & 1) !== 0;
+      perms = octal.slice(1);
+    }
+    const map = ['---','--x','-w-','-wx','r--','r-x','rw-','rwx'];
+    let out = '';
+    for (const d of perms) out += map[parseInt(d)];
+    // Modificar con setgid
+    if (setgid) out = out.slice(0,5) + (out[5]==='x'?'s':'S') + out.slice(6);
+    return out;
+  }
+
+  function handle4(cmd) {
+    const prompt = 'alumno@ubuntu:~$';
+    writePrompt('term4', prompt, cmd);
+    const c = cmd.trim();
+    if (c === '') return;
+    if (c === 'clear') return clearTerm('term4');
+
+    // groupadd
+    let m = c.match(/^sudo\s+groupadd\s+(\S+)$/);
+    if (m) {
+      if (state4.groups.has(m[1])) {
+        writeOut('term4', [{ text: `groupadd: el grupo «${m[1]}» ya existe`, cls: 'warn' }]);
+      } else {
+        state4.groups.add(m[1]);
+        writeOut('term4', [{ text: '(sin salida — éxito)', cls: 'muted' }]);
+        if (m[1] === 'dev_clase') markChallenge(4, 'c4_1');
+        markHintDone(4, c);
+      }
+      s4UpdatePanel();
+      return;
+    }
+
+    // mkdir
+    m = c.match(/^sudo\s+mkdir\s+(?:-p\s+)?(\S+)$/);
+    if (m) {
+      const path = m[1];
+      if (state4.dirs.has(path)) {
+        writeOut('term4', [{ text: `mkdir: no se puede crear el directorio «${path}»: ya existe`, cls: 'warn' }]);
+      } else {
+        state4.dirs.set(path, { owner: 'root', group: 'root', perm: '755', files: [] });
+        writeOut('term4', [{ text: '(sin salida — éxito)', cls: 'muted' }]);
+        if (path === '/opt/proyecto_clase') markChallenge(4, 'c4_2');
+        markHintDone(4, c);
+      }
+      s4UpdatePanel();
+      return;
+    }
+
+    // chown user:group path
+    m = c.match(/^sudo\s+chown\s+([^:]+):(\S+)\s+(\S+)$/);
+    if (m) {
+      const [, user, grp, path] = m;
+      const d = state4.dirs.get(path);
+      if (!d) {
+        writeOut('term4', [{ text: `chown: cannot access «${path}»: No such file or directory`, cls: 'err' }]);
+      } else if (!state4.groups.has(grp)) {
+        writeOut('term4', [{ text: `chown: grupo inválido: «${grp}»`, cls: 'err' }]);
+      } else {
+        d.owner = user; d.group = grp;
+        writeOut('term4', [{ text: '(sin salida — éxito)', cls: 'muted' }]);
+        if (path === '/opt/proyecto_clase' && grp === 'dev_clase') markChallenge(4, 'c4_3');
+        markHintDone(4, c);
+      }
+      s4UpdatePanel();
+      return;
+    }
+
+    // chmod MODE path
+    m = c.match(/^sudo\s+chmod\s+(\d+)\s+(\S+)$/);
+    if (m) {
+      const [, mode, path] = m;
+      const d = state4.dirs.get(path);
+      if (!d) {
+        writeOut('term4', [{ text: `chmod: cannot access «${path}»: No such file or directory`, cls: 'err' }]);
+      } else {
+        d.perm = mode;
+        writeOut('term4', [{ text: '(sin salida — éxito)', cls: 'muted' }]);
+        if (path === '/opt/proyecto_clase' && mode === '2770') markChallenge(4, 'c4_4');
+        markHintDone(4, c);
+      }
+      s4UpdatePanel();
+      return;
+    }
+
+    // usermod -aG GR USR
+    m = c.match(/^sudo\s+usermod\s+-aG\s+(\S+)\s+(\S+)$/);
+    if (m) {
+      const [, grp, user] = m;
+      if (!state4.groups.has(grp)) {
+        writeOut('term4', [{ text: `usermod: el grupo «${grp}» no existe`, cls: 'err' }]);
+      } else {
+        if (!state4.memberships[user]) state4.memberships[user] = new Set();
+        state4.memberships[user].add(grp);
+        writeOut('term4', [
+          { text: '(sin salida — éxito)', cls: 'muted' },
+          { text: '💡 Para activarlo sin cerrar sesión: newgrp ' + grp, cls: 'warn' }
+        ]);
+        if (user === 'alumno' && grp === 'dev_clase') markChallenge(4, 'c4_5');
+        markHintDone(4, c);
+      }
+      s4UpdatePanel();
+      return;
+    }
+
+    // newgrp
+    m = c.match(/^newgrp\s+(\S+)$/);
+    if (m) {
+      const grp = m[1];
+      if (!state4.memberships.alumno.has(grp)) {
+        writeOut('term4', [{ text: `newgrp: El usuario no es miembro de «${grp}»`, cls: 'err' }]);
+      } else {
+        state4.activeGroup = grp;
+        writeOut('term4', [{ text: `(grupo activo ahora: ${grp})`, cls: 'ok' }]);
+        markHintDone(4, c);
+      }
+      return;
+    }
+
+    // touch path
+    m = c.match(/^touch\s+(\S+)$/);
+    if (m) {
+      const fullPath = m[1];
+      const slash = fullPath.lastIndexOf('/');
+      const dirPath = fullPath.slice(0, slash);
+      const fname = fullPath.slice(slash + 1);
+      const d = state4.dirs.get(dirPath);
+      if (!d) {
+        writeOut('term4', [{ text: `touch: no se puede crear «${fullPath}»: No such file or directory`, cls: 'err' }]);
+        return;
+      }
+      // Permiso? — solo el dueño o el grupo pueden escribir
+      const inGroup = state4.memberships.alumno.has(d.group);
+      const w = d.perm.slice(-3);  // últimos 3 dígitos
+      const ownerW = (parseInt(w[0]) & 2) !== 0;
+      const groupW = (parseInt(w[1]) & 2) !== 0;
+      const othersW = (parseInt(w[2]) & 2) !== 0;
+      const isOwner = d.owner === 'alumno';
+      const canWrite = (isOwner && ownerW) || (inGroup && groupW) || othersW;
+      if (!canWrite) {
+        writeOut('term4', [
+          { text: `touch: no se puede hacer 'touch' sobre «${fullPath}»: Permiso denegado`, cls: 'err' }
+        ]);
+        return;
+      }
+      // ¿setgid activo? → heredar grupo del directorio. Si no, usar grupo activo del usuario
+      const hasSetgid = d.perm.length === 4 && (parseInt(d.perm[0]) & 2) !== 0;
+      const fileGroup = hasSetgid ? d.group : state4.activeGroup;
+      d.files.push({ name: fname, owner: 'alumno', group: fileGroup });
+      writeOut('term4', [
+        { text: '(fichero creado)', cls: 'ok' },
+        { text: `  grupo asignado: ${fileGroup} ${hasSetgid ? '(heredado por setgid)' : '(grupo primario de alumno)'}`, cls: 'muted' }
+      ]);
+      if (fileGroup === 'dev_clase' && dirPath === '/opt/proyecto_clase') {
+        markChallenge(4, 'c4_6');
+      }
+      markHintDone(4, c);
+      s4UpdatePanel();
+      return;
+    }
+
+    // ls -la DIR
+    m = c.match(/^ls\s+-la\s+(\S+)$/);
+    if (m) {
+      const path = m[1];
+      // Si es /opt/ mostramos los dirs dentro
+      if (path === '/opt/' || path === '/opt') {
+        const rows = [{ text: 'total 12', cls: 'muted' }];
+        rows.push({ text: 'drwxr-xr-x  3 root root 4096 abr 13 10:00 .', cls: 'ok' });
+        rows.push({ text: 'drwxr-xr-x 20 root root 4096 abr 13 10:00 ..', cls: 'ok' });
+        for (const [p, d] of state4.dirs) {
+          if (p.startsWith('/opt/')) {
+            const name = p.slice(5);
+            rows.push({
+              text: `d${permSymbolic(d.perm)} 2 ${d.owner} ${d.group} 4096 abr 13 10:00 ${name}`,
+              cls: 'ok'
+            });
+          }
+        }
+        writeOut('term4', rows);
+        markHintDone(4, 'ls -la /opt/');
+        return;
+      }
+      const d = state4.dirs.get(path);
+      if (!d) {
+        writeOut('term4', [{ text: `ls: no se puede acceder a «${path}»: No such file or directory`, cls: 'err' }]);
+        return;
+      }
+      const rows = [{ text: `total ${d.files.length * 4}`, cls: 'muted' }];
+      rows.push({ text: `d${permSymbolic(d.perm)} 2 ${d.owner} ${d.group} 4096 abr 13 10:00 .`, cls: 'ok' });
+      for (const f of d.files) {
+        rows.push({ text: `-rw-r--r-- 1 ${f.owner} ${f.group}   0 abr 13 10:00 ${f.name}`, cls: 'ok' });
+      }
+      writeOut('term4', rows);
+      markHintDone(4, c);
+      return;
+    }
+
+    // stat FICH
+    m = c.match(/^stat\s+(\S+)$/);
+    if (m) {
+      const fullPath = m[1].startsWith('/') ? m[1] : '/opt/proyecto_clase/' + m[1];
+      const slash = fullPath.lastIndexOf('/');
+      const dirPath = fullPath.slice(0, slash);
+      const fname = fullPath.slice(slash + 1);
+      const d = state4.dirs.get(dirPath);
+      if (!d) {
+        writeOut('term4', [{ text: `stat: no se puede hacer 'stat' a «${fullPath}»: No such file or directory`, cls: 'err' }]);
+        return;
+      }
+      const f = d.files.find(x => x.name === fname);
+      if (!f) {
+        writeOut('term4', [{ text: `stat: no se puede hacer 'stat' a «${fullPath}»: No such file or directory`, cls: 'err' }]);
+        return;
+      }
+      writeOut('term4', [
+        { text: `  File: ${fullPath}`, cls: 'ok' },
+        { text: `  Size: 0         Blocks: 0        regular empty file`, cls: 'muted' },
+        { text: `Access: (0644/-rw-r--r--)  Uid: (1000/  ${f.owner})   Gid: (???/${f.group})`, cls: 'ok' },
+        { text: `Modify: 2026-04-13 10:00:00.000000000 +0200`, cls: 'muted' },
+      ]);
+      markHintDone(4, 'stat /opt/proyecto_clase/fichero1.txt');
+      return;
+    }
+
+    writeOut('term4', [{ text: `bash: ${c.split(' ')[0]}: orden no encontrada`, cls: 'err' }]);
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // WIRE UP — inputs y botones sugeridos
+  // ═══════════════════════════════════════════════════════════════
+  const handlers = { 1: handle1, 2: handle2, 3: handle3, 4: handle4 };
+
+  for (let i = 1; i <= 4; i++) {
+    const input = document.getElementById('input' + i);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        handlers[i](input.value);
+        input.value = '';
+      }
+    });
+    const hintsContainer = document.getElementById('hints' + i);
+    hintsContainer.addEventListener('click', (e) => {
+      if (e.target.tagName === 'BUTTON') {
+        const cmd = e.target.dataset.cmd;
+        input.value = cmd;
+        input.focus();
+      }
+    });
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // RESET
+  // ═══════════════════════════════════════════════════════════════
+  function resetSim(n) {
+    if (!confirm('¿Reiniciar el simulador ' + n + '? Perderás el progreso actual.')) return;
+
+    completed[n].clear();
+    document.querySelectorAll('#ch' + n + ' li').forEach(li => li.classList.remove('done'));
+    document.getElementById('prog' + n).style.width = '0%';
+    document.querySelectorAll('#hints' + n + ' button').forEach(b => b.classList.remove('done'));
+    const term = document.getElementById('term' + n);
+    term.innerHTML = '';
+    term.dataset.cleared = '';
+
+    if (n === 2) {
+      state2.users = new Map([
+        ['alumno', { uid: 1000, gid: 1000, groups: ['alumno', 'adm', 'sudo'], home: '/home/alumno' }],
+      ]);
+      state2.nextUid = 1001;
+      renderUserList();
+      term.innerHTML = '<span class="muted"># Crea un usuario de prueba. Empieza con: sudo adduser dev_test</span>';
+    }
+    if (n === 3) {
+      state3.sessionStack = ['alumno'];
+      s3UpdatePanel();
+      term.innerHTML = '<span class="muted"># Empieza como \'alumno\'. Prueba: sudo whoami</span>';
+    }
+    if (n === 4) {
+      state4.groups = new Set(['alumno', 'sudo', 'adm']);
+      state4.memberships = { alumno: new Set(['alumno', 'sudo', 'adm']) };
+      state4.dirs = new Map();
+      state4.activeGroup = 'alumno';
+      s4UpdatePanel();
+      term.innerHTML = '<span class="muted"># Sigue los 5 pasos. Empieza creando el grupo: sudo groupadd dev_clase</span>';
+    }
+    if (n === 1) {
+      term.innerHTML = '<span class="muted"># Escribe un comando o usa los botones de abajo. Prueba: whoami</span>';
+    }
+  }
+</script>
+
+</body>
+</html>

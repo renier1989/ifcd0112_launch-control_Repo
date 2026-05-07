@@ -1,0 +1,16 @@
+id,album,artista,anio,duracion_min
+1,Thriller,Michael Jackson,1982,42
+2,Back in Black,AC/DC,1980,42
+3,Discovery,Daft Punk,2001,61
+4,Arrival,ABBA,1976,33
+5,Brat,Charli XCX,2024,39
+6,Revolver,The Beatles,1966,35
+7,Kind of Blue,Miles Davis,1959,45
+8,Motomami,Rosalia,2022,42
+9,Nevermind,Nirvana,1991,42
+10,Midnights,Taylor Swift,2022,44
+11,Homework,Daft Punk,1997,73
+12,Animals,Pink Floyd,1977,41
+13,Zola,Gorgon City,2014,52
+14,Oasis,J Balvin & Bad Bunny,2019,30
+15,Blurryface,Twenty One Pilots,2015,52

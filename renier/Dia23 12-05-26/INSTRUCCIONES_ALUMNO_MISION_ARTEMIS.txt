@@ -1,0 +1,181 @@
+================================================================
+  MISION ARTEMIS — Instrucciones para el alumno
+  Amtigravity Space Program
+================================================================
+
+# Construye tu propia "Misión Artemis"
+
+ **Autor:** Prof. Juan Marcelo Gutierrez Miranda
+ **Curso:** IFCD0112 — Programación con Lenguaj
+
+OBJETIVO:
+  Conectar tu VM Linux con Ground Control y completar el protocolo
+  de inicializacion. Dura unos 3 minutos.
+
+LO QUE NECESITAS:
+  - Tu PC Windows del aula (con VirtualBox)
+  - Tu VM Linux Ubuntu (la del curso)
+  - Estar en la red del aula (cable o WiFi)
+
+
+----------------------------------------------------------------
+  PASO 0 — Instalar dependencias en la VM (una sola vez)
+----------------------------------------------------------------
+
+Abrir terminal dentro de la VM Ubuntu y ejecutar:
+
+  sudo apt update
+  sudo apt install -y curl openssh-client isc-dhcp-client
+
+Verificar:
+
+  curl --version | head -1     # debe mostrar "curl 7.X" o "curl 8.X"
+  ssh -V                       # debe mostrar "OpenSSH_X.X"
+  which dhclient               # debe mostrar /sbin/dhclient o /usr/sbin/dhclient
+
+(Si la VM ya los tiene, no hace nada.)
+
+  > Por que cada uno:
+  >   - curl: baja el script de la mision desde el servidor
+  >   - openssh-client (ssh): el recon lo necesita para verificar el
+  >     enlace con Artemis. Sin ssh el reporte llega incompleto.
+  >   - isc-dhcp-client (dhclient): para forzar IP del aula en el Paso 3
+  >     si el adaptador Bridge no la coge sola.
+
+
+----------------------------------------------------------------
+  PASO 1 — Apagar la VM (si esta encendida)
+----------------------------------------------------------------
+
+En VirtualBox, sobre tu VM (boton derecho):
+  Cerrar -> Apagar la maquina
+
+(O desde dentro de Ubuntu: sudo poweroff)
+
+
+----------------------------------------------------------------
+  PASO 2 — Anadir Adapter 3 en modo Bridge
+----------------------------------------------------------------
+
+En VirtualBox, con la VM SELECCIONADA pero APAGADA:
+
+  1. Boton "Configuracion" (rueda dentada)
+  2. Pestana "Red"
+  3. Click en "Adaptador 3"
+  4. Marcar la casilla "Habilitar adaptador de red"
+  5. "Conectado a:" -> Adaptador puente
+  6. "Nombre:" -> elegir tu tarjeta REAL del PC:
+       - Por cable: "Realtek..." o "Intel I219..." (Ethernet)
+       - Por WiFi:  "Intel Wireless..." o similar
+       - NUNCA elegir "VirtualBox Host-Only"
+  7. Desplegar "Avanzadas" -> Modo promiscuo: "Permitir todo"
+  8. Aceptar
+
+IMPORTANTE: NO toques Adaptador 1 ni Adaptador 2.
+            Solo se anade el 3.
+
+
+----------------------------------------------------------------
+  PASO 3 — Encender la VM y verificar IP del aula
+----------------------------------------------------------------
+
+Encender la VM. Cuando llegues al escritorio, abrir terminal y:
+
+  ip -4 addr show | grep "10.0.140"
+
+Debe aparecer algo como:
+  inet 10.0.140.XX/24 brd 10.0.140.255 scope global ... enp0s9
+
+Si no aparece nada o ves una IP rara (169.254.X.X), forzar DHCP
+(necesita isc-dhcp-client instalado en el Paso 0):
+
+  sudo dhclient -r enp0s9
+  sudo dhclient enp0s9
+  ip -4 addr show enp0s9
+
+Si sigue sin obtener una 10.0.140.X, avisar al profesor.
+
+
+----------------------------------------------------------------
+  PASO 4 — Comprobar que llegas a Ground Control
+----------------------------------------------------------------
+
+  ping -c 3 10.0.140.2
+
+Deben llegar las 3 respuestas (0% packet loss). Si no llegan,
+volver al Paso 2 y revisar el adaptador Bridge.
+
+
+----------------------------------------------------------------
+  PASO 5 — Iniciar la mision
+----------------------------------------------------------------
+
+En la terminal de la VM, escribir EXACTAMENTE:
+
+  curl -s http://10.0.140.2:9999/go | bash
+
+(El profesor proyectara la IP en pizarra. Si fuera distinta a
+10.0.140.2, sustituirla.)
+
+
+----------------------------------------------------------------
+  PASO 6 — Seguir el dialogo con Ground Control
+----------------------------------------------------------------
+
+Te pedira tres cosas:
+
+  1. CODIGO DE ACCESO
+     Lo veras escrito en la pizarra (el profesor lo proyecta).
+     Tienes 3 intentos.
+
+  2. NOMBRE COMPLETO Y RANGO
+     Escribir tu nombre real (sin acentos, sin espacios raros).
+     Rango: cadete / piloto / comandante
+
+  3. PALABRA CLAVE (al elegir mision 2)
+     El profesor la dira EN VOZ ALTA cuando llegues a esa parte.
+     Escribirla en mayusculas tal y como la diga.
+
+Despues veras barras de progreso ("Transmitiendo telemetria").
+Esperar a que termine la cuenta atras de desconexion.
+
+
+----------------------------------------------------------------
+  SI ALGO FALLA
+----------------------------------------------------------------
+
+* "command not found: curl"  o  "command not found: ssh"
+  o  "command not found: dhclient"
+    Volver al Paso 0:
+      sudo apt update
+      sudo apt install -y curl openssh-client isc-dhcp-client
+
+* "Could not resolve host" o "Connection refused"
+    Repetir Paso 4 (ping). Si el ping no funciona, problema de
+    red — avisar al profesor.
+
+* "Ya has completado la mision"
+    Solo se puede ejecutar UNA vez por VM.
+    Avisar al profesor para que haga reset.
+
+* La VM no obtiene IP 10.0.140.X
+    Verificar Paso 2: el adaptador Bridge debe apuntar a la
+    tarjeta REAL del Windows (no a Host-Only).
+    Probar: sudo dhclient enp0s9
+
+
+----------------------------------------------------------------
+  AL TERMINAR
+----------------------------------------------------------------
+
+Cuando salga el mensaje "Hasta la proxima, cadete <tu nombre>",
+la mision esta completa. El reporte llego automaticamente a
+Ground Control. No tienes que hacer nada mas.
+
+Puedes dejar el Adaptador 3 (Bridge) anadido o quitarlo,
+da igual — Adaptador 1 (NAT) y Adaptador 2 (Host-Only) siguen
+funcionando como siempre.
+
+================================================================
+  FIN — Amtigravity Space Program 2026
+================================================================

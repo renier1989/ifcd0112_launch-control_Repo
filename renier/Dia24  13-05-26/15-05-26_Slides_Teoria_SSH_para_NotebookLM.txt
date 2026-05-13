@@ -1,0 +1,233 @@
+TÍTULO DEL CURSO: SSH a Producción — Teoría
+SESIÓN: 15-05-26 | Curso IFCD0112 | Prof. Juan Marcelo Gutierrez Miranda
+
+INSTRUCCIONES PARA NOTEBOOKLM:
+- Generar diapositivas en orden, una por bloque marcado con ===
+- Cada bloque empieza con TÍTULO y contiene puntos cortos
+- Tono: claro, técnico pero accesible, con analogías
+- Idioma: español
+
+===
+
+DIAPOSITIVA 1 — EL PROBLEMA DE LAS PASSWORDS
+
+- Las passwords se olvidan, se filtran, se reutilizan entre sitios
+- Si un servidor guarda passwords mal cifradas y lo hackean → pierdes acceso en todos los sitios donde uses esa misma password
+- En empresas con 100 servidores, escribir password 100 veces al día no escala
+- Necesitamos algo más fuerte: criptografía asimétrica
+
+===
+
+DIAPOSITIVA 2 — CRIPTOGRAFÍA ASIMÉTRICA EN UN MINUTO
+
+- Generas DOS archivos relacionados matemáticamente: una clave PRIVADA y una clave PÚBLICA
+- La privada nunca sale de tu máquina — es "tú"
+- La pública la podés repartir libremente — es como tu DNI digital
+- Cualquier cosa firmada con la privada se puede VERIFICAR con la pública
+- Si verifica OK, la firma vino de ti — sin password, sin secreto compartido
+
+===
+
+DIAPOSITIVA 3 — LA ANALOGÍA DEL CANDADO
+
+- Clave privada = la llave física que llevas en el bolsillo
+- Clave pública = el candado que dejas en cualquier puerta
+- Quien tiene la llave abre el candado; nadie más puede
+- Si pierdes la llave, los candados quedan inservibles pero NADIE puede usarlos
+- Si copian tu candado, no pasa nada — necesitarían la llave
+- Reparto público de candados + privacidad estricta de la llave
+
+===
+
+DIAPOSITIVA 4 — LOS DOS ARCHIVOS QUE GENERAS
+
+- Comando: ssh-keygen -t ed25519
+- Crea ~/.ssh/id_ed25519 (la PRIVADA) — chmod 600, nunca compartir
+- Crea ~/.ssh/id_ed25519.pub (la PÚBLICA) — chmod 644, repartir libremente
+- ed25519 = algoritmo moderno: más rápido, más seguro y claves más cortas que RSA
+- Una sola línea de texto cada una
+
+===
+
+DIAPOSITIVA 5 — INSTALAR UN CANDADO: authorized_keys
+
+- Cada usuario en un servidor tiene un archivo ~/.ssh/authorized_keys
+- Es una lista de claves PÚBLICAS autorizadas a entrar como ese usuario
+- Para autorizar a alguien: añades su pública en una línea de ese archivo
+- A partir de ese momento, quien tenga la PRIVADA correspondiente entra sin password
+- Para revocar: borras la línea
+- Es la base de la confianza SSH
+
+===
+
+DIAPOSITIVA 6 — EL BOOTSTRAP: CONFIANZA MUTUA
+
+- Bootstrap = el "primer arranque" donde estableces confianza
+- Paso 1: tú generas tu par de claves
+- Paso 2: envías tu pública al servidor del profesor (vía curl/upload)
+- Paso 3: el profesor te da SU pública
+- Paso 4: instalas la pública del profesor en TU authorized_keys
+- Resultado: ambos podéis entrar al otro sin password, solo con vuestras privadas
+
+===
+
+DIAPOSITIVA 7 — EL FLUJO DE AUTENTICACIÓN PASO A PASO
+
+- Tú ejecutas: ssh control@artemis
+- Tu cliente SSH conecta al servidor en el puerto 22
+- El servidor responde: "demuéstrame quién eres"
+- Tu cliente firma un mensaje con tu PRIVADA y envía la firma + tu pública
+- El servidor verifica con la pública guardada en authorized_keys
+- Si la firma valida → te deja entrar como ese usuario
+- Todo cifrado, sin password jamás viajando por la red
+
+===
+
+DIAPOSITIVA 8 — EL PROBLEMA DE LA PRIVADA EN CLARO
+
+- Tu archivo id_ed25519 está en disco
+- Si alguien copia ese archivo → es TÚ en cualquier servidor autorizado
+- Solución: cifrar la privada con una PASSPHRASE
+- Cada vez que la uses te pediría la passphrase — molesto si haces 100 SSH al día
+- Necesitamos algo intermedio: el ssh-agent
+
+===
+
+DIAPOSITIVA 9 — SSH-AGENT: LA CAJA FUERTE EN MEMORIA
+
+- ssh-agent es un proceso pequeño que vive en tu sesión
+- Mantiene tus claves DESCIFRADAS en memoria RAM, nunca en disco
+- ssh-add cargar una clave: te pide la passphrase UNA vez, la descifra, la guarda en RAM
+- A partir de ahí, cualquier ssh en esa sesión usa la clave del agent sin preguntar
+- Al cerrar la sesión, la RAM se borra y las claves descifradas desaparecen
+- Equilibrio entre seguridad (passphrase en disco) y comodidad (sin pedirla en cada ssh)
+
+===
+
+DIAPOSITIVA 10 — CALIDAD DE LA PASSPHRASE
+
+- Muy débil: una palabra de diccionario ("control") → segundos para romper
+- Débil: patrón típico ("Control2026!") → minutos para romper
+- Buena: 4 palabras random — diceware ("caballo correcto batería grapa") → siglos
+- Excelente: 16+ caracteres aleatorios ("7Mango#piano-47Tormenta") → eras geológicas
+- Nunca reuses la passphrase del PC ni la de otros sitios
+
+===
+
+DIAPOSITIVA 11 — ~/.SSH/CONFIG: ALIASES PROFESIONALES
+
+- Sin config: ssh -i ~/.ssh/id_ed25519 -p 2222 control@192.168.56.20
+- Con config: ssh artemis
+- El archivo define bloques Host alias con: HostName, User, Port, IdentityFile, ProxyJump
+- Wildcards para grupos: Host 192.168.56.* aplica a toda la red
+- Permisos críticos: chmod 600 ~/.ssh/config
+- Orden importa: la PRIMERA asignación gana, lo demás se ignora
+
+===
+
+DIAPOSITIVA 12 — KNOWN_HOSTS: ¿ES REALMENTE EL SERVIDOR QUE CREO?
+
+- La primera vez que conectas a un host, SSH te muestra su huella (fingerprint)
+- Si aceptas, se guarda en ~/.ssh/known_hosts
+- En conexiones siguientes, SSH verifica que la huella coincide
+- Si NO coincide → posible suplantación → SSH se niega a conectar
+- A esto se le llama TOFU: Trust On First Use
+- Si el host legítimamente cambió clave: ssh-keygen -R host para borrar la huella vieja
+
+===
+
+DIAPOSITIVA 13 — PROXYJUMP: BASTIÓN HOSTS
+
+- En empresas serias las máquinas internas NO se exponen a Internet
+- Solo un "bastión" tiene acceso desde fuera
+- Para llegar a una máquina interna: pasas por el bastión
+- ssh -J bastion destino → hace el salto automáticamente
+- En config: ProxyJump bastion en el bloque del destino
+- Tu pública debe estar en authorized_keys del bastión Y del destino
+- Encadenable: ProxyJump bastion1,bastion2
+
+===
+
+DIAPOSITIVA 14 — SSH PARA GIT
+
+- GitHub acepta autenticación por SSH además de HTTPS+token
+- Ventaja: misma clave para todos tus repos, sin tokens que expiran
+- Subes tu pública en Settings > SSH Keys
+- Cambias remote URL: git@github.com:usuario/repo.git (en lugar de https://...)
+- ssh -T git@github.com → confirma identificación
+- Mismo principio: tu privada firma, GitHub verifica con tu pública
+
+===
+
+DIAPOSITIVA 15 — DEPLOY KEYS Y MACHINE USERS
+
+- Personal SSH key: una sola clave de tu cuenta, acceso a todos tus repos
+- Deploy key: una clave POR repo, ideal para servidores de producción
+- Machine user: usuario "robot" en GitHub con su propia clave
+- Regla: en producción usar deploy key (read-only o read-write), no la personal
+- Si la deploy key se filtra, solo compromete UN repo, no toda tu cuenta
+
+===
+
+DIAPOSITIVA 16 — CUÁNDO NO USAR EL AGENT
+
+- En servidor de producción para deploy automatizado: usar deploy key sin passphrase, agent no aporta nada
+- En sesiones compartidas (kiosko, máquina ajena): NUNCA cargar tu clave personal
+- En CI/CD: variables de entorno cifradas o secret manager dedicado
+- Agent es para tu equipo de desarrollo personal, no para infraestructura
+
+===
+
+DIAPOSITIVA 17 — ¿QUÉ HEMOS CONSTRUIDO EN LA PRÁCTICA?
+
+- Una caja fuerte (ssh-agent) que descifra tu clave en RAM
+- Un par de claves modernas (ed25519) con passphrase
+- Aliases (~/.ssh/config) para no escribir IPs nunca más
+- Tu pública subida al servidor del profesor (curl /upload)
+- La pública del profesor instalada en tu authorized_keys
+- Capacidad de salto por bastión (ProxyJump)
+- Conexión a GitHub por SSH
+- Todo el flujo que usan los sysadmins en empresas reales
+
+===
+
+DIAPOSITIVA 18 — RESUMEN VISUAL DE LA SESIÓN
+
+- Antes de hoy: tenías claves SSH pero las usabas básico
+- Hoy: las usas como un profesional
+- Tu privada nunca está en claro
+- Tus alias son tu interfaz, no las IPs
+- Saltas máquinas como en redes privadas reales
+- Detectas suplantaciones por known_hosts
+- Tu Git push no pide password
+- Diagnosticas problemas tú mismo con ssh -vvv
+
+===
+
+DIAPOSITIVA 19 — CONEXIÓN CON EL EXAMEN PRÁCTICO 18-05
+
+- Misión Artemis: bootstrap con tu propia VM Artemis
+- Aplicarás ssh-copy-id para autorizarte en Artemis
+- Usarás aliases para no perder tiempo escribiendo IPs durante la prueba
+- Si algo falla, ssh -vvv te dirá qué pasa en segundos
+- Lo que entiendas hoy es lo que vas a aplicar en el examen contrareloj
+
+===
+
+DIAPOSITIVA 20 — CIERRE Y TOMA DE CONTROL
+
+- SSH es una herramienta diaria del sysadmin y del desarrollador
+- Lo dominas no memorizando comandos, sino entendiendo el modelo:
+  privada firma, pública verifica, authorized_keys autoriza
+- Con eso, cualquier escenario nuevo lo razonas tú
+- Próximo paso: practicar en escenarios reales hasta que el flujo sea automático
+
+===
+
+FIN DE LAS DIAPOSITIVAS
+
+Fuentes:
+- OpenSSH (Tatu Ylönen + OpenBSD project)
+- ed25519 (Bernstein, Duif, Lange, Schwabe, Yang)
+- Manuales ssh(1), ssh-keygen(1), ssh_config(5), sshd_config(5)
+- Documentación oficial de GitHub sobre claves SSH

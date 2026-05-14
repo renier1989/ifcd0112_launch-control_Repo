@@ -1,0 +1,14 @@
+# Normalizar TODO a LF — evita warnings CRLF en el flujo casa/SSD/VM
+* text=auto eol=lf
+
+# Scripts — siempre LF (se ejecutan en Linux/VM)
+*.sh text eol=lf
+*.py text eol=lf
+
+# Binarios — no tocar
+*.pdf binary
+*.png binary
+*.jpg binary
+*.pptx binary
+*.xlsx binary
+*.docx binary

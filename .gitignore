@@ -48,13 +48,10 @@ sync_curso.log
 *.swp
 *.swo
 
-# ─── OS ──────────────────────────────────────────────────────
+# OS
 .DS_Store
-Thumbs.db
-desktop.ini
 
 # ─── LOGS Y TEMPORALES ──────────────────────────────────────
 *.log
-*.tmp
 *.bak
 *~

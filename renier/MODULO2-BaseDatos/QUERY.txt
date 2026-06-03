@@ -1,0 +1,49 @@
+CREATE TABLE ALMACEN
+(
+   Numero      NUMBER PRIMARY KEY,
+   Direccion   TEXT        NOT NULL,
+   Telefono    FLOAT        NOT NULL
+);
+
+CREATE TABLE TIENDA
+(
+   Nombre      TEXT PRIMARY KEY,
+   Direccion   TEXT        NOT NULL,
+   Telefono    NUMBER        NOT NULL
+);
+
+CREATE TABLE CAMION
+(
+   Matricula       TEXT PRIMARY KEY,
+   LimitePeso      FLOAT        NOT NULL,
+   LimiteVolumen   FLOAT        NOT NULL
+);
+
+CREATE TABLE VIAJE
+(
+   Numero              NUMBER PRIMARY KEY,
+   FechaUso            DATE        NOT NULL,
+   CAMION_Matricula   TEXT        NOT NULL,
+   FOREIGN KEY (CAMION_Matricula) REFERENCES CAMION(Matricula)
+);
+
+CREATE TABLE PEDIDO
+(
+   Numero           NUMBER PRIMARY KEY,
+   Volumen          FLOAT        NOT NULL,
+   Peso             FLOAT        NOT NULL,
+   Entregado        BOOLEAN        NOT NULL,
+   TIENDA_Nombre    TEXT        NOT NULL,
+   ALMACEN_Numero   NUMBER        NOT NULL,
+   FOREIGN KEY (TIENDA_Nombre) REFERENCES TIENDA(Nombre),
+   FOREIGN KEY (ALMACEN_Numero) REFERENCES ALMACEN(Numero)
+);
+
+CREATE TABLE TRANSPORTAR
+(
+   VIAJE_Numero    NUMBER,
+   PEDIDO_Numero   NUMBER,
+   PRIMARY KEY (VIAJE_Numero,PEDIDO_Numero),
+   FOREIGN KEY (VIAJE_Numero) REFERENCES VIAJE(Numero),
+   FOREIGN KEY (PEDIDO_Numero) REFERENCES PEDIDO(Numero)
+); 

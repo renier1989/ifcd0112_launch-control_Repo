@@ -1,0 +1,34 @@
+ESQUEMA RELACIONAL
+
+Dominios:
+
+Esquemas de relacion:
+   CAMNIONES = (N起matricula: VARCHAR, clave primaria; limite_max: REAL, NO NULO; 
+                volumen: REAL, NO NULO; peso_trans: ENTERO, NO NULO);
+
+   VIAJE = (numero: ENTERO, clave primaria; fechaUso: FECHA, NO NULO; 
+            CAMNIONES_N起matricula: VARCHAR, NO NULO);
+            clave ajena (CAMNIONES_N起matricula) referencia a CAMNIONES(N起matricula)
+
+   TIENDA = (nombre: VARCHAR, clave primaria; direccion: VARCHAR, NO NULO; 
+             telefono: ENTERO, NO NULO);
+
+   CADENA = (nombre: VARCHAR, clave primaria);
+
+   ALMACEN = (numero: ENTERO, clave primaria; direccion: VARCHAR, NO NULO; 
+              telefono: VARCHAR, NO NULO; CADENA_nombre: VARCHAR, NO NULO);
+              clave ajena (CADENA_nombre) referencia a CADENA(nombre)
+
+   PEDIDO = (numero: ENTERO, clave primaria; peso: REAL, NO NULO; 
+             volumen: REAL, NO NULO; entregado: BOOLEANO, NO NULO; 
+             TIENDA_nombre: VARCHAR, NO NULO; ALMACEN_numero: ENTERO, NO NULO);
+             clave ajena (TIENDA_nombre) referencia a TIENDA(nombre)
+             clave ajena (ALMACEN_numero) referencia a ALMACEN(numero)
+
+   transporte = (PEDIDO_numero: ENTERO; VIAJE_numero: ENTERO);
+                 clave primaria (PEDIDO_numero,VIAJE_numero);
+                 clave ajena (PEDIDO_numero) referencia a PEDIDO(numero)
+                 clave ajena (VIAJE_numero) referencia a VIAJE(numero)
+
+   Verificar que para toda ocurrencia de 'numero' en 'VIAJE' existe al menos 1 ocurrencia en 'transporte'
+

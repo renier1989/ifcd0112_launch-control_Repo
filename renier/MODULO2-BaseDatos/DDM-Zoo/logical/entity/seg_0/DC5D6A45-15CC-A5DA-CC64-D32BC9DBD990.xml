@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC5D6A45-15CC-A5DA-CC64-D32BC9DBD990" name="ESPECIE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 11:12:47 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre_cientifico" id="C13E57F9-B0C9-D36C-E7CF-D858D247B1FF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 11:13:25 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_vulgar" id="9D5D5742-E813-BB7B-0D24-620B5BA0F064">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 11:12:55 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="8C5F0043-D37E-62B9-9BE0-D23E6F36553E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 11:13:52 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B1A7BCCC-6F05-C175-586A-9F3AADFF7B6B" name="ESPECIE PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 11:23:48 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C13E57F9-B0C9-D36C-E7CF-D858D247B1FF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

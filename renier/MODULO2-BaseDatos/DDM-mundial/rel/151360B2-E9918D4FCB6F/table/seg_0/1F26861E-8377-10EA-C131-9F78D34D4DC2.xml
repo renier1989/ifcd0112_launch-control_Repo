@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F26861E-8377-10EA-C131-9F78D34D4DC2" name="SEDE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>479B9E12-8536-D350-91E6-83A92B8CA9AA</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="00FC62AC-6B4D-4CA1-8800-5328FA237C9F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>C0D0381F-BC76-F934-1DA0-FF22C5CCBB19</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="481476CF-7C5C-42AE-E3E2-841D3C87713A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>79DDAFE7-5766-8449-6B96-EE99E92E5016</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>98 CHAR</dataTypeSize>
+<ownDataTypeParameters>98 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS_codigo" id="1CAA85E2-8DC5-B8FE-8D5D-B6E4EE19E8D7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>DB8C21C9-48D5-AB7A-36C4-FB27899B9D7B</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BFBEFD2-3802-BBEF-552B-E362002623E2" referredColumn="AE1AD837-8EAC-4376-3961-6A8C9FE089A4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AB37C89-0703-8FFF-46DC-861985415FB3" name="SEDE_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>92B79348-E31C-1C0D-8DC3-B8604DB21B2D</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00FC62AC-6B4D-4CA1-8800-5328FA237C9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31CB41BA-A8D3-917F-F427-ADDD425DB1FB" name="SEDE_PAIS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>47AA1BC5-BA4B-2894-3023-0A6BBFAD3611</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CAA85E2-8DC5-B8FE-8D5D-B6E4EE19E8D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4161E9E-7227-1F03-C01E-D504F9D7AEA5" name="someter">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTROL_SEDE_codigo" id="E589D0A0-06EE-2E40-D78D-8F67A6F4DD3E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECE7F475-E390-7FD0-D659-A6237F4E18C4" referredColumn="3713813F-42AA-6EFD-0CD7-559C5CF533B8"/>
+</associations>
+</Column>
+<Column name="JUGADOR_dni" id="E4FEB651-3A78-EBB9-B2F3-74F123198026">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34663336-F4B0-B0CA-B098-EFF5BE3EB24C" referredColumn="AA53F436-96D7-BC96-6662-C42FDEF66E7A"/>
+</associations>
+</Column>
+<Column name="JUGADOR_PAIS_codigo" id="473F33A2-F2EA-15B6-D5BB-1C45C08EADEB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34663336-F4B0-B0CA-B098-EFF5BE3EB24C" referredColumn="6BC31524-BFD3-A342-437D-C5B9C9B3C245"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83982BAE-5699-0053-9717-243F97FF7B3C" name="someter_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E589D0A0-06EE-2E40-D78D-8F67A6F4DD3E"/>
+<colUsage columnID="E4FEB651-3A78-EBB9-B2F3-74F123198026"/>
+<colUsage columnID="473F33A2-F2EA-15B6-D5BB-1C45C08EADEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65D6B65B-457D-708A-7E4B-438586573865" name="someter_CONTROL_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>21193D2E-926C-7236-4910-7EE81D353497</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E589D0A0-06EE-2E40-D78D-8F67A6F4DD3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2616D85D-26B0-F345-56A8-FD54B434486D" name="someter_JUGADOR_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>21193D2E-926C-7236-4910-7EE81D353497</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4FEB651-3A78-EBB9-B2F3-74F123198026"/>
+<colUsage columnID="473F33A2-F2EA-15B6-D5BB-1C45C08EADEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

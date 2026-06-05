@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F80C0870-70F9-760A-8957-8058CA544C94" name="EQUIPO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>6DB4A71E-20F1-A065-8C49-BABF70733F06</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="39A88D30-6898-E603-1327-9E72D6821F90">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>6693EF1A-2058-FFAE-41CF-24BE6412D895</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS_codigo" id="E6437388-C809-438E-0CD5-3FB78A912E57">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>A512BA0D-CDE7-86F7-D074-A5DE7DB69291</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93FB78C2-BA4D-A963-8B59-A8F8E21D8A71" referredColumn="AE1AD837-8EAC-4376-3961-6A8C9FE089A4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF2240F0-91A1-12CD-3167-3161D537F1D3" name="EQUIPO_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>006438A4-A668-FB56-A32A-42B2F2E4D546</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39A88D30-6898-E603-1327-9E72D6821F90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8C33489-5E9B-82E5-F5D5-06ECECC64C75" name="EQUIPO__IDX">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A13872D7-0F34-B159-8E37-66023117743B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E6437388-C809-438E-0CD5-3FB78A912E57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B55D1CB5-5CEB-A762-9842-7291DAA97629" name="EQUIPO_PAIS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>A13872D7-0F34-B159-8E37-66023117743B</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6437388-C809-438E-0CD5-3FB78A912E57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

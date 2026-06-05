@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="alojar" directorySegmentName="seg_0" id="87660403-F84C-C394-A2BB-A7BDE35C81D1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:33:29 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<sourcePk>A0261894-E541-1EE4-DB65-FA2D1ABA9487</sourcePk>
+<targetPk>006438A4-A668-FB56-A32A-42B2F2E4D546</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>33189E22-2636-FA30-936C-D3E2E2D4B449</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6DB4A71E-20F1-A065-8C49-BABF70733F06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="habitacion" id="C434452C-B6FD-BD77-FD93-633A794E087F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:34:01 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

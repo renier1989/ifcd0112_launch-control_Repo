@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BEFE9E4-1A1E-27E7-F1E7-CEA6F3E9EDD1" name="CAMISETA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>808D816D-4D35-07EA-232A-14ADFF25BDA4</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="D38E6440-03CD-2E5F-A395-607F716C5E99">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>7C57990A-20DE-F1B3-CFC8-C91E07DF0F96</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="A3318516-42A8-4C46-44EC-74854504C6A9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>AED7F561-4D66-E286-108D-3D1FB0AA81DC</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EQUIPO_codigo" id="6EA09025-BEFA-B015-10A1-C582DE6F5E7E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>B014287B-C01E-57F8-7871-4CBEAF95945F</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71B99CEC-BB72-4D7B-A6A2-82A8AFF8E073" referredColumn="39A88D30-6898-E603-1327-9E72D6821F90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC27B78E-BB4F-4036-506C-4A03B4489A24" name="CAMISETA_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>EC31250F-D342-5EFC-0FD9-22447A387376</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D38E6440-03CD-2E5F-A395-607F716C5E99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D91DE39C-41AC-7EFC-EA20-BDB7C10CD394" name="CAMISETA_EQUIPO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>AEFEA9C9-7FF9-A8FE-F363-709301CD9BCD</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EA09025-BEFA-B015-10A1-C582DE6F5E7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

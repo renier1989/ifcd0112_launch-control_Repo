@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="someter" directorySegmentName="seg_0" id="21193D2E-926C-7236-4910-7EE81D353497">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:41:43 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C4B2B838-CF55-B66C-1C43-224BBEE4E343</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>350C6578-586A-3D49-294D-D2E10AD054B4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

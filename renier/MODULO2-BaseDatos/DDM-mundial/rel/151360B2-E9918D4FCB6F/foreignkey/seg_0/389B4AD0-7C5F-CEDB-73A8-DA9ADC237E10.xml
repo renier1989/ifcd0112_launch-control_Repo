@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="389B4AD0-7C5F-CEDB-73A8-DA9ADC237E10" containerWithKeyObject="B7BF09C1-548D-10AE-24E8-AD0F5124C141" localFKIndex="25B2E3E6-5758-4815-4300-F6D72643C84A" name="PARTIDO_SEDE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>0A6ED8BB-F865-AADC-71D9-641345627FF0</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<referredTableLongName>SEDE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F26861E-8377-10EA-C131-9F78D34D4DC2</referredTableID>
+<keyObject>1AB37C89-0703-8FFF-46DC-861985415FB3</keyObject>
+<referredKeyID>1AB37C89-0703-8FFF-46DC-861985415FB3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

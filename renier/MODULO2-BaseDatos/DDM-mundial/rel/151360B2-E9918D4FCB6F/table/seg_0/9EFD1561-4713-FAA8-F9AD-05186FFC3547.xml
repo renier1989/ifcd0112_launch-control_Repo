@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EFD1561-4713-FAA8-F9AD-05186FFC3547" name="vigilar_var">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARBITRO_dni" id="258D637F-3B07-7896-0D56-2D73FDA2AABB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E0BA739-9516-DF9B-2866-B1D9C0C65F2C" referredColumn="46F4306B-B7E4-F32A-557F-336A4BC116CE"/>
+</associations>
+</Column>
+<Column name="ARBITRO_PAIS_codigo" id="26A83DBD-716E-E6BB-351C-849299A32C73">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E0BA739-9516-DF9B-2866-B1D9C0C65F2C" referredColumn="4AD9596A-A29F-D3A1-6CC0-2A4DDD68FDF1"/>
+</associations>
+</Column>
+<Column name="PARTIDO_fecha" id="230B527E-823C-8885-D95A-4049AD248A91">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="221669A0-740F-0CA8-87D1-7A6EF4B373FD" referredColumn="5EBFB168-2F32-CD54-81F1-43F4B40341B4"/>
+</associations>
+</Column>
+<Column name="PARTIDO_SEDE_codigo" id="12321B74-5448-6EBC-1474-001CA577561A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="221669A0-740F-0CA8-87D1-7A6EF4B373FD" referredColumn="44C520C0-C7AE-0469-4CAF-66AB7F43E1C9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F363C2FE-58AC-61CC-8B55-89F7430BAD25" name="vigilar_var_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="258D637F-3B07-7896-0D56-2D73FDA2AABB"/>
+<colUsage columnID="26A83DBD-716E-E6BB-351C-849299A32C73"/>
+<colUsage columnID="230B527E-823C-8885-D95A-4049AD248A91"/>
+<colUsage columnID="12321B74-5448-6EBC-1474-001CA577561A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C5870CE-AFE6-356F-8741-13453AE279BB" name="vigilar_var_ARBITRO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>249C935A-86A2-94C7-1873-199352412C95</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="258D637F-3B07-7896-0D56-2D73FDA2AABB"/>
+<colUsage columnID="26A83DBD-716E-E6BB-351C-849299A32C73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7F81419-A05F-3645-86A0-52DDB5DB5F33" name="vigilar_var_PARTIDO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>249C935A-86A2-94C7-1873-199352412C95</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="230B527E-823C-8885-D95A-4049AD248A91"/>
+<colUsage columnID="12321B74-5448-6EBC-1474-001CA577561A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E4B2DB3-1136-2A5B-3DFA-417A00E9ACD1" name="pertenecer">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLUB_codigo" id="2A3EE5B5-2CBB-5F4A-C793-0B683A4DF6C5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA22CA58-E872-76A1-0184-E947193C1143" referredColumn="6327D29E-8BA8-3E48-72CA-BEEAECE7B304"/>
+</associations>
+</Column>
+<Column name="JUGADOR_dni" id="0DB530AB-F388-A17C-3C46-1DA602916839">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCE08795-5092-4406-48CE-C8D91A9EEA7A" referredColumn="AA53F436-96D7-BC96-6662-C42FDEF66E7A"/>
+</associations>
+</Column>
+<Column name="JUGADOR_PAIS_codigo" id="1E6E1FC1-8C02-B07E-5D43-A880F85136B8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCE08795-5092-4406-48CE-C8D91A9EEA7A" referredColumn="6BC31524-BFD3-A342-437D-C5B9C9B3C245"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5670A3C1-0700-6C46-7C33-F99459A1CBC0" name="pertenecer_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A3EE5B5-2CBB-5F4A-C793-0B683A4DF6C5"/>
+<colUsage columnID="0DB530AB-F388-A17C-3C46-1DA602916839"/>
+<colUsage columnID="1E6E1FC1-8C02-B07E-5D43-A880F85136B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4C69ED0-0AA1-C87F-3F90-F9BA9245625B" name="pertenecer_CLUB_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>4C79088E-1610-E593-E3EA-154E28F0115D</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A3EE5B5-2CBB-5F4A-C793-0B683A4DF6C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1933F64F-A2BD-59FF-6EF2-480EE8667ACF" name="pertenecer_JUGADOR_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>4C79088E-1610-E593-E3EA-154E28F0115D</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DB530AB-F388-A17C-3C46-1DA602916839"/>
+<colUsage columnID="1E6E1FC1-8C02-B07E-5D43-A880F85136B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

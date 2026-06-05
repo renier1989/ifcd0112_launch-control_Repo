@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3E0BA739-9516-DF9B-2866-B1D9C0C65F2C" containerWithKeyObject="9EFD1561-4713-FAA8-F9AD-05186FFC3547" localFKIndex="6C5870CE-AFE6-356F-8741-13453AE279BB" name="vigilar_var_ARBITRO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>249C935A-86A2-94C7-1873-199352412C95</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<referredTableLongName>ARBITRO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ED51A9EE-3CDE-9A6E-0FB7-4AB2FC51E944</referredTableID>
+<keyObject>4EEDB762-2957-C3EA-C2ED-68E3FFE056F7</keyObject>
+<referredKeyID>4EEDB762-2957-C3EA-C2ED-68E3FFE056F7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>dni,PAIS_codigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

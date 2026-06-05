@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C81F1BC6-CC74-60D0-9A9A-39A73088081F" name="JUGADOR">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>350C6578-586A-3D49-294D-D2E10AD054B4</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dni" id="AA53F436-96D7-BC96-6662-C42FDEF66E7A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>81CAE39D-7466-A761-7EEB-D11766780FCB</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C527B433-6209-9D28-A5F4-06D739309DA4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>ADEA5890-ADFE-3EDA-DF1E-D9261544B47F</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechanac" id="C9D136DF-12E1-52B9-E92B-F229562D1D21">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>5CDB916B-CADB-EFCD-C8D9-1F5302235236</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS_codigo" id="6BC31524-BFD3-A342-437D-C5B9C9B3C245">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>2D862A6B-BFC7-4408-5691-6EAF12016E38</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0610F6D0-78BD-4710-9153-41CB26969AF3" referredColumn="AE1AD837-8EAC-4376-3961-6A8C9FE089A4"/>
+</associations>
+</Column>
+<Column name="EQUIPO_codigo" id="2A9DD24A-A117-D07A-AFC5-646331FD1612">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>3B9739DB-EC9A-4FE0-55B8-AAA3BF4C001F</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7640771-B81C-3691-4C31-8E4DD47058DC" referredColumn="39A88D30-6898-E603-1327-9E72D6821F90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1298577C-0A2F-1062-2A12-D4156970CEC1" name="JUGADOR_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>1F82EBB4-6A50-94EE-7D8D-0559822347F0</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA53F436-96D7-BC96-6662-C42FDEF66E7A"/>
+<colUsage columnID="6BC31524-BFD3-A342-437D-C5B9C9B3C245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4546A3AF-9921-FE25-26FC-939BFC884917" name="JUGADOR_EQUIPO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>7B9F2664-006E-9D10-5D3B-C607C137F694</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A9DD24A-A117-D07A-AFC5-646331FD1612"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52C278AF-337B-287B-3724-B2DD1908D774" name="JUGADOR_PAIS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>08CD7D84-02B7-C564-80AA-1CAEEE6EEF96</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BC31524-BFD3-A342-437D-C5B9C9B3C245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

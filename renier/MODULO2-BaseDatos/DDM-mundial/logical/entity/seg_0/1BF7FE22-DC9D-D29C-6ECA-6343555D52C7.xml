@@ -87,6 +87,166 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="dni" id="0315FAE1-15F7-3E5E-49C2-EC5E985AC6F7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:13:01 UTC</createdTime>
+<generatorID>3322417C-9CFA-098A-F625-DBCEA082D43E</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>81CAE39D-7466-A761-7EEB-D11766780FCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo3" id="60EA40B6-654B-1EB4-D28B-320110D193AB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:13:01 UTC</createdTime>
+<generatorID>3322417C-9CFA-098A-F625-DBCEA082D43E</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D862A6B-BFC7-4408-5691-6EAF12016E38</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dni1" id="B9121D5E-C8BC-8672-EAB4-488F2AA5D1A8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:13:25 UTC</createdTime>
+<generatorID>89FCB7DD-2DCE-E86E-1C7F-F3125AF0E29E</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>81CAE39D-7466-A761-7EEB-D11766780FCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo4" id="0EEAD9AC-918E-4364-0711-1F46A60D048B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:13:25 UTC</createdTime>
+<generatorID>89FCB7DD-2DCE-E86E-1C7F-F3125AF0E29E</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D862A6B-BFC7-4408-5691-6EAF12016E38</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dni2" id="36314427-E97A-CAD0-1FD6-C793D5F6DC08">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:20:24 UTC</createdTime>
+<generatorID>4C7276C4-12A5-74A8-DF03-14577A53EA36</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>81CAE39D-7466-A761-7EEB-D11766780FCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo5" id="BC97B3B1-233F-CEB6-E761-F68AF5F3725A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:20:24 UTC</createdTime>
+<generatorID>4C7276C4-12A5-74A8-DF03-14577A53EA36</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D862A6B-BFC7-4408-5691-6EAF12016E38</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dni3" id="A298DAD4-1BA1-7AD7-397F-7B3D4D273716">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:21:59 UTC</createdTime>
+<generatorID>ED0A094B-0EE2-D160-80E2-F75F2CFB27F0</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>81CAE39D-7466-A761-7EEB-D11766780FCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo6" id="30C62F4C-DB01-DFEB-688D-2F6A902A0401">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:21:59 UTC</createdTime>
+<generatorID>ED0A094B-0EE2-D160-80E2-F75F2CFB27F0</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D862A6B-BFC7-4408-5691-6EAF12016E38</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dni4" id="7AEC0226-71B3-CAA5-386B-C5869DF0082B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:24:05 UTC</createdTime>
+<generatorID>39AC0ECC-81A6-D056-1A1B-5D0425EF132A</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>81CAE39D-7466-A761-7EEB-D11766780FCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo7" id="86023BE5-4828-5593-256D-15FC7F4D913B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:24:05 UTC</createdTime>
+<generatorID>39AC0ECC-81A6-D056-1A1B-5D0425EF132A</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D862A6B-BFC7-4408-5691-6EAF12016E38</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="3547AE24-EB70-914C-4A79-1DF55C1CA58E" name="PARTIDO PK">

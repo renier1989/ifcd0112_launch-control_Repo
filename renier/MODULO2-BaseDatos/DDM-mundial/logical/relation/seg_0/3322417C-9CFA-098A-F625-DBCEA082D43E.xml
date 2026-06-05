@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="jugar" directorySegmentName="seg_0" id="3322417C-9CFA-098A-F625-DBCEA082D43E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:13:01 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<sourcePk>1F82EBB4-6A50-94EE-7D8D-0559822347F0</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Ser jugado por</nameOnSource>
+<nameOnTarget>jugar</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>350C6578-586A-3D49-294D-D2E10AD054B4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1BF7FE22-DC9D-D29C-6ECA-6343555D52C7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

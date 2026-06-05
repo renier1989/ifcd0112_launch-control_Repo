@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="71B99CEC-BB72-4D7B-A6A2-82A8AFF8E073" containerWithKeyObject="0BEFE9E4-1A1E-27E7-F1E7-CEA6F3E9EDD1" localFKIndex="D91DE39C-41AC-7EFC-EA20-BDB7C10CD394" name="CAMISETA_EQUIPO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>AEFEA9C9-7FF9-A8FE-F363-709301CD9BCD</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<referredTableLongName>EQUIPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F80C0870-70F9-760A-8957-8058CA544C94</referredTableID>
+<keyObject>FF2240F0-91A1-12CD-3167-3161D537F1D3</keyObject>
+<referredKeyID>FF2240F0-91A1-12CD-3167-3161D537F1D3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

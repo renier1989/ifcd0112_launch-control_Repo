@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vivir" directorySegmentName="seg_0" id="A5E0A1A6-703E-F6AC-C660-30D7536F5EAC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 11:24:33 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<sourcePk>B1A7BCCC-6F05-C175-586A-9F3AADFF7B6B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DC5D6A45-15CC-A5DA-CC64-D32BC9DBD990</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C8858074-0516-4C54-DDE7-758EF7C5C2D1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

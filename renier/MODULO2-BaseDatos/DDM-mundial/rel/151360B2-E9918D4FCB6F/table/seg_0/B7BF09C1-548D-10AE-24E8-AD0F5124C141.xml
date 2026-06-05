@@ -1,0 +1,408 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7BF09C1-548D-10AE-24E8-AD0F5124C141" name="PARTIDO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>1BF7FE22-DC9D-D29C-6ECA-6343555D52C7</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fecha" id="5EBFB168-2F32-CD54-81F1-43F4B40341B4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>A9A5C51F-C9D7-A891-C767-2E63201F141D</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resultado" id="50FA8DCF-76B2-49B5-50E8-E131789A6938">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>1012798F-7C7C-FB93-8533-98FBB64F2E20</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEDE_codigo" id="44C520C0-C7AE-0469-4CAF-66AB7F43E1C9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>6AFE221E-96E0-8C92-D3A2-FB45A1D7E69C</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="389B4AD0-7C5F-CEDB-73A8-DA9ADC237E10" referredColumn="00FC62AC-6B4D-4CA1-8800-5328FA237C9F"/>
+</associations>
+</Column>
+<Column name="EQUIPO_codigo" id="36F4933C-186C-A04C-687B-0DFFABC12AE2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>C298F07D-5C6B-F269-2124-4FB11D12C5BA</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E60777A0-F5DE-83F3-067E-B03C371DD47D" referredColumn="39A88D30-6898-E603-1327-9E72D6821F90"/>
+</associations>
+</Column>
+<Column name="EQUIPO_codigo2" id="D896ECEF-37EB-0B1E-098B-2928E4DDBC0B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>91FFD81A-DEB1-A4FF-31D7-7D8B58F0F13F</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FF9228E-B2B8-FF73-FE53-AA32B25ECE3E" referredColumn="39A88D30-6898-E603-1327-9E72D6821F90"/>
+</associations>
+</Column>
+<Column name="JUGADOR_dni" id="053EFC16-6D3E-3108-E562-2A723CA51F55">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>0315FAE1-15F7-3E5E-49C2-EC5E985AC6F7</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82B10EBD-A5EC-D526-07B0-A68F18294B2F" referredColumn="AA53F436-96D7-BC96-6662-C42FDEF66E7A"/>
+</associations>
+</Column>
+<Column name="JUGADOR_codigo" id="1EA8A2B4-66B8-DCCF-FB09-4FD2B220A2A1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>60EA40B6-654B-1EB4-D28B-320110D193AB</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82B10EBD-A5EC-D526-07B0-A68F18294B2F" referredColumn="6BC31524-BFD3-A342-437D-C5B9C9B3C245"/>
+</associations>
+</Column>
+<Column name="JUGADOR_dni2" id="AD769E3E-34E0-85B8-9047-26651C9F9988">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>B9121D5E-C8BC-8672-EAB4-488F2AA5D1A8</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E566E26-1883-4389-6C72-0D075BBB315C" referredColumn="AA53F436-96D7-BC96-6662-C42FDEF66E7A"/>
+</associations>
+</Column>
+<Column name="JUGADOR_codigo2" id="DD58724E-5E2D-AC01-E6FC-E82A0E4DC4AC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>0EEAD9AC-918E-4364-0711-1F46A60D048B</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E566E26-1883-4389-6C72-0D075BBB315C" referredColumn="6BC31524-BFD3-A342-437D-C5B9C9B3C245"/>
+</associations>
+</Column>
+<Column name="ARBITRO_dni3" id="B4C154AA-99B4-9A2B-44BB-5BDDCA46477C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>36314427-E97A-CAD0-1FD6-C793D5F6DC08</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="080BC69A-5D73-0431-74E5-ED9ED9C84C24" referredColumn="46F4306B-B7E4-F32A-557F-336A4BC116CE"/>
+</associations>
+</Column>
+<Column name="ARBITRO_codigo3" id="34D59036-910E-2121-B584-B3EEE329D8B5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>BC97B3B1-233F-CEB6-E761-F68AF5F3725A</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="080BC69A-5D73-0431-74E5-ED9ED9C84C24" referredColumn="4AD9596A-A29F-D3A1-6CC0-2A4DDD68FDF1"/>
+</associations>
+</Column>
+<Column name="ARBITRO_dni2" id="074147F8-29E7-15E5-27FC-4F6F55550AB4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>A298DAD4-1BA1-7AD7-397F-7B3D4D273716</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49324CAC-3123-F030-81D0-A3D91A95CFDC" referredColumn="46F4306B-B7E4-F32A-557F-336A4BC116CE"/>
+</associations>
+</Column>
+<Column name="ARBITRO_codigo2" id="7F00B75A-718B-5166-ADFC-4A4B34B47EA9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>30C62F4C-DB01-DFEB-688D-2F6A902A0401</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49324CAC-3123-F030-81D0-A3D91A95CFDC" referredColumn="4AD9596A-A29F-D3A1-6CC0-2A4DDD68FDF1"/>
+</associations>
+</Column>
+<Column name="ARBITRO_dni" id="CE797F7E-79F7-7F5A-A0E7-F05DAB194797">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>7AEC0226-71B3-CAA5-386B-C5869DF0082B</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B713905-35AF-39EB-0F5F-7925813655AE" referredColumn="46F4306B-B7E4-F32A-557F-336A4BC116CE"/>
+</associations>
+</Column>
+<Column name="ARBITRO_codigo" id="03EB368B-F39C-AD57-BE7C-3FD8B534087D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>86023BE5-4828-5593-256D-15FC7F4D913B</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B713905-35AF-39EB-0F5F-7925813655AE" referredColumn="4AD9596A-A29F-D3A1-6CC0-2A4DDD68FDF1"/>
+</associations>
+</Column>
+<Column name="goles" id="EDEF3712-EC5C-B0B6-85B7-00F59722328C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>4F1106E2-5934-36F5-5A63-26750EFF6E11</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>E60777A0-F5DE-83F3-067E-B03C371DD47D</dependOnForeignKeyID>
+</Column>
+<Column name="goles1" id="F357821E-7539-8F6C-6A7F-ADB45BA49862">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>B6B703AF-18D6-9A3D-F6EF-487473389475</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>0FF9228E-B2B8-FF73-FE53-AA32B25ECE3E</dependOnForeignKeyID>
+</Column>
+<Column name="minuto" id="E0A884F4-52D2-AE94-5298-857F7895580A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>CC1C591B-6D4C-32A5-256A-F7F2FB65C074</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>1E566E26-1883-4389-6C72-0D075BBB315C</dependOnForeignKeyID>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1E509D1-DA81-3E65-EF4D-774850704785" name="PARTIDO_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>3547AE24-EB70-914C-4A79-1DF55C1CA58E</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EBFB168-2F32-CD54-81F1-43F4B40341B4"/>
+<colUsage columnID="44C520C0-C7AE-0469-4CAF-66AB7F43E1C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C07B4AA-DF6B-AEDC-493D-529B0473D11E" name="PARTIDO_ARBITRO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>39AC0ECC-81A6-D056-1A1B-5D0425EF132A</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE797F7E-79F7-7F5A-A0E7-F05DAB194797"/>
+<colUsage columnID="03EB368B-F39C-AD57-BE7C-3FD8B534087D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CC7A466-37F9-6F5A-3A71-5D424D6B7369" name="PARTIDO_ARBITRO_FKv2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>ED0A094B-0EE2-D160-80E2-F75F2CFB27F0</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="074147F8-29E7-15E5-27FC-4F6F55550AB4"/>
+<colUsage columnID="7F00B75A-718B-5166-ADFC-4A4B34B47EA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0487DA06-986F-8EE1-E22A-78CFCA863C98" name="PARTIDO_ARBITRO_FKv3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>4C7276C4-12A5-74A8-DF03-14577A53EA36</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4C154AA-99B4-9A2B-44BB-5BDDCA46477C"/>
+<colUsage columnID="34D59036-910E-2121-B584-B3EEE329D8B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="796B7AA1-BA2A-88DB-3893-A6FFA9DDF197" name="PARTIDO_JUGADOR_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>3322417C-9CFA-098A-F625-DBCEA082D43E</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="053EFC16-6D3E-3108-E562-2A723CA51F55"/>
+<colUsage columnID="1EA8A2B4-66B8-DCCF-FB09-4FD2B220A2A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA71E20D-FD2E-2831-1CF9-1F72C9B40E39" name="PARTIDO_EQUIPO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>A0C41A72-4B1C-3641-A266-9114CC658612</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36F4933C-186C-A04C-687B-0DFFABC12AE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07F03E3D-9731-8C60-7DE4-B6DD0484CB47" name="PARTIDO_EQUIPO_FKv2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>1D0CE282-691F-A88D-75FC-4C916CCB8EB9</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D896ECEF-37EB-0B1E-098B-2928E4DDBC0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="869DE77C-54F8-F6BF-873F-44435B52B832" name="PARTIDO_JUGADOR_FKv2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>89FCB7DD-2DCE-E86E-1C7F-F3125AF0E29E</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD769E3E-34E0-85B8-9047-26651C9F9988"/>
+<colUsage columnID="DD58724E-5E2D-AC01-E6FC-E82A0E4DC4AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25B2E3E6-5758-4815-4300-F6D72643C84A" name="PARTIDO_SEDE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>0A6ED8BB-F865-AADC-71D9-641345627FF0</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44C520C0-C7AE-0469-4CAF-66AB7F43E1C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

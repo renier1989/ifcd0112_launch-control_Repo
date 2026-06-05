@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="controlar_der" directorySegmentName="seg_0" id="39AC0ECC-81A6-D056-1A1B-5D0425EF132A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:24:05 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<sourcePk>1F82EBB4-6A50-94EE-7D8D-0559822347F0</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>control DER</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>07331348-E342-A9A6-AE6F-95445A276220</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1BF7FE22-DC9D-D29C-6ECA-6343555D52C7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

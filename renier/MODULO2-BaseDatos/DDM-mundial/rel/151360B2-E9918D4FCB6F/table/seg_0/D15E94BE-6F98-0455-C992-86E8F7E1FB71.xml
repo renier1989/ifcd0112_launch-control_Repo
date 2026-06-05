@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D15E94BE-6F98-0455-C992-86E8F7E1FB71" name="CONTROL">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>C4B2B838-CF55-B66C-1C43-224BBEE4E343</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fecha" id="5FB7BE31-9FDA-38CC-F3BE-3B772001DC34">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>5E60C1F3-F04A-FC6E-6544-1ED568B98504</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEDE_codigo" id="3713813F-42AA-6EFD-0CD7-559C5CF533B8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>44E8DE15-6B21-F11C-E1F5-BE572A1B3152</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32DD5F63-F9DA-CE0E-B891-9CC8052850A1" referredColumn="00FC62AC-6B4D-4CA1-8800-5328FA237C9F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="632D9FC5-9001-4F6D-D1FF-6B24DEBF5068" name="CONTROL_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>1D012493-EE7B-E9EE-A5AD-3019D2AC13EE</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3713813F-42AA-6EFD-0CD7-559C5CF533B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5ADC07A7-AB69-D33F-FEAA-D55C7714B498" name="CONTROL_SEDE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:56:11 UTC</createdTime>
+<generatorID>15BAC5BA-ADA5-1FFD-8951-2FCC45448973</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3713813F-42AA-6EFD-0CD7-559C5CF533B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

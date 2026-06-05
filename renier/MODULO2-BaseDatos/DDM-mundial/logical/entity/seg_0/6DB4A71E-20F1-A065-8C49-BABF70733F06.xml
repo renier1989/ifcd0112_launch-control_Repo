@@ -27,6 +27,21 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="codigo1" id="A512BA0D-CDE7-86F7-D074-A5DE7DB69291">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:15:56 UTC</createdTime>
+<generatorID>A13872D7-0F34-B159-8E37-66023117743B</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<referedAttribute>E80627FD-7563-9F5E-79B4-7BB42E681180</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="006438A4-A668-FB56-A32A-42B2F2E4D546" name="EQUIPO PK">

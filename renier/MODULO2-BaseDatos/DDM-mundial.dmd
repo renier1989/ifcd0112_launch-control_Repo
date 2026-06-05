@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DDM-mundial" id="E677315D-90C5-E4DA-E017-11455C5D31E7" version="3.5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:11:44 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E677315D-90C5-E4DA-E017-11455C5D31E7</designId>
+</OSDM_Design>

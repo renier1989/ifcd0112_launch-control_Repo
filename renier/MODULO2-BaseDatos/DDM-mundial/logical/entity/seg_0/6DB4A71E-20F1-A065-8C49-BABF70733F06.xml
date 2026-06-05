@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6DB4A71E-20F1-A065-8C49-BABF70733F06" name="EQUIPO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:27:42 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="6693EF1A-2058-FFAE-41CF-24BE6412D895">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:28:12 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="006438A4-A668-FB56-A32A-42B2F2E4D546" name="EQUIPO PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:28:28 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6693EF1A-2058-FFAE-41CF-24BE6412D895</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1BF7FE22-DC9D-D29C-6ECA-6343555D52C7" name="PARTIDO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:54:35 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="fecha" id="A9A5C51F-C9D7-A891-C767-2E63201F141D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:56:16 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resultado" id="1012798F-7C7C-FB93-8533-98FBB64F2E20">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:54:53 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="6AFE221E-96E0-8C92-D3A2-FB45A1D7E69C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:57:04 UTC</createdTime>
+<generatorID>0A6ED8BB-F865-AADC-71D9-641345627FF0</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<referedAttribute>C0D0381F-BC76-F934-1DA0-FF22C5CCBB19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo1" id="C298F07D-5C6B-F269-2124-4FB11D12C5BA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:02:54 UTC</createdTime>
+<generatorID>A0C41A72-4B1C-3641-A266-9114CC658612</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6693EF1A-2058-FFAE-41CF-24BE6412D895</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo2" id="91FFD81A-DEB1-A4FF-31D7-7D8B58F0F13F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:04:21 UTC</createdTime>
+<generatorID>1D0CE282-691F-A88D-75FC-4C916CCB8EB9</generatorID>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6693EF1A-2058-FFAE-41CF-24BE6412D895</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3547AE24-EB70-914C-4A79-1DF55C1CA58E" name="PARTIDO PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 09:56:26 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9A5C51F-C9D7-A891-C767-2E63201F141D</attributeRef>
+<attributeRef>6AFE221E-96E0-8C92-D3A2-FB45A1D7E69C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

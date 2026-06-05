@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="jugar_local" directorySegmentName="seg_0" id="A0C41A72-4B1C-3641-A266-9114CC658612">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:02:54 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<sourcePk>006438A4-A668-FB56-A32A-42B2F2E4D546</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>local</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6DB4A71E-20F1-A065-8C49-BABF70733F06</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1BF7FE22-DC9D-D29C-6ECA-6343555D52C7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="goles" id="4F1106E2-5934-36F5-5A63-26750EFF6E11">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-05 10:06:59 UTC</createdTime>
+<ownerDesignName>DDM-mundial</ownerDesignName>
+<engineerTo>
+<item key="151360B2-1BA2-3F15-9493-E9918D4FCB6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

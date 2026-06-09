@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2273568-BFD3-D237-C050-C88CE1DBF295" name="ESPECIE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>DC5D6A45-15CC-A5DA-CC64-D32BC9DBD990</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre_cientifico" id="747E374B-FD3C-D682-DB91-B99289C1CA35">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>C13E57F9-B0C9-D36C-E7CF-D858D247B1FF</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_vulgar" id="8E544DC2-61DA-BFCD-3196-AB4F5E6153D6">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>9D5D5742-E813-BB7B-0D24-620B5BA0F064</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="53045841-9257-BA26-0250-FE489F59D3A4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>8C5F0043-D37E-62B9-9BE0-D23E6F36553E</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZONA_id_zona" id="595B362F-294B-C745-0643-B0B91FA3B373">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>66046DBE-B376-9357-C549-53DE14462ED5</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25C9999E-20FB-E21F-0B84-BED2BDA0F545" referredColumn="BC2CD97A-58F5-0B34-16C3-E6482B614978"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C76AAA30-5333-0703-6341-6E9280CB6928" name="ESPECIE_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>B1A7BCCC-6F05-C175-586A-9F3AADFF7B6B</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="747E374B-FD3C-D682-DB91-B99289C1CA35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50F2DA5C-0C16-9DBB-026C-FCDB6FF11B19" name="ESPECIE_ZONA_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>DB136855-7F95-1DDD-1ABB-35A92B21F28F</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="595B362F-294B-C745-0643-B0B91FA3B373"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -14,4 +14,46 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre" id="B7172D38-5F5A-4DBE-3D2B-458BE1FBA84D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:47:52 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="05D49414-65C9-9C3E-F1FD-11F053B62543">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:48:23 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E6EDC57-D549-48EE-1F78-62FC58DC1F60" name="PUERTO PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:48:02 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B7172D38-5F5A-4DBE-3D2B-458BE1FBA84D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3DB8522-7C82-C612-6F39-8BDDB0513960" name="HABITAT">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>C8858074-0516-4C54-DDE7-758EF7C5C2D1</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_habitat" id="AEF66EDA-A29F-11CE-0F34-15158557A3EE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>84004833-5D2E-41BC-91D0-1957D6546D54</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="D166788F-4BD3-AB74-3820-9ACD88030D20">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>65C784C4-5B7D-644E-A0F3-FBC3C9CA9E5B</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEGETACION_id" id="FC0A19CD-96F9-871B-E4C4-56CC8727520F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>781E5D47-9A24-A793-EC64-A9C20399C87F</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6ED190C-3C42-FFD7-E7C6-B3AD2C3A2FF1" referredColumn="46046C47-6696-105C-A809-C1BE875EE44A"/>
+</associations>
+</Column>
+<Column name="CLIMA_id" id="A2FCC132-9031-8F96-59D9-9A2B496874A2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>7F0C8532-D753-F81E-1F81-3A6494865700</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C1772A9-FB8A-064F-3867-3335D9530647" referredColumn="F8529428-8F4A-4D5D-EB51-AE8F0EB256DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F22E0714-7BC9-D49D-451B-AEC8D8884C05" name="HABITAT_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>6CE93106-77C9-FB47-FA75-94F3A8DA465F</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEF66EDA-A29F-11CE-0F34-15158557A3EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FCA7EED-98B9-C93A-C7CB-4AF1F02931D0" name="HABITAT_nombre_UN">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>B425079D-2E02-E1D6-4A6A-C7BD3CEF67A7</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D166788F-4BD3-AB74-3820-9ACD88030D20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC6B62F8-05EF-844E-231D-9C766C1CBC51" name="HABITAT_CLIMA_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>D7377CB0-A6AE-ED19-0758-16DC4C70DBBE</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2FCC132-9031-8F96-59D9-9A2B496874A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F58A728D-0374-F344-873F-05E9418FF7AD" name="HABITAT_VEGETACION_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>567A64F9-812A-2EE9-B41C-2D85FC35BBB1</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC0A19CD-96F9-871B-E4C4-56CC8727520F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

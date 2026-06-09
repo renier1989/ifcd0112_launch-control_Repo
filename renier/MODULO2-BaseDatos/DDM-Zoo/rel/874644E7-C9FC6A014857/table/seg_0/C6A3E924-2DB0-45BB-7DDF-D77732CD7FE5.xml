@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6A3E924-2DB0-45BB-7DDF-D77732CD7FE5" name="vivir">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ESPECIE_nombre_cientifico" id="F7FE10BF-83AB-FFFB-7A5A-3095C12A08E6">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="509E5F79-B2CE-801A-653C-705D5283F422" referredColumn="747E374B-FD3C-D682-DB91-B99289C1CA35"/>
+</associations>
+</Column>
+<Column name="HABITAT_id_habitat" id="7324DF9A-7F2C-C945-CBC5-CD697F8F8520">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD1EFF47-AF75-0FEC-BFA6-EC2EC1F43EBF" referredColumn="AEF66EDA-A29F-11CE-0F34-15158557A3EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E137527-4249-50F7-7FA7-E73DEBA0071B" name="vivir_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7FE10BF-83AB-FFFB-7A5A-3095C12A08E6"/>
+<colUsage columnID="7324DF9A-7F2C-C945-CBC5-CD697F8F8520"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD8F241E-5C7C-E6D0-391E-93BF284F1043" name="vivir_ESPECIE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>A5E0A1A6-703E-F6AC-C660-30D7536F5EAC</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7FE10BF-83AB-FFFB-7A5A-3095C12A08E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C332839-CF16-3BD9-E9F1-F7DDC5B50DCE" name="vivir_HABITAT_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>A5E0A1A6-703E-F6AC-C660-30D7536F5EAC</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7324DF9A-7F2C-C945-CBC5-CD697F8F8520"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="509E5F79-B2CE-801A-653C-705D5283F422" containerWithKeyObject="C6A3E924-2DB0-45BB-7DDF-D77732CD7FE5" localFKIndex="CD8F241E-5C7C-E6D0-391E-93BF284F1043" name="vivir_ESPECIE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>A5E0A1A6-703E-F6AC-C660-30D7536F5EAC</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<referredTableLongName>ESPECIE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2273568-BFD3-D237-C050-C88CE1DBF295</referredTableID>
+<keyObject>C76AAA30-5333-0703-6341-6E9280CB6928</keyObject>
+<referredKeyID>C76AAA30-5333-0703-6341-6E9280CB6928</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nombre_cientifico</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

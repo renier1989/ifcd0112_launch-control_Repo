@@ -4,7 +4,7 @@
 <createdTime>2026-06-08 08:51:30 UTC</createdTime>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+<item key="874644E7-D624-8146-DD5E-C9FC6A014857" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,19 +20,7 @@
 <createdTime>2026-06-08 10:55:29 UTC</createdTime>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="numero_visita" id="61A16EB5-0A34-1110-28C7-F9AA753EE57A">
-<createdBy>manana</createdBy>
-<createdTime>2026-06-08 08:51:57 UTC</createdTime>
-<ownerDesignName>DDM-Zoo</ownerDesignName>
-<engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+<item key="874644E7-D624-8146-DD5E-C9FC6A014857" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,7 +32,7 @@
 <createdTime>2026-06-08 08:52:15 UTC</createdTime>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+<item key="874644E7-D624-8146-DD5E-C9FC6A014857" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,7 +44,7 @@
 <createdTime>2026-06-08 08:53:05 UTC</createdTime>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+<item key="874644E7-D624-8146-DD5E-C9FC6A014857" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -70,7 +58,7 @@
 <generatorID>D4CFDEAB-7ABC-62CE-118C-2072FE3B995B</generatorID>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+<item key="874644E7-D624-8146-DD5E-C9FC6A014857" value="true"/>
 </engineerTo>
 <referedAttribute>0B8E8E68-8001-191F-8EC1-CCDF51E1E135</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -84,7 +72,7 @@
 <generatorID>5E11117B-57F4-913B-C395-AEFD66A571FB</generatorID>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+<item key="874644E7-D624-8146-DD5E-C9FC6A014857" value="true"/>
 </engineerTo>
 <referedAttribute>5E04F643-3D46-15B9-AB50-19A234A15CDD</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -99,11 +87,10 @@
 <createdTime>2026-06-08 08:52:13 UTC</createdTime>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
-<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+<item key="874644E7-D624-8146-DD5E-C9FC6A014857" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>61A16EB5-0A34-1110-28C7-F9AA753EE57A</attributeRef>
 <attributeRef>F2791665-2FD6-FF0C-63E8-5C9C7FCA97C3</attributeRef>
 <attributeRef>71091866-FB60-2186-6223-9F455D5D6DA2</attributeRef>
 </usedAttributes>

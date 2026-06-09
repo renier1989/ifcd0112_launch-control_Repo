@@ -14,4 +14,45 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre" id="7A3EDA2A-3AFF-7B09-ABFA-E48DCC03E7D7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:53:27 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="profundida_media" id="34F7D3FD-0E02-540C-5FC4-C3B92BF1CE7C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:53:48 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5CBC3ABF-E9E5-2D3B-219F-728F3FDA7808" name="MAR PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:54:14 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7A3EDA2A-3AFF-7B09-ABFA-E48DCC03E7D7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

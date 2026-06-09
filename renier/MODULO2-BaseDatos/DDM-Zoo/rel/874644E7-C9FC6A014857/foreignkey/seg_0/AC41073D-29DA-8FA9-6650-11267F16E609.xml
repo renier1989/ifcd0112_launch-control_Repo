@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AC41073D-29DA-8FA9-6650-11267F16E609" containerWithKeyObject="A921D929-444E-304B-4998-CE6FE871DFDF" localFKIndex="2FF4A8D9-D997-AFBE-3E94-E9FB4A22F940" name="visitar_zona_ITINERARIOS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>E142C88A-BCDD-A982-6BFC-446CDA36202E</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<referredTableLongName>ITINERARIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3C64EBE7-C9AA-1D44-1EA9-9DEA0246975A</referredTableID>
+<keyObject>FF4536B3-7561-3F2D-7ECA-CAD0EFEF9FDE</keyObject>
+<referredKeyID>FF4536B3-7561-3F2D-7ECA-CAD0EFEF9FDE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_itinerario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

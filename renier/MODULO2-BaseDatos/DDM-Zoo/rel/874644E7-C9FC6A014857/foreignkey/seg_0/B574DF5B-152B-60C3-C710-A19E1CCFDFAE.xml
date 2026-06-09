@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B574DF5B-152B-60C3-C710-A19E1CCFDFAE" containerWithKeyObject="011E7AB0-A0CA-D1BD-7645-06E650448E56" localFKIndex="09EBD191-CC3D-14F4-436B-9EFF318847FC" name="pertenecer_HABITAT_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>19CAB932-C140-806A-2A34-BB640E1C917C</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<referredTableLongName>HABITAT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E3DB8522-7C82-C612-6F39-8BDDB0513960</referredTableID>
+<keyObject>F22E0714-7BC9-D49D-451B-AEC8D8884C05</keyObject>
+<referredKeyID>F22E0714-7BC9-D49D-451B-AEC8D8884C05</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_habitat</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

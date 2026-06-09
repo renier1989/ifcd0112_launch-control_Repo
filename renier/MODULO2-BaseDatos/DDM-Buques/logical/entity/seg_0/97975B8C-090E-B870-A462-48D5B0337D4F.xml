@@ -14,4 +14,72 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_movimiento" id="DE4EC47D-8888-2B94-0B48-BF558D510EB4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:45:39 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="longitud" id="7187311D-7C1A-5CC3-4FAC-589F89F9EBBF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:45:52 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="latitud" id="EFC436DA-D14D-2930-A5D8-512C7F34C499">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:46:10 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="marca_temp" id="DA91565F-9FC2-7694-BD02-01DD275A5692">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:46:37 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="469D1364-D17E-990B-C73C-920699E1AEB2" name="MOVIMIENTO PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:45:49 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE4EC47D-8888-2B94-0B48-BF558D510EB4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

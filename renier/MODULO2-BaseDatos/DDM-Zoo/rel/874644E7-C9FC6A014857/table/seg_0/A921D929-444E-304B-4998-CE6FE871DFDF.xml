@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A921D929-444E-304B-4998-CE6FE871DFDF" name="visitar_zona">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ZONA_id_zona" id="FA33B917-282F-D2A9-0403-40913E33EDF4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84322EA1-B140-AF97-22B4-81BBFD1B12BF" referredColumn="BC2CD97A-58F5-0B34-16C3-E6482B614978"/>
+</associations>
+</Column>
+<Column name="ITINERARIOS_cod_itinerario" id="9193CC99-E1F0-0C6C-39F4-B9998CCAC712">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC41073D-29DA-8FA9-6650-11267F16E609" referredColumn="5E021B31-0C75-1583-E590-D08D77106E02"/>
+</associations>
+</Column>
+<Column name="orden" id="A3F07EE6-C82D-53D7-8118-D852BB6B7639">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>2F0009BA-DB47-B0B4-59D3-3AD6DCCE3A8D</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BB1B371-795F-0BD9-10C2-537439F36801" name="visitar_zona_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA33B917-282F-D2A9-0403-40913E33EDF4"/>
+<colUsage columnID="9193CC99-E1F0-0C6C-39F4-B9998CCAC712"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28C088F8-55AE-D068-7B26-12A93FAC82C3" name="visitar_zona_ZONA_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>E142C88A-BCDD-A982-6BFC-446CDA36202E</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA33B917-282F-D2A9-0403-40913E33EDF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FF4A8D9-D997-AFBE-3E94-E9FB4A22F940" name="visitar_zona_ITINERARIOS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>E142C88A-BCDD-A982-6BFC-446CDA36202E</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9193CC99-E1F0-0C6C-39F4-B9998CCAC712"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

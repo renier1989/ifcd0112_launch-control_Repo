@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDE84191-0C3D-9BD5-0178-4065332FC3F1" name="visitar_especie">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ITINERARIOS_cod_itinerario" id="E61BE817-8181-A733-726E-12F91E8E4E4B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB701246-FF52-2D57-7220-3CD253CB9C99" referredColumn="5E021B31-0C75-1583-E590-D08D77106E02"/>
+</associations>
+</Column>
+<Column name="ESPECIE_nombre_cientifico" id="3CDDC118-EE57-64A5-4D52-CD556A1BBCED">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A98D2237-649F-2BAF-4551-6453EEB91815" referredColumn="747E374B-FD3C-D682-DB91-B99289C1CA35"/>
+</associations>
+</Column>
+<Column name="orden" id="822AA848-89C8-BB1C-C0D9-9AB3FB2AEFA0">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>38A052A2-B24C-4E70-1993-5EEB1BAEC2DB</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="066FF428-1F17-6168-5E75-707F9AB8FB3E" name="visitar_especie_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E61BE817-8181-A733-726E-12F91E8E4E4B"/>
+<colUsage columnID="3CDDC118-EE57-64A5-4D52-CD556A1BBCED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="172B7A31-B02B-A34C-A089-F528765D7E8B" name="visitar_especie_ITINERARIOS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>C3DB9086-7F2C-0A9A-1448-F05554E3323D</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E61BE817-8181-A733-726E-12F91E8E4E4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="628A2657-22AF-8C37-F603-A12EA2D7A75F" name="visitar_especie_ESPECIE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 09:49:04 UTC</createdTime>
+<generatorID>C3DB9086-7F2C-0A9A-1448-F05554E3323D</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CDDC118-EE57-64A5-4D52-CD556A1BBCED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

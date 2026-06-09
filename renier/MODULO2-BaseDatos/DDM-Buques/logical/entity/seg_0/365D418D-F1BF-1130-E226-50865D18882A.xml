@@ -14,4 +14,58 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="166ACBE2-D477-D36D-8DEB-81A19F4CFCCB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:43:55 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tonelaje" id="F3CA4941-3430-DD5A-54ED-CF250DBEF1B9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:44:13 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="material" id="A5631197-AE04-A8FB-A831-19F57261B674">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:45:02 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E4B5F8C-47ED-902B-51C5-879AC8CC7FBC" name="TIPO_BUQUE PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:44:01 UTC</createdTime>
+<ownerDesignName>DDM-Buques</ownerDesignName>
+<engineerTo>
+<item key="DAD15907-F0CF-2790-0C74-CC8E5C620783" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>166ACBE2-D477-D36D-8DEB-81A19F4CFCCB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

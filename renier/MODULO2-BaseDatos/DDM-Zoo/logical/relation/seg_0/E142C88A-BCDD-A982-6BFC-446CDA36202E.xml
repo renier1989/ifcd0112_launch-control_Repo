@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="visitar_zona" directorySegmentName="seg_0" id="E142C88A-BCDD-A982-6BFC-446CDA36202E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:22:44 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>BA41FFFF-03F5-44AC-B831-37B1E7744363</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9DE31D28-011C-7D04-9287-C6BC7D46196A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="orden" id="2F0009BA-DB47-B0B4-59D3-3AD6DCCE3A8D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 10:23:08 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

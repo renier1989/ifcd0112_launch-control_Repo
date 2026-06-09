@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tiene" directorySegmentName="seg_0" id="DB136855-7F95-1DDD-1ABB-35A92B21F28F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:22:05 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<sourcePk>91829211-4701-536E-B890-6803CE636243</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BA41FFFF-03F5-44AC-B831-37B1E7744363</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DC5D6A45-15CC-A5DA-CC64-D32BC9DBD990</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

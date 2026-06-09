@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_habitat" id="84004833-5D2E-41BC-91D0-1957D6546D54">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 09:53:54 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nombre" id="65C784C4-5B7D-644E-A0F3-FBC3C9CA9E5B">
 <createdBy>manana</createdBy>
 <createdTime>2026-06-05 11:17:31 UTC</createdTime>
@@ -28,31 +40,60 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="clima" id="36E663A3-0863-CDFD-55EA-5EB4543A6C2A">
+<Attribute name="id" id="781E5D47-9A24-A793-EC64-A9C20399C87F">
 <createdBy>manana</createdBy>
-<createdTime>2026-06-05 11:17:52 UTC</createdTime>
+<createdTime>2026-06-08 09:40:19 UTC</createdTime>
+<generatorID>567A64F9-812A-2EE9-B41C-2D85FC35BBB1</generatorID>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
 <item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3695F8C7-0A5A-D79C-6CE4-219854E51A45</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>120</dataTypeSize>
-<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="vegetacion" id="27ACB22C-90AC-2783-51F3-68C61D766EEB">
+<Attribute name="id1" id="7F0C8532-D753-F81E-1F81-3A6494865700">
 <createdBy>manana</createdBy>
-<createdTime>2026-06-05 11:18:27 UTC</createdTime>
+<createdTime>2026-06-08 09:43:42 UTC</createdTime>
+<generatorID>D7377CB0-A6AE-ED19-0758-16DC4C70DBBE</generatorID>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
 <item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
 </engineerTo>
+<referedAttribute>41D9BC5B-CBF4-4796-4A27-781502FF478F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6CE93106-77C9-FB47-FA75-94F3A8DA465F" name="HABITAT PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 09:54:03 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>84004833-5D2E-41BC-91D0-1957D6546D54</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B425079D-2E02-E1D6-4A6A-C7BD3CEF67A7" name="Key_2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 10:03:00 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<newElementsIDs>65C784C4-5B7D-644E-A0F3-FBC3C9CA9E5B</newElementsIDs>
+<usedAttributes>
+<attributeRef>65C784C4-5B7D-644E-A0F3-FBC3C9CA9E5B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

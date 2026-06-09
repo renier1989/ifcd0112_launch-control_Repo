@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FAA2A8DF-1D5F-560C-D8C2-01D19FA94E39" containerWithKeyObject="A769FAFA-B5FB-4819-D384-A0BB08993478" localFKIndex="E5ACAD54-7685-7E98-782C-B0F53C8A06E8" name="comprar_PRODUCTO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>C10EBC6F-13F2-CB8E-C596-E963EE9026C0</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<referredTableLongName>PRODUCTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E537E27E-94D8-2DEC-8726-E804EC397DC9</referredTableID>
+<keyObject>DE30C7C1-1BBA-4E66-AEB9-539670B56B85</keyObject>
+<referredKeyID>DE30C7C1-1BBA-4E66-AEB9-539670B56B85</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_producto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

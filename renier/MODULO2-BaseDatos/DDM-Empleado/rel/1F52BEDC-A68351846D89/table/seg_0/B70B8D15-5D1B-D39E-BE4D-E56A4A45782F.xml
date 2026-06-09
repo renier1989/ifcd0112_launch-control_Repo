@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B70B8D15-5D1B-D39E-BE4D-E56A4A45782F" name="TELEFONO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>90DB5658-9EDD-28A1-A5BF-21B883E43622</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_telefono" id="71FDDABB-0B7E-9DB1-3CE0-CB11DF6F7343">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>6B362B8D-0ED6-3531-88B8-FF3DE0175C78</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_telefono" id="75A1D8BF-076C-A237-2EA6-98C033841D9A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>89259031-F6A6-221F-55FF-662EEEB98295</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9476BF0F-85E2-2DA6-6A1F-57BD9EB6EA5F" name="TELEFONO_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>D32BDBA0-1742-0C73-4958-AA9EE224C434</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71FDDABB-0B7E-9DB1-3CE0-CB11DF6F7343"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

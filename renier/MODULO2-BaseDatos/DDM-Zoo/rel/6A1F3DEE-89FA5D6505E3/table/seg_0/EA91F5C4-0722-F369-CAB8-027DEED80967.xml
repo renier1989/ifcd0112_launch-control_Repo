@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA91F5C4-0722-F369-CAB8-027DEED80967" name="asignar">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ITINERARIOS_cod_itinerario" id="FDB93679-79E0-6362-64B5-05E5B88EB5E9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A54C22D3-625A-44C6-0F91-F1B4C6ACD89C" referredColumn="CC918985-0893-0E8D-0D6C-83AB57B65938"/>
+</associations>
+</Column>
+<Column name="GUIA_DNI" id="CDA655C1-4A82-A06B-9954-B9EC48029CC4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD485622-9EC2-90C9-10B3-F28F2D80E234" referredColumn="93284A34-367A-A4CA-16BF-815A296959EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F0DFE16-251C-F175-7944-158952984550" name="asignar_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDB93679-79E0-6362-64B5-05E5B88EB5E9"/>
+<colUsage columnID="CDA655C1-4A82-A06B-9954-B9EC48029CC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D93B99BC-C9DE-0C45-AE88-CBF28D9A3184" name="asignar_ITINERARIOS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>315E28C1-19C5-B0A6-959D-8F539F210116</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDB93679-79E0-6362-64B5-05E5B88EB5E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01E11423-EFA6-9CEE-BB57-4A3D0A3DCCF6" name="asignar_GUIA_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>315E28C1-19C5-B0A6-959D-8F539F210116</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDA655C1-4A82-A06B-9954-B9EC48029CC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

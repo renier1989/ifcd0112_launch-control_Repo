@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="41D9BC5B-CBF4-4796-4A27-781502FF478F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 09:40:32 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nombre" id="1DCD92FD-B4FA-3D19-D5BC-FF453EED1F59">
 <createdBy>manana</createdBy>
 <createdTime>2026-06-05 11:29:58 UTC</createdTime>
@@ -43,4 +55,18 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6D4B2B9A-4DBD-0FA5-5C84-A9ACB01FDB6E" name="CLIMA PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 09:43:39 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>41D9BC5B-CBF4-4796-4A27-781502FF478F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

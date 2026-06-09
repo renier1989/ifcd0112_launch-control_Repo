@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08A67FED-84AD-F814-21E8-9D6727103E1A" name="GUIA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>EE517E9F-1B69-DC87-DA65-6EC4D4A165A9</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DNI" id="93284A34-367A-A4CA-16BF-815A296959EE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>0B8E8E68-8001-191F-8EC1-CCDF51E1E135</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="093DDEF3-3C46-641E-BCAE-C8DCB2E6F469">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>8ED4ECFF-CB17-212E-0E1B-793F6133D5DD</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="AAD3F0F8-A8D4-88DA-BEDB-4F9BFE0D8660">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>EFE84832-068E-76B9-DB69-1B214F72D5F5</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="242781FA-8336-A6C0-7E2D-9E6F7A056AAF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>9177A119-22F0-70A6-733F-A72C9CA13A18</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_alta" id="0EB8DFBF-A191-A399-8ECA-61B2299D7862">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>19922D38-4447-6052-D36D-A40ED88C1364</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7324CB4-357A-0FDA-65FE-63F38E75ED5E" name="GUIA_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>661143AB-3789-EBAE-827F-3692416C93E8</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93284A34-367A-A4CA-16BF-815A296959EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

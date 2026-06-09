@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAFD935A-5815-0837-B0AA-5EB04E877A0A" name="CLIENTE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>8CC5E112-1271-A36A-EA39-9AE3898F44C0</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_cliente" id="4BFE06C9-4187-1061-F5C2-461F416A8228">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>CA7B05C5-74FB-D204-D601-49FA79955995</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="F3F678EA-F10C-0D35-9F50-9ACFCF78736F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>2E94CB35-5452-877F-4993-91D2BAF9F256</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="calle" id="47D6A871-5BA4-5F00-F890-315D1FD6E7F8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>B07A3AF0-B15F-D76E-4720-FEA7E8D35655</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="portal" id="13881901-8337-5CBE-A2FC-69333AD50A06">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>5C8F2FBE-6D27-1204-8F9B-A58F90C7A9B2</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="piso" id="E8A7E8A5-BCC9-7771-A15D-BDF033B30C47">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>0121D066-57A7-FC78-64CC-34C5D730357C</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46673A16-F6C8-BF74-A3C2-54B699DA9CA9" name="CLIENTE_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>255FE2BD-15EB-124A-B290-E8F98DF35D79</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BFE06C9-4187-1061-F5C2-461F416A8228"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

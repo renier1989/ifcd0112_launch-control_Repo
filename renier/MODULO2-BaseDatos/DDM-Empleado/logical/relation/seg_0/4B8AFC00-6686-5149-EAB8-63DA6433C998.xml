@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="trabajar" directorySegmentName="seg_0" id="4B8AFC00-6686-5149-EAB8-63DA6433C998">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:10:36 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<sourcePk>1B6F7E23-82A9-54BE-7E74-9A7EB73E98C7</sourcePk>
+<targetPk>F1F885F6-7DB8-558E-A815-3593375D0B29</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>93E81EE8-1900-59AF-FE63-814C4D82A5B9</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D27F33A5-8CBA-4440-3FD4-40A7FF6E5974</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

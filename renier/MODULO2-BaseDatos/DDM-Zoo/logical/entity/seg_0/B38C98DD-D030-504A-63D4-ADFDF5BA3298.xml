@@ -15,6 +15,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="4ADFCA7A-BCA4-770B-D0D8-BEEC89DB83F3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 09:39:46 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nombre" id="B4A52934-3651-AB01-C0EA-1AF0159F7605">
 <createdBy>manana</createdBy>
 <createdTime>2026-06-05 11:30:35 UTC</createdTime>
@@ -25,21 +38,22 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descripcion" id="ACA9F433-062B-8F79-C3EB-ACF920D7D5F8">
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ABE83721-A429-128E-EBCE-6394872B8320" name="CONTINENTE PK">
 <createdBy>manana</createdBy>
-<createdTime>2026-06-05 11:30:47 UTC</createdTime>
+<createdTime>2026-06-08 09:39:54 UTC</createdTime>
 <ownerDesignName>DDM-Zoo</ownerDesignName>
 <engineerTo>
 <item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4ADFCA7A-BCA4-770B-D0D8-BEEC89DB83F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

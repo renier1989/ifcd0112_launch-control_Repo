@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FECFD9FE-55A4-1574-AC10-53EFA46781A4" containerWithKeyObject="4C5B4042-7CDD-4969-4C3A-60B956F9F62F" localFKIndex="385E42A6-9895-FC90-FA3A-89E7E3B121BB" name="EMPLEADO_TELEFONO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>15E7310C-E031-CE8C-7942-6EFFFB36679F</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<referredTableLongName>TELEFONO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B70B8D15-5D1B-D39E-BE4D-E56A4A45782F</referredTableID>
+<keyObject>9476BF0F-85E2-2DA6-6A1F-57BD9EB6EA5F</keyObject>
+<referredKeyID>9476BF0F-85E2-2DA6-6A1F-57BD9EB6EA5F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_telefono</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

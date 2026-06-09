@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="realizar" directorySegmentName="seg_0" id="D4CFDEAB-7ABC-62CE-118C-2072FE3B995B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:57:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<sourcePk>B2E0A7AF-5B2A-8FEB-1E30-A2F69AFF229A</sourcePk>
+<targetPk>661143AB-3789-EBAE-827F-3692416C93E8</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>4E964431-855F-1E50-7146-1F2DCA38E1FD</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>EE517E9F-1B69-DC87-DA65-6EC4D4A165A9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

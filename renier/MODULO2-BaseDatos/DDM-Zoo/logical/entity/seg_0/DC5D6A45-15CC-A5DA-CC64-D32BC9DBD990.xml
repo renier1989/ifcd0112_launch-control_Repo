@@ -54,6 +54,20 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_zona" id="66046DBE-B376-9357-C549-53DE14462ED5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 09:41:17 UTC</createdTime>
+<generatorID>DB136855-7F95-1DDD-1ABB-35A92B21F28F</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<referedAttribute>F6BF10FF-D9F8-9983-EC80-C3068C1DA7EC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B1A7BCCC-6F05-C175-586A-9F3AADFF7B6B" name="ESPECIE PK">

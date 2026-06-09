@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="93E81EE8-1900-59AF-FE63-814C4D82A5B9" name="DEPARTAMENTO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:03:35 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_departamento" id="A2AF776C-11D6-D977-42EB-581E34CE85C6">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:03:41 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="790ADA6D-FEE6-85CE-31F8-64C90AB4CC8B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:03:54 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_producto" id="5224288D-4C16-3F34-25EE-523A0751A044">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:08:52 UTC</createdTime>
+<generatorID>899760AA-03CB-C340-4158-ACE74B56CEB9</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>320A6B18-298A-E4C5-C0B6-F9EEFFDED93E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="55C8EE0B-76F7-9E00-3AF0-0C00121A21CC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:11:03 UTC</createdTime>
+<generatorID>4B8AFC00-6686-5149-EAB8-63DA6433C998</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4DF8E123-5228-3AB0-68D9-8C9564844D92</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B6F7E23-82A9-54BE-7E74-9A7EB73E98C7" name="DEPARTAMENTO PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:03:52 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A2AF776C-11D6-D977-42EB-581E34CE85C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

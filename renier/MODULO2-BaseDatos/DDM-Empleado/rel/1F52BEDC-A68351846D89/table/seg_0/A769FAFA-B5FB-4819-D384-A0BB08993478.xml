@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A769FAFA-B5FB-4819-D384-A0BB08993478" name="comprar">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENTE_cod_cliente" id="03381BCF-A1BC-56C8-DCC7-B3A31ACA94D5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF99D5E9-179A-D7F9-776C-32E90839186B" referredColumn="4BFE06C9-4187-1061-F5C2-461F416A8228"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_cod_producto" id="00469176-FD60-BBD1-6318-B4DB821BF577">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAA2A8DF-1D5F-560C-D8C2-01D19FA94E39" referredColumn="3F18763B-DF45-23F6-9A9A-09A007E51C7C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="838F432D-EC7C-0EEE-4528-77F0FEF88580" name="comprar_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03381BCF-A1BC-56C8-DCC7-B3A31ACA94D5"/>
+<colUsage columnID="00469176-FD60-BBD1-6318-B4DB821BF577"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9C65700-56FA-E8C6-9906-069FEC685F7D" name="comprar_CLIENTE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>C10EBC6F-13F2-CB8E-C596-E963EE9026C0</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03381BCF-A1BC-56C8-DCC7-B3A31ACA94D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5ACAD54-7685-7E98-782C-B0F53C8A06E8" name="comprar_PRODUCTO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>C10EBC6F-13F2-CB8E-C596-E963EE9026C0</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00469176-FD60-BBD1-6318-B4DB821BF577"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FC90FD9-05E2-1934-8DC6-F1BAB93D1C01" name="pertenecer">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HABITAT_id_habitat" id="EAA2CCBD-DF7A-D188-CC94-5F917C95D374">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B3EC655-D80D-30F3-0ED3-D48061468E33" referredColumn="2928FAFC-7A0E-D94B-9737-EAB116DFB361"/>
+</associations>
+</Column>
+<Column name="CONTINENTE_id" id="679010B3-78B8-CF56-0F38-9657001F3A41">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E51346BE-C673-6AF8-5BE5-E9C07DEE4999" referredColumn="217A8179-14A3-FB7F-1E3B-C56C98DDB546"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A707C62C-8E21-73C0-72C0-05EE4BDE2DD4" name="pertenecer_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAA2CCBD-DF7A-D188-CC94-5F917C95D374"/>
+<colUsage columnID="679010B3-78B8-CF56-0F38-9657001F3A41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DE43126-4BC7-2F8C-2EB7-B3AC806671A3" name="pertenecer_HABITAT_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>19CAB932-C140-806A-2A34-BB640E1C917C</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAA2CCBD-DF7A-D188-CC94-5F917C95D374"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49AFC4B3-9248-09F3-45E1-309FE839B696" name="pertenecer_CONTINENTE_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>19CAB932-C140-806A-2A34-BB640E1C917C</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="679010B3-78B8-CF56-0F38-9657001F3A41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

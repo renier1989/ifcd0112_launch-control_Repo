@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E964431-855F-1E50-7146-1F2DCA38E1FD" name="VISITA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:51:30 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero" id="F2791665-2FD6-FF0C-63E8-5C9C7FCA97C3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 10:55:29 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_visita" id="61A16EB5-0A34-1110-28C7-F9AA753EE57A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:51:57 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora_inicio" id="F6A4F236-55FB-FA92-CF02-8777201BF8C4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:52:15 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="maximo_visitantes" id="93A36AE6-D035-6C66-4CE0-19DD21B1FE83">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:53:05 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNI" id="C8537922-7E83-66AF-8AEE-D7A92F6F6907">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 09:00:01 UTC</createdTime>
+<generatorID>D4CFDEAB-7ABC-62CE-118C-2072FE3B995B</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<referedAttribute>0B8E8E68-8001-191F-8EC1-CCDF51E1E135</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_itinerario" id="71091866-FB60-2186-6223-9F455D5D6DA2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 10:56:40 UTC</createdTime>
+<generatorID>5E11117B-57F4-913B-C395-AEFD66A571FB</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<referedAttribute>5E04F643-3D46-15B9-AB50-19A234A15CDD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B2E0A7AF-5B2A-8FEB-1E30-A2F69AFF229A" name="VISITA PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-08 08:52:13 UTC</createdTime>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<engineerTo>
+<item key="6A1F3DEE-7484-25C0-74BF-89FA5D6505E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>61A16EB5-0A34-1110-28C7-F9AA753EE57A</attributeRef>
+<attributeRef>F2791665-2FD6-FF0C-63E8-5C9C7FCA97C3</attributeRef>
+<attributeRef>71091866-FB60-2186-6223-9F455D5D6DA2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="90DB5658-9EDD-28A1-A5BF-21B883E43622" name="TELEFONO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:05:26 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_telefono" id="6B362B8D-0ED6-3531-88B8-FF3DE0175C78">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:05:34 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_telefono" id="89259031-F6A6-221F-55FF-662EEEB98295">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:05:44 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D32BDBA0-1742-0C73-4958-AA9EE224C434" name="TELEFONO PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:05:42 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B362B8D-0ED6-3531-88B8-FF3DE0175C78</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

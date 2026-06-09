@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8CC5E112-1271-A36A-EA39-9AE3898F44C0" name="CLIENTE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:58:59 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_cliente" id="CA7B05C5-74FB-D204-D601-49FA79955995">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:59:31 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="2E94CB35-5452-877F-4993-91D2BAF9F256">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:59:13 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="calle" id="B07A3AF0-B15F-D76E-4720-FEA7E8D35655">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:59:54 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="portal" id="5C8F2FBE-6D27-1204-8F9B-A58F90C7A9B2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:00:14 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="piso" id="0121D066-57A7-FC78-64CC-34C5D730357C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:01:04 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="255FE2BD-15EB-124A-B290-E8F98DF35D79" name="CLIENTE PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:59:44 UTC</createdTime>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<engineerTo>
+<item key="1F52BEDC-7C17-D1E5-9F94-A68351846D89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CA7B05C5-74FB-D204-D601-49FA79955995</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

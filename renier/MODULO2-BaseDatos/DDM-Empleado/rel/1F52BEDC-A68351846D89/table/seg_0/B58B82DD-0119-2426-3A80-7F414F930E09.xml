@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B58B82DD-0119-2426-3A80-7F414F930E09" name="DEPARTAMENTO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>93E81EE8-1900-59AF-FE63-814C4D82A5B9</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_departamento" id="C371E633-4080-C792-EF7D-5EC685264E73">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>A2AF776C-11D6-D977-42EB-581E34CE85C6</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="088F9318-A46A-AF6A-BD42-911460D02196">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>790ADA6D-FEE6-85CE-31F8-64C90AB4CC8B</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_cod_producto" id="14630833-C5D8-29F4-4F30-DE95163E643C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>5224288D-4C16-3F34-25EE-523A0751A044</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87794AAB-B7BA-0448-D9F8-3A19B6430CC8" referredColumn="3F18763B-DF45-23F6-9A9A-09A007E51C7C"/>
+</associations>
+</Column>
+<Column name="EMPLEADO_numero" id="DE6873E0-2D52-2B52-DEC6-375F4738ACBF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>55C8EE0B-76F7-9E00-3AF0-0C00121A21CC</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCD02195-1A86-9C45-A4B9-204B53021396" referredColumn="80E64964-50C5-D554-3508-E21CBDDFABF1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF6E916B-7DE9-7833-5946-FA0D87301364" name="DEPARTAMENTO_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>1B6F7E23-82A9-54BE-7E74-9A7EB73E98C7</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C371E633-4080-C792-EF7D-5EC685264E73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19472F2B-733B-D40B-C1E7-9BBD16E767D4" name="DEPARTAMENTO_PRODUCTO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>899760AA-03CB-C340-4158-ACE74B56CEB9</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14630833-C5D8-29F4-4F30-DE95163E643C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BFE7E16-58E9-E120-6C26-5864BD10B5ED" name="DEPARTAMENTO_EMPLEADO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>4B8AFC00-6686-5149-EAB8-63DA6433C998</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE6873E0-2D52-2B52-DEC6-375F4738ACBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

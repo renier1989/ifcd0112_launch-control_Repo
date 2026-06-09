@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5A25D36E-0A07-867E-5FA5-DCA05B217A77" containerWithKeyObject="EEB46378-57A5-19BA-3979-345574428DBC" localFKIndex="3A9CDF5D-E4D2-A33C-37FD-65A64CB6AFE0" name="VISITA_GUIA_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 07:17:37 UTC</createdTime>
+<generatorID>D4CFDEAB-7ABC-62CE-118C-2072FE3B995B</generatorID>
+<ownerDesignName>DDM-Zoo</ownerDesignName>
+<referredTableLongName>GUIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>08A67FED-84AD-F814-21E8-9D6727103E1A</referredTableID>
+<keyObject>E7324CB4-357A-0FDA-65FE-63F38E75ED5E</keyObject>
+<referredKeyID>E7324CB4-357A-0FDA-65FE-63F38E75ED5E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DNI</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

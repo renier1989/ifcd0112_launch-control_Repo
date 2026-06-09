@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C5B4042-7CDD-4969-4C3A-60B956F9F62F" name="EMPLEADO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>D27F33A5-8CBA-4440-3FD4-40A7FF6E5974</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero" id="80E64964-50C5-D554-3508-E21CBDDFABF1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>4DF8E123-5228-3AB0-68D9-8C9564844D92</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C287FBB1-2909-7C88-5405-481428327C1E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>78F2CD14-1620-D92E-103A-E4B2138D205D</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO_id_telefono" id="2C1E51DD-A894-BF67-F713-713A83FB3CB9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>053C7BDA-1985-8C3C-99D6-D111ACF13DA1</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FECFD9FE-55A4-1574-AC10-53EFA46781A4" referredColumn="71FDDABB-0B7E-9DB1-3CE0-CB11DF6F7343"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD4F4A16-47E4-7993-4460-575DA46D5DDA" name="EMPLEADO_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>F1F885F6-7DB8-558E-A815-3593375D0B29</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80E64964-50C5-D554-3508-E21CBDDFABF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="385E42A6-9895-FC90-FA3A-89E7E3B121BB" name="EMPLEADO_TELEFONO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-09 08:13:11 UTC</createdTime>
+<generatorID>15E7310C-E031-CE8C-7942-6EFFFB36679F</generatorID>
+<ownerDesignName>DDM-Empleado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C1E51DD-A894-BF67-F713-713A83FB3CB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

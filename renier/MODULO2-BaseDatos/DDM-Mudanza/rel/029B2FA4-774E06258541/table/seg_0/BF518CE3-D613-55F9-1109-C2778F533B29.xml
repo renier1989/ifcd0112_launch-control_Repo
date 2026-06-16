@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF518CE3-D613-55F9-1109-C2778F533B29" name="Poblacion">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>B899C6E6-3DC3-4192-3A89-BB917315DE32</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_poblacion" id="B4E724C7-149B-CA7C-0A3D-B5506DED02AE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>9803EC9D-557F-372E-5A09-5E439F4B7E4C</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_poblacion" id="CC1D725C-3E11-C705-3159-0D4375D67C5A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>794E000E-69BD-6CE0-55BE-6ADFAFF9DAA7</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Provincia_id_provincia" id="8F478613-E7F5-82F1-60A6-F2C7D30D0A0F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-16 10:37:42 UTC</createdTime>
+<generatorID>A12ED61A-2CAA-2804-2799-C449BA1BC4D3</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95B556BF-2E42-59B7-51AC-F0BC741D8E81" referredColumn="EA906E1D-B877-2F0A-C5DE-2F887AB3EACF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B91BB24-85D7-0D5C-5BE8-AFD4F7771DDA" name="Poblacion_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>62833638-4CEF-C285-733D-3B56DB9D2151</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4E724C7-149B-CA7C-0A3D-B5506DED02AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1A3C8C5-80A0-8B3D-2C36-94D751900C79" name="Poblacion_Provincia_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-16 10:37:42 UTC</createdTime>
+<generatorID>32467716-5954-106C-E5A8-4A92C563BE38</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F478613-E7F5-82F1-60A6-F2C7D30D0A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

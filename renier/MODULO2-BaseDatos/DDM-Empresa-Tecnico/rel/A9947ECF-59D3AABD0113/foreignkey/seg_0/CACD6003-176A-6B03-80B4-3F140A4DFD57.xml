@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CACD6003-176A-6B03-80B4-3F140A4DFD57" containerWithKeyObject="2084E1FC-E9A9-B53B-EED7-3CA504811246" localFKIndex="EE002D0E-3388-24C5-7389-7810D7AE5FD4" name="habilidade_conocimiento_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>464E1396-C5D3-271C-B2ED-3FEBC9FD28AE</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<referredTableLongName>conocimiento</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7F1BE8B4-A531-3AA8-7C8A-FA55A661ECF7</referredTableID>
+<keyObject>6A1A32BB-CE54-B3C4-ED1B-11909CF6CF9C</keyObject>
+<referredKeyID>6A1A32BB-CE54-B3C4-ED1B-11909CF6CF9C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_conocimiento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

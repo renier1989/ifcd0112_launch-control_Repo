@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8083B30F-B691-2AA5-9C98-BDC708FB9C8F" name="PrestacionServicio">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:23:52 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre_servicio" id="CB2E7C56-4D65-FFE6-F7D6-205DA1004B9B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:24:00 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_grua" id="A5846D64-A1D0-184A-AE38-C0071EF18788">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:53:12 UTC</createdTime>
+<generatorID>C5063650-F883-E651-7A95-3175A637AAF2</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>930CDA7A-A68A-638F-4BE0-0354CD31C82A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_solicitud" id="9B3268C9-077B-B8DF-72C4-C46E678A43BE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:56:47 UTC</createdTime>
+<generatorID>FC9BFB25-7DF8-B72D-B9F1-3E6CCE57C3F3</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>47B915D6-C5DD-A19E-D9CC-CBAA5FA52583</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="duracion" id="884312AA-5075-98FB-B722-440E96E3ADFC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:04:18 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="coste_total" id="D292B861-428A-E94F-8096-0C74B51D75D5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:04:26 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="C99AC606-F25B-97BC-BCB8-CF17A16A47BD">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:18:03 UTC</createdTime>
+<generatorID>754CD85D-401B-0CCA-3BA9-54926C695756</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>46F194DD-0624-72AB-0058-F233DA952D64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="3C9C0CA6-4883-7977-DBB5-1784A382951E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:18:03 UTC</createdTime>
+<generatorID>754CD85D-401B-0CCA-3BA9-54926C695756</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>1390D71B-981F-539A-3F46-CA632FAEDDC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D8663365-43F3-1AF0-B985-D2D3AE8FE0A8" name="Prestado PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:55:17 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9B3268C9-077B-B8DF-72C4-C46E678A43BE</attributeRef>
+<attributeRef>C99AC606-F25B-97BC-BCB8-CF17A16A47BD</attributeRef>
+<attributeRef>3C9C0CA6-4883-7977-DBB5-1784A382951E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

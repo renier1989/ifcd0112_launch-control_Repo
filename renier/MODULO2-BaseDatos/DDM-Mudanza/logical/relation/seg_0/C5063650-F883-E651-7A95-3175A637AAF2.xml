@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="salicitar" directorySegmentName="seg_0" id="C5063650-F883-E651-7A95-3175A637AAF2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:52:11 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<targetPk>1FD57FAA-B491-31FB-15CF-547F490B6E27</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>8083B30F-B691-2AA5-9C98-BDC708FB9C8F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>95692A3C-9394-954A-5B90-C294E227FAB3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

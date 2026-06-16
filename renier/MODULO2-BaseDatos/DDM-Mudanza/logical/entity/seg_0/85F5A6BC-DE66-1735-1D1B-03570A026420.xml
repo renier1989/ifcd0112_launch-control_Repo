@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85F5A6BC-DE66-1735-1D1B-03570A026420" name="Contratacion">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:29:40 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="fec_inicio" id="519310E7-3BB9-F3A5-8697-466B7717E429">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:29:48 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fec_fin" id="B0E15828-090F-3DC6-9CA1-BBCE0FD497C6">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:29:59 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="E76B250E-2C8D-AA4D-4A79-FD72F143CBDD">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:03:18 UTC</createdTime>
+<generatorID>7567CCCF-C68F-A42B-7C65-261B4F8811CA</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>46F194DD-0624-72AB-0058-F233DA952D64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero1" id="201E1237-C935-A989-7399-0FABAD16D14D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:03:30 UTC</createdTime>
+<generatorID>4799C42F-9225-0856-C99E-0E0C6F97BF2A</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>46F194DD-0624-72AB-0058-F233DA952D64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="12160E9A-1541-D76D-1AD1-2633B8AC1A63">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:08:15 UTC</createdTime>
+<generatorID>7567CCCF-C68F-A42B-7C65-261B4F8811CA</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>1390D71B-981F-539A-3F46-CA632FAEDDC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo1" id="2903FC5A-991F-5C5F-C63C-063A43A5892E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:08:15 UTC</createdTime>
+<generatorID>4799C42F-9225-0856-C99E-0E0C6F97BF2A</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>1390D71B-981F-539A-3F46-CA632FAEDDC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="890C8899-C552-FF3E-64BF-EE44D9F3EA16" name="cliente">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>69B4E4D4-6A1C-49C5-C74B-9DE6E3B55BD6</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_cliente" id="2645B48B-0858-B0D9-971F-36634D1F4BA7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>23F4A291-7C59-48CC-C14D-C63F4FA754B4</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_cliente" id="E3035AA9-BF51-5738-AC6F-BCCB15B57AFA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>98D396AD-FA4C-7F42-5455-EBBFA3CA184F</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6AFC2E7D-2A9E-33CB-F84D-4FEA8594CBE2" name="cliente_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>3452CEC5-2235-059F-7600-77775D9ECA7B</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2645B48B-0858-B0D9-971F-36634D1F4BA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

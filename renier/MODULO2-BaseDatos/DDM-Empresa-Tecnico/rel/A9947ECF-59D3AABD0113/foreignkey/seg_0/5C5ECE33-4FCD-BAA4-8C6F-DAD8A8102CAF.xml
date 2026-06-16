@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5C5ECE33-4FCD-BAA4-8C6F-DAD8A8102CAF" containerWithKeyObject="9575B3CB-944B-A0DB-3DD4-3F6B95677039" localFKIndex="EEB808D6-9535-BDA7-8017-9BD273D2B5F2" name="tecnico_categoria_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>76440FC1-F432-42E6-FDF0-2F896CD5B585</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<referredTableLongName>categoria</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EE9A15E8-EFC5-1427-23F1-9B22D6D957EC</referredTableID>
+<keyObject>D21E783A-7412-119B-6A5A-36ED3E08CCEA</keyObject>
+<referredKeyID>D21E783A-7412-119B-6A5A-36ED3E08CCEA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_categoria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

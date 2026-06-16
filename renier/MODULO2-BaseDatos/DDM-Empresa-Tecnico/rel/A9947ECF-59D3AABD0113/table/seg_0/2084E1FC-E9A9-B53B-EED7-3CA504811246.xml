@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2084E1FC-E9A9-B53B-EED7-3CA504811246" name="habilidade">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>226F8673-930B-8916-BC02-F358E4144F73</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="grado" id="17A2F917-C485-7B5B-F4B3-BEDE9DFE0ECC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>93F380B1-46B1-040D-CB6A-42F8460CF609</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tecnico_cod_tecnico" id="A4C2A95C-1375-8099-C622-43F54CEC129F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>A0EDE639-D528-F31C-B4C0-74A82494914C</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05B6C471-1320-5E56-7C8C-E17F2CDBCB3D" referredColumn="5366BF88-B80B-C739-B09B-5A9F6FA5140B"/>
+</associations>
+</Column>
+<Column name="tecnico_empresa_cod_empresa" id="D1E53B4F-D228-8E57-54A5-C2F8C39382D1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>69F0B977-AD6F-A6FF-9D03-C1D8A6C0E9DD</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05B6C471-1320-5E56-7C8C-E17F2CDBCB3D" referredColumn="8974079B-63BB-69FD-6756-F2FA642C9CCD"/>
+</associations>
+</Column>
+<Column name="conocimiento_cod_conocimiento" id="6D945332-5C8E-2F88-5BE6-A1D9072421D5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>ECAC1DDB-C5BA-6FB1-75D1-7EB925B9210F</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CACD6003-176A-6B03-80B4-3F140A4DFD57" referredColumn="A3F27A82-0707-A32C-40AE-117C935A7D1B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DD7E5E5-1A74-FA0B-75B9-6C9F713E8D4A" name="habilidade_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>6A7FFE6C-3975-58CF-D3BC-656806AD1884</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4C2A95C-1375-8099-C622-43F54CEC129F"/>
+<colUsage columnID="D1E53B4F-D228-8E57-54A5-C2F8C39382D1"/>
+<colUsage columnID="6D945332-5C8E-2F88-5BE6-A1D9072421D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE002D0E-3388-24C5-7389-7810D7AE5FD4" name="habilidade_conocimiento_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>464E1396-C5D3-271C-B2ED-3FEBC9FD28AE</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D945332-5C8E-2F88-5BE6-A1D9072421D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05F280E2-F546-735B-30AB-483EF4A25F2B" name="habilidade_tecnico_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>5354ED58-A78B-667B-8266-B248BA712E45</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4C2A95C-1375-8099-C622-43F54CEC129F"/>
+<colUsage columnID="D1E53B4F-D228-8E57-54A5-C2F8C39382D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

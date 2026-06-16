@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52CFFB39-DEBA-FCBB-7963-1CEEF3C15D44" name="Telefono">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>F77FD001-92E5-B775-CD6E-FDC593A918EB</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero" id="D8D4F7CB-6A21-5C33-478A-6B0E9C0441E1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>F854AE75-5F15-265A-CDD9-700F99E0F4F4</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_telefono" id="E56AB054-66C5-56F1-3001-08C224D80FF3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>E61AE007-C12E-5DCF-6E1E-B0D55BA08B26</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Persona_numero" id="530F0F24-BB93-E6FB-7871-FF4091E94A3E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>6102F172-6859-25B8-AB8E-1ACEE5BD400C</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="413B0B2D-2F72-4CA8-5421-DAC619BADAA6" referredColumn="B8A01A95-31D7-B887-414B-C2431759E0C5"/>
+</associations>
+</Column>
+<Column name="Persona_Tipo_documento_codigo" id="6330EC97-03AF-9274-22E6-DC841A41B58E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>3464DC2B-C643-1AAC-5759-0BD7ADF83490</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="413B0B2D-2F72-4CA8-5421-DAC619BADAA6" referredColumn="5F9B7A76-9255-4204-00EA-4B95FE4A24AF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="99702252-6980-651A-70F5-F427E0C32725" name="Telefono_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>239557FE-75AA-7C1A-3E26-29C86F8F457B</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E56AB054-66C5-56F1-3001-08C224D80FF3"/>
+<colUsage columnID="530F0F24-BB93-E6FB-7871-FF4091E94A3E"/>
+<colUsage columnID="6330EC97-03AF-9274-22E6-DC841A41B58E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F4AC88E-D447-32B9-36C2-649D1DCBEB0F" name="Telefono_Persona_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>7DF69901-69D0-E858-1669-F785E2FDEC60</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="530F0F24-BB93-E6FB-7871-FF4091E94A3E"/>
+<colUsage columnID="6330EC97-03AF-9274-22E6-DC841A41B58E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

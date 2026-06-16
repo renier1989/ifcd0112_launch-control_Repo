@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="transitar" directorySegmentName="seg_0" id="7BD392A6-F295-4A4A-867E-C6F8298424BE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:58:52 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<sourcePk>B930E5CF-B577-9BE1-A165-59BFAD45D4E5</sourcePk>
+<targetPk>D925AAA8-F2FE-C1A9-3583-34ADF3583845</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2CDFEE97-3CB0-9966-8047-8D585B366C38</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>459016ED-D940-CBDA-3533-B30180379603</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

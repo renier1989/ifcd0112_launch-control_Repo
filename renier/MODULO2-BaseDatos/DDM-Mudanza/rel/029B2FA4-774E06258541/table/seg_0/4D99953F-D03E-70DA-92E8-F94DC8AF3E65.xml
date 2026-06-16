@@ -1,0 +1,276 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D99953F-D03E-70DA-92E8-F94DC8AF3E65" name="Persona">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>2CDFEE97-3CB0-9966-8047-8D585B366C38</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero" id="B8A01A95-31D7-B887-414B-C2431759E0C5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>46F194DD-0624-72AB-0058-F233DA952D64</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="A00AE625-94CA-35E9-C0C9-CF350CF5AAB7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>782402E9-FD0F-7178-A398-E93B2B9920FC</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_postal" id="F1F3E45F-7024-C46D-B21E-2E0ADBBC368C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>8BDC2501-616E-6419-676C-2A210D9BFF6B</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_via_codigo_via" id="4030F9B9-2CEB-DB68-7095-5AC6CBC272D7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>AE497F1E-F3D6-0FA7-46B7-4297D75F7BD0</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CFC64AF-414B-C271-3644-B3A3CF2A9515" referredColumn="9E262B18-1957-E2E1-DC25-318BC9EDBC73"/>
+</associations>
+</Column>
+<Column name="Tipo_documento_codigo" id="5F9B7A76-9255-4204-00EA-4B95FE4A24AF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>1390D71B-981F-539A-3F46-CA632FAEDDC3</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05F8BD99-AE2E-5CB8-5E7A-0D479463E93A" referredColumn="4BFE8E97-FEC0-9F34-4ED5-841D28074C5A"/>
+</associations>
+</Column>
+<Column name="Poblacion_id_poblacion" id="FA888C76-6E4D-1597-B151-F77063D16170">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>D1613F7D-2585-5B55-8485-EFF611C9C960</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29B6B8A3-8787-C751-3BB1-BBA5A2ECDC8A" referredColumn="B4E724C7-149B-CA7C-0A3D-B5506DED02AE"/>
+</associations>
+</Column>
+<Column name="nombre_empresa" id="234BA61F-0C7A-0566-F982-8FF5F7ECA66F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>0270902F-90F4-B623-FA3F-2FD87C50515B</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="B8D5F007-0E1A-191D-3082-9541D6971ED4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[											]]></commentInRDBMS>
+<generatorID>A57BBBB5-D0EA-F23D-4596-F2F3485E5552</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_pat" id="389EE3E5-9AB5-6145-6098-ABD6F3C22972">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>2689526F-66AA-1A95-77C7-1197F9B7B872</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_mat" id="A794823A-5526-A9F3-D922-68542B86CDAB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>A2FB5A55-C105-5A85-8DEC-D915C1A9E2B4</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_empleado" id="6B724524-27A1-3AF1-D6C4-08BB6DB30684">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>82702B08-46AC-2B6F-DA25-129906E038F4</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Especialidad_cod_especialidad" id="B6625AFF-9E76-0694-F773-57221C0A8BDF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>FCBFA3FE-80B8-544F-88D2-2A630BBB9341</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C0F9B42-4BED-E499-1CCF-25FA4563FC90" referredColumn="3D506064-6E66-1CBF-1A22-66B8D8F3D85D"/>
+</associations>
+</Column>
+<Column name="cod_cliente" id="C329EF8A-5540-AE01-D472-E30CCB7913A8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>588B6616-762E-8B39-1018-DC8827FA70B9</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B3E51CD-3226-DBEA-AA8D-9DD7205C4C69" name="Persona_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>B930E5CF-B577-9BE1-A165-59BFAD45D4E5</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8A01A95-31D7-B887-414B-C2431759E0C5"/>
+<colUsage columnID="5F9B7A76-9255-4204-00EA-4B95FE4A24AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="047C1DAD-8D46-BAF2-2290-69FEE1FD525E" name="Persona_cod_cliente_UN">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>D636FB24-E7D6-7868-BB0B-D2586D5AD72A</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C329EF8A-5540-AE01-D472-E30CCB7913A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BA7E54E-A3C1-24B3-53E2-6651C34ABBE5" name="Persona_cod_empleado_UN">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>DFC8C686-C7D4-C337-9382-2700F1A2D21F</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B724524-27A1-3AF1-D6C4-08BB6DB30684"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5325E42-1041-0247-BCF5-72CB10C199E2" name="Persona_nombre_empresa_UN">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>020D588E-1351-8BE4-26A7-E785158A980A</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="234BA61F-0C7A-0566-F982-8FF5F7ECA66F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="155B8680-A941-ED51-905C-05516E96FE14" name="Persona_Poblacion_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>15C75A73-21CF-C7FE-27B7-F19C19548B76</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA888C76-6E4D-1597-B151-F77063D16170"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB4FB80A-C348-788E-E698-10314DA3918A" name="Persona_Tipo_documento_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-16 10:37:42 UTC</createdTime>
+<generatorID>61ADF280-8DCB-75BB-C65E-A1CBA8490731</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F9B7A76-9255-4204-00EA-4B95FE4A24AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F1415D5-1EE9-2C81-BF73-2E82A55C6EA3" name="Persona_Especialidad_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-16 10:37:42 UTC</createdTime>
+<generatorID>FC22A08A-9252-38DB-8243-CE53CFCCC6C0</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6625AFF-9E76-0694-F773-57221C0A8BDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2969E08F-77F5-25D7-3419-FD1F54F23C9D" name="Persona_Tipo_via_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-16 10:37:42 UTC</createdTime>
+<generatorID>7BD392A6-F295-4A4A-867E-C6F8298424BE</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4030F9B9-2CEB-DB68-7095-5AC6CBC272D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

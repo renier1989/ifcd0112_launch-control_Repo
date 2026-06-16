@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1DB391F1-B43C-D19F-CD4F-8F5D819E9F14" name="asignacion">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:38:17 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_tecnico" id="8A909DFE-7089-D4A3-53DF-073218415839">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:41:23 UTC</createdTime>
+<generatorID>192D4248-205F-F643-20F5-6E8B24397A1B</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>5D60EAC1-3628-8175-B319-08F7E869398C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_empresa" id="5788707B-1229-C590-31D0-039AAD66EFBB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:41:23 UTC</createdTime>
+<generatorID>192D4248-205F-F643-20F5-6E8B24397A1B</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>A2C997BC-49DD-7951-6983-69ED6A214061</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_asignacion" id="A36FBEBB-BFEC-DAAC-CC8F-9E93F4C65808">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:38:24 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_cese" id="1BB4A1E3-B880-28F0-3935-09B31EEBC2D2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:38:47 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_proyecto" id="D4904CF6-B398-48C9-874D-DD4D67130592">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:44:29 UTC</createdTime>
+<generatorID>D9936714-6DA4-6ADF-B134-571DED866CBC</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>8C913ADE-6DF4-3663-D9B9-FF3BF9A7A3EB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA644245-1DB9-798E-274C-E4ACF9ED3516" name="asignacion PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:43:08 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A909DFE-7089-D4A3-53DF-073218415839</attributeRef>
+<attributeRef>5788707B-1229-C590-31D0-039AAD66EFBB</attributeRef>
+<attributeRef>D4904CF6-B398-48C9-874D-DD4D67130592</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

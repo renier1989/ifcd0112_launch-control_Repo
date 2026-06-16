@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F77FD001-92E5-B775-CD6E-FDC593A918EB" name="Telefono">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:30:14 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero" id="F854AE75-5F15-265A-CDD9-700F99E0F4F4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:30:23 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_telefono" id="E61AE007-C12E-5DCF-6E1E-B0D55BA08B26">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:30:36 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero1" id="6102F172-6859-25B8-AB8E-1ACEE5BD400C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:07:45 UTC</createdTime>
+<generatorID>7DF69901-69D0-E858-1669-F785E2FDEC60</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>46F194DD-0624-72AB-0058-F233DA952D64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="3464DC2B-C643-1AAC-5759-0BD7ADF83490">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:08:15 UTC</createdTime>
+<generatorID>7DF69901-69D0-E858-1669-F785E2FDEC60</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<referedAttribute>1390D71B-981F-539A-3F46-CA632FAEDDC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="239557FE-75AA-7C1A-3E26-29C86F8F457B" name="Telefono PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:30:47 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E61AE007-C12E-5DCF-6E1E-B0D55BA08B26</attributeRef>
+<attributeRef>6102F172-6859-25B8-AB8E-1ACEE5BD400C</attributeRef>
+<attributeRef>3464DC2B-C643-1AAC-5759-0BD7ADF83490</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

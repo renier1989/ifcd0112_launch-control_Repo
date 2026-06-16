@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBD8209F-89E6-380C-D7E0-9945C20F5D1D" name="proyecto">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:42:08 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_proyecto" id="8C913ADE-6DF4-3663-D9B9-FF3BF9A7A3EB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:43:30 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_proyecto" id="E6411441-2FA7-CCC7-6337-03CCA8A105BF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:42:21 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_inicio" id="0FAC92A0-0C42-1750-1FE1-B191BE2525D2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:42:38 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_fin" id="18CD1857-0259-8129-C76B-9B30F4787084">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:42:47 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4A37DA15-C042-19BD-C58A-61C89CBC48CE" name="proyecto PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:43:38 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8C913ADE-6DF4-3663-D9B9-FF3BF9A7A3EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

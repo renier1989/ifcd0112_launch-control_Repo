@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B3D5D0CE-B5CA-4FB1-4B2C-A269220A4118" name="Cliente">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:41:12 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>27AAF837-205B-353B-4BB7-A4CF01047356</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_cliente" id="588B6616-762E-8B39-1018-DC8827FA70B9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:41:22 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D636FB24-E7D6-7868-BB0B-D2586D5AD72A" name="cod_cliente_unico">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:41:31 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<newElementsIDs>588B6616-762E-8B39-1018-DC8827FA70B9</newElementsIDs>
+</identifier>
+</identifiers>
+</Entity>

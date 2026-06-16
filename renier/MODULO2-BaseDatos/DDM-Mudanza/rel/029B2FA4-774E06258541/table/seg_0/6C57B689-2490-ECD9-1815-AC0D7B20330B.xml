@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C57B689-2490-ECD9-1815-AC0D7B20330B" name="Solicitud">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>C8BEB00A-9E24-9181-3CC4-7057D9EAF3E4</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_solicitud" id="E4D3951F-DEA0-5C53-8EC6-26F72CA583DD">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>47B915D6-C5DD-A19E-D9CC-CBAA5FA52583</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_solicitud" id="7942B157-38E4-50EC-0BCC-9F67294559A4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>0C1134CE-87F9-7252-130F-8DE1B65CBB3F</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_resolucion" id="B9B95C2D-4D89-C676-4869-7262370201C9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>BC1F648F-2531-A62F-3E11-443BFC6D11A0</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resolucion" id="40CA1496-CC51-5FD5-CC61-A86CECCEA2A7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>632967BD-E643-BC33-CDF0-8C8441C3FF12</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_via_codigo_via" id="DB21BB91-AF7A-1914-54DA-C8F447CD5D3C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>7DE8EB42-B0F5-A923-C32B-E381AEA2D4D2</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A006DE4-1E6D-93FA-453D-D0635FA33B99" referredColumn="9E262B18-1957-E2E1-DC25-318BC9EDBC73"/>
+</associations>
+</Column>
+<Column name="Persona_numero" id="A1CBBE75-6E64-6D23-A2C9-653A6932BDF5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>415CB385-7C5A-0952-C6B6-09E2278953DC</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04838237-2F6E-C359-8573-EAB043E7D773" referredColumn="B8A01A95-31D7-B887-414B-C2431759E0C5"/>
+</associations>
+</Column>
+<Column name="Persona_Tipo_documento_codigo" id="9B13DE34-8BB7-E096-8555-5D2E342D5233">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>63C4574A-6818-933A-294A-014AA6344ED6</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04838237-2F6E-C359-8573-EAB043E7D773" referredColumn="5F9B7A76-9255-4204-00EA-4B95FE4A24AF"/>
+</associations>
+</Column>
+<Column name="calle" id="0E5BCE0F-B32D-0909-FB2A-EFDD69F9276C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>AFC23910-F196-FF1A-07F4-ECEB6B3CA4B5</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_postal" id="03C1DE06-2022-7BD6-92E9-CB9281340C6E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>7107317E-BC87-F358-CC5B-CB8C8FBC9258</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Poblacion_id_poblacion" id="B657F861-ABA8-88A4-B030-ED4AEE4FC6BF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>5DC4F36E-F761-A1CC-D706-769F5078799E</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09C2B044-1C41-AF07-6A03-F3A9742BA98C" referredColumn="B4E724C7-149B-CA7C-0A3D-B5506DED02AE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D99D8AD5-8BCE-9B89-BD17-F8C83D579932" name="Solicitud_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>93DDFD75-A650-37ED-72C5-70C74B5DF767</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4D3951F-DEA0-5C53-8EC6-26F72CA583DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3122BF56-9977-EB77-A6D9-7AC83234D053" name="Solicitud_Tipo_via_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>9ADB1CA2-0063-F7D4-000D-DD14AFAA88B6</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB21BB91-AF7A-1914-54DA-C8F447CD5D3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EB61938-A827-E38E-8296-E34E144D5022" name="Solicitud_Poblacion_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>8A616382-B9DC-73CD-B8D6-BAAC4E4D2457</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B657F861-ABA8-88A4-B030-ED4AEE4FC6BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCEE5FE0-3248-FDE8-0FF9-882DC3F8BFE6" name="Solicitud_Persona_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>DEE35F81-8AF8-AAD7-D103-B5311362528B</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1CBBE75-6E64-6D23-A2C9-653A6932BDF5"/>
+<colUsage columnID="9B13DE34-8BB7-E096-8555-5D2E342D5233"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

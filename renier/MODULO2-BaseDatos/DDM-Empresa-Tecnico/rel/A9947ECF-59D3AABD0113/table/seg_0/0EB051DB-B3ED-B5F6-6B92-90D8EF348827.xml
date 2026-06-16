@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EB051DB-B3ED-B5F6-6B92-90D8EF348827" name="proyecto_empresa">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>8A5006A2-063D-20F0-FDD7-C0FF461CCAC8</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="proyecto_cod_proyecto" id="6D70CB44-2928-F2FB-A6F3-62E5575AA5F7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>36D77B2C-F9AF-14F4-F058-9A33CF2EAADD</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5509A510-57EB-CA76-C89D-591E720A8B4D" referredColumn="39C24336-773B-4A01-C159-FAF0BCE0C521"/>
+</associations>
+</Column>
+<Column name="empresa_cod_empresa" id="DEC92089-B17C-DEF7-EC2A-41FB2E0AE04A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>C8BD3EB9-A2AC-67A7-2F6F-357E2F1EB52A</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9977BF78-2AE0-5862-D59D-7EE28E2FD583" referredColumn="1DE99C62-66B1-F6D6-7A87-8980E7FC7F55"/>
+</associations>
+</Column>
+<Column name="cliente_cod_cliente" id="47779091-5BBC-D697-777E-DA3663741838">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>A44F0E9D-1F20-FFD4-751E-3ECB2E340012</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8AE78BC-0BB4-D08F-D958-2906059CCB32" referredColumn="2645B48B-0858-B0D9-971F-36634D1F4BA7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE938336-D4D9-5385-948D-E7C7BE16E670" name="proyecto_empresa_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>19041EC3-A7F6-8CDE-275F-AB113B7ED8B7</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D70CB44-2928-F2FB-A6F3-62E5575AA5F7"/>
+<colUsage columnID="DEC92089-B17C-DEF7-EC2A-41FB2E0AE04A"/>
+<colUsage columnID="47779091-5BBC-D697-777E-DA3663741838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="158B28A7-BE47-C95B-44DE-A8B92614405D" name="proyecto_empresa_empresa_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>13150978-7C5B-666F-F414-63F164771E38</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEC92089-B17C-DEF7-EC2A-41FB2E0AE04A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F82F849B-4FDC-1AAE-926F-BF3EB5217E31" name="proyecto_empresa_cliente_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>8281F259-D423-EFC5-F79A-CD82DA5A5958</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47779091-5BBC-D697-777E-DA3663741838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98FFD5D3-AE69-6AD3-CEDE-7EB45C40F4D5" name="proyecto_empresa_proyecto_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>0B1F1FA4-6618-82D3-E27C-BD0935688F7D</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D70CB44-2928-F2FB-A6F3-62E5575AA5F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

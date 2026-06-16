@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="prestado_solicitud" directorySegmentName="seg_0" id="FC9BFB25-7DF8-B72D-B9F1-3E6CCE57C3F3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 10:56:09 UTC</createdTime>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<engineerTo>
+<item key="029B2FA4-252B-BE89-9DFE-774E06258541" value="true"/>
+</engineerTo>
+<sourcePk>D8663365-43F3-1AF0-B985-D2D3AE8FE0A8</sourcePk>
+<targetPk>93DDFD75-A650-37ED-72C5-70C74B5DF767</targetPk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>8083B30F-B691-2AA5-9C98-BDC708FB9C8F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C8BEB00A-9E24-9181-3CC4-7057D9EAF3E4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

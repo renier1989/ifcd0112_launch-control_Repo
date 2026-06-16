@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A0442141-E83C-B2DC-A05C-7674E41086CB" containerWithKeyObject="DC09178B-5FA6-E9CC-39D3-AD84FB8BF12E" localFKIndex="B1051663-4302-B42C-AB6E-2221B4288438" name="PrestacionServicio_Grua_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-16 10:37:42 UTC</createdTime>
+<generatorID>C5063650-F883-E651-7A95-3175A637AAF2</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<referredTableLongName>Grua</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6DDFE93F-2980-DE0D-D598-B1A78A9B9EC3</referredTableID>
+<keyObject>F1FB316D-1054-3253-4BB2-339792F7C9A7</keyObject>
+<referredKeyID>F1FB316D-1054-3253-4BB2-339792F7C9A7</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_grua</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

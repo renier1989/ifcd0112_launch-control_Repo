@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F1BE8B4-A531-3AA8-7C8A-FA55A661ECF7" name="conocimiento">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>21A24EEB-FEE0-E08F-E17C-313DAE6AF8BE</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_conocimiento" id="A3F27A82-0707-A32C-40AE-117C935A7D1B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>7E45EBAE-DBFB-F814-3D18-ED7BCA725A48</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulo_conocimiento" id="0FE98E52-5173-8278-E784-C9671FCF5845">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>79353DA5-FD9F-BAFA-56EB-271F5A2AD5BC</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="area_conocimiento" id="BBCCE580-F3D2-8CB9-5D3A-8DCF66438E97">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>020DD820-6240-73B6-BCFB-59F092C59BA8</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A1A32BB-CE54-B3C4-ED1B-11909CF6CF9C" name="conocimiento_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>A4CE68E2-84AC-0CCC-6224-B8C3EC5019E7</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3F27A82-0707-A32C-40AE-117C935A7D1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

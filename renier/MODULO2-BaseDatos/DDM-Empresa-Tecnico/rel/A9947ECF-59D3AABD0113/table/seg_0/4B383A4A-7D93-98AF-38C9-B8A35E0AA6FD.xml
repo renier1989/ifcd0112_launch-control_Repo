@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B383A4A-7D93-98AF-38C9-B8A35E0AA6FD" name="proyecto">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>EBD8209F-89E6-380C-D7E0-9945C20F5D1D</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_proyecto" id="39C24336-773B-4A01-C159-FAF0BCE0C521">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>8C913ADE-6DF4-3663-D9B9-FF3BF9A7A3EB</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_proyecto" id="B747F312-031E-7170-6571-4510E2C88AF0">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>E6411441-2FA7-CCC7-6337-03CCA8A105BF</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="11E777DA-3EBC-3B73-FF4F-A5AC4668CF07">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>0FAC92A0-0C42-1750-1FE1-B191BE2525D2</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fin" id="5C9F00D1-ABEF-9DC9-FAD6-B7144C7BC7EC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>18CD1857-0259-8129-C76B-9B30F4787084</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF3CB052-421C-6835-09FE-7940C92DE8A3" name="proyecto_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:55:26 UTC</createdTime>
+<generatorID>4A37DA15-C042-19BD-C58A-61C89CBC48CE</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39C24336-773B-4A01-C159-FAF0BCE0C521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

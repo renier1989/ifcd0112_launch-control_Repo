@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3A006DE4-1E6D-93FA-453D-D0635FA33B99" containerWithKeyObject="6C57B689-2490-ECD9-1815-AC0D7B20330B" localFKIndex="3122BF56-9977-EB77-A6D9-7AC83234D053" name="Solicitud_Tipo_via_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>9ADB1CA2-0063-F7D4-000D-DD14AFAA88B6</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<referredTableLongName>Tipo_via</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B45CAFD0-4D04-555E-BA19-EDA979A5FC94</referredTableID>
+<keyObject>BE7D38AB-A958-D784-49B4-59A2D5768BDB</keyObject>
+<referredKeyID>BE7D38AB-A958-D784-49B4-59A2D5768BDB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>codigo_via</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

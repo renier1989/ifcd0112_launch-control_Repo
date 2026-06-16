@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="poseer" directorySegmentName="seg_0" id="464E1396-C5D3-271C-B2ED-3FEBC9FD28AE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:49:49 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<sourcePk>A4CE68E2-84AC-0CCC-6224-B8C3EC5019E7</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>21A24EEB-FEE0-E08F-E17C-313DAE6AF8BE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>226F8673-930B-8916-BC02-F358E4144F73</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

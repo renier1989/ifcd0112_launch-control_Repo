@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="226F8673-930B-8916-BC02-F358E4144F73" name="habilidade">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:45:23 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="grado" id="93F380B1-46B1-040D-CB6A-42F8460CF609">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:45:40 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_tecnico" id="A0EDE639-D528-F31C-B4C0-74A82494914C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:47:16 UTC</createdTime>
+<generatorID>5354ED58-A78B-667B-8266-B248BA712E45</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>5D60EAC1-3628-8175-B319-08F7E869398C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_empresa" id="69F0B977-AD6F-A6FF-9D03-C1D8A6C0E9DD">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:47:16 UTC</createdTime>
+<generatorID>5354ED58-A78B-667B-8266-B248BA712E45</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>A2C997BC-49DD-7951-6983-69ED6A214061</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_conocimiento" id="ECAC1DDB-C5BA-6FB1-75D1-7EB925B9210F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:50:35 UTC</createdTime>
+<generatorID>464E1396-C5D3-271C-B2ED-3FEBC9FD28AE</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>7E45EBAE-DBFB-F814-3D18-ED7BCA725A48</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6A7FFE6C-3975-58CF-D3BC-656806AD1884" name="habilidade PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:47:40 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0EDE639-D528-F31C-B4C0-74A82494914C</attributeRef>
+<attributeRef>69F0B977-AD6F-A6FF-9D03-C1D8A6C0E9DD</attributeRef>
+<attributeRef>ECAC1DDB-C5BA-6FB1-75D1-7EB925B9210F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A869607C-E924-2A5A-D709-B3BEEE2D032E" name="Participacion">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>4F15CE12-3CC5-5C6C-9E0A-11058FD34D60</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Persona_numero" id="F4271116-9DFC-1B08-29DA-9A7EEFC3FBA2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>46341142-DE3B-4DE9-46DE-BE80FC5B0B7C</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73A2B320-6333-AD35-4442-D1B0A000DCDD" referredColumn="B8A01A95-31D7-B887-414B-C2431759E0C5"/>
+</associations>
+</Column>
+<Column name="PrestacionServicio_Solicitud_cod_solicitud" id="D2730037-A149-E8A3-8CD3-253EF3E46118">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>CEB2C718-9E57-2EFB-FA75-D49F8D933365</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C603A3D-7B23-5778-24D0-ED8402956080" referredColumn="C444BB64-D215-D458-5B41-0D223AB7F3E0"/>
+</associations>
+</Column>
+<Column name="Persona_Tipo_documento_codigo" id="849C4E6A-279E-CCFD-C16F-289453A247CE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>50982C28-1BCC-DD83-AD5E-4D6A772A3C59</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73A2B320-6333-AD35-4442-D1B0A000DCDD" referredColumn="5F9B7A76-9255-4204-00EA-4B95FE4A24AF"/>
+</associations>
+</Column>
+<Column name="PrestacionServicio_Persona_numero" id="AA6F4508-48F5-F910-1DBE-05155C89E765">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>1C52E551-E468-35FA-77E2-2E2EFCEE689B</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C603A3D-7B23-5778-24D0-ED8402956080" referredColumn="D5193CAC-9A39-A263-A961-80F777F37187"/>
+</associations>
+</Column>
+<Column name="PrestacionServicio_Persona_Tipo_documento_codigo" id="5C421AA7-0E16-3857-B058-112B6BE1E0EE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>D5E095B2-7BA7-4D5D-C8D8-57B852BD35FF</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C603A3D-7B23-5778-24D0-ED8402956080" referredColumn="095F3498-D1EA-1BA6-516F-0D06BEF20382"/>
+</associations>
+</Column>
+<Column name="Especialidad_cod_especialidad" id="9541F685-C04A-AD72-05ED-04852FE98924">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>847B62B9-799B-F759-82C6-BA23E316A09C</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49224EA1-2B45-C20B-8C9A-C3A6DE3011B8" referredColumn="3D506064-6E66-1CBF-1A22-66B8D8F3D85D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5091BFF-6817-1C57-12DE-B3A9B3551D35" name="Participacion_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>A969A580-D486-D81B-D370-552D180F1027</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4271116-9DFC-1B08-29DA-9A7EEFC3FBA2"/>
+<colUsage columnID="849C4E6A-279E-CCFD-C16F-289453A247CE"/>
+<colUsage columnID="D2730037-A149-E8A3-8CD3-253EF3E46118"/>
+<colUsage columnID="AA6F4508-48F5-F910-1DBE-05155C89E765"/>
+<colUsage columnID="5C421AA7-0E16-3857-B058-112B6BE1E0EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F432D7C-65F6-767B-B10F-07D4E5AF9EA9" name="Participacion_Persona_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>796D8A2D-5323-471B-AF2B-C29A47F21606</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4271116-9DFC-1B08-29DA-9A7EEFC3FBA2"/>
+<colUsage columnID="849C4E6A-279E-CCFD-C16F-289453A247CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A659222-6671-6035-E040-1CEF404E99D9" name="Participacion_Especialidad_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-15 11:41:24 UTC</createdTime>
+<generatorID>5F70692D-C18D-120B-4471-82805BBEAD7A</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9541F685-C04A-AD72-05ED-04852FE98924"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2AF8DB6-1BE5-9B7A-4DD9-75A888028A3A" name="Participacion_PrestacionServicio_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-16 10:37:42 UTC</createdTime>
+<generatorID>8F7FC411-F6F8-B52E-DF0A-20B27AD6245D</generatorID>
+<ownerDesignName>DDM-Mudanza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2730037-A149-E8A3-8CD3-253EF3E46118"/>
+<colUsage columnID="AA6F4508-48F5-F910-1DBE-05155C89E765"/>
+<colUsage columnID="5C421AA7-0E16-3857-B058-112B6BE1E0EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

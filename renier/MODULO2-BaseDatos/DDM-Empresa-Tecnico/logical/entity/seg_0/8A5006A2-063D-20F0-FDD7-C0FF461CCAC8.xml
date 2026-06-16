@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A5006A2-063D-20F0-FDD7-C0FF461CCAC8" name="proyecto_empresa">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:52:16 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_proyecto" id="36D77B2C-F9AF-14F4-F058-9A33CF2EAADD">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:53:58 UTC</createdTime>
+<generatorID>0B1F1FA4-6618-82D3-E27C-BD0935688F7D</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>8C913ADE-6DF4-3663-D9B9-FF3BF9A7A3EB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_empresa" id="C8BD3EB9-A2AC-67A7-2F6F-357E2F1EB52A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:54:06 UTC</createdTime>
+<generatorID>13150978-7C5B-666F-F414-63F164771E38</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>6DE639B5-02E9-013B-A444-28B5776497F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_cliente" id="A44F0E9D-1F20-FFD4-751E-3ECB2E340012">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:54:12 UTC</createdTime>
+<generatorID>8281F259-D423-EFC5-F79A-CD82DA5A5958</generatorID>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<referedAttribute>23F4A291-7C59-48CC-C14D-C63F4FA754B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="19041EC3-A7F6-8CDE-275F-AB113B7ED8B7" name="proyecto_empresa PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-11 11:54:00 UTC</createdTime>
+<ownerDesignName>DDM-Empresa-Tecnico</ownerDesignName>
+<engineerTo>
+<item key="A9947ECF-E096-1362-50F3-59D3AABD0113" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36D77B2C-F9AF-14F4-F058-9A33CF2EAADD</attributeRef>
+<attributeRef>C8BD3EB9-A2AC-67A7-2F6F-357E2F1EB52A</attributeRef>
+<attributeRef>A44F0E9D-1F20-FFD4-751E-3ECB2E340012</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

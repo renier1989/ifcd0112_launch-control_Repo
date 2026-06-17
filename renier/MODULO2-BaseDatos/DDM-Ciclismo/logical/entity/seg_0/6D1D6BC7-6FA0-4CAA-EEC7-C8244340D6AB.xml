@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6D1D6BC7-6FA0-4CAA-EEC7-C8244340D6AB" name="PAIS">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:19:37 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pais" id="A1D6DBD8-F6DD-F802-E742-651E5EF0F85B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:19:46 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_pais" id="045ED47E-8629-3023-CF70-BFA5AF1287F7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:20:01 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DABE5AD2-14FD-6567-B054-61869C470326" name="PAIS PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:19:59 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1D6DBD8-F6DD-F802-E742-651E5EF0F85B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33F33678-BADA-F0AE-B16D-7549B905AFD9" name="COMPETICION">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:20:44 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_competicion" id="C63D375D-1743-7829-8283-052B4879F787">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:20:51 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ED65C54B-0BAC-EFB7-399B-58F09CA58AE7" name="COMPETICION PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:20:58 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C63D375D-1743-7829-8283-052B4879F787</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

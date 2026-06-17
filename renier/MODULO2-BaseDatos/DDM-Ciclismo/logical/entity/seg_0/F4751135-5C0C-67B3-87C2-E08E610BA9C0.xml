@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4751135-5C0C-67B3-87C2-E08E610BA9C0" name="TIPO_ETAPA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:26:37 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipo_etapa" id="75615151-B804-9F1F-F131-BF6767A1AC35">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:26:43 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_tipo_etapa" id="FB2D69E6-85A7-D150-7781-9506C2450D34">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:27:09 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="911E3F7A-FA64-7D82-1211-6CE75F0C3E94" name="TIPO_ETAPA PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:27:03 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>75615151-B804-9F1F-F131-BF6767A1AC35</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

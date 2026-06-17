@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1BD6131-57D8-A08E-0B67-C1F695B9ACA1" name="ETAPA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:23:24 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero_etapa" id="731575FC-0A1D-88CA-49DC-80251DC60E91">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:23:43 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="66F945C9-D608-C2BF-6CBA-97EF83528D06">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:24:18 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="longitud_kilometros" id="595302C8-61E4-40F9-62DB-ED118816019B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:24:49 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tiempo_maximo" id="201D27B3-19F9-3C8B-C7CE-BB394FF0D520">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:35:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[es un valor predeterminado que se le establece a la etapa para  ser cumplida]]></commentInRDBMS>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B2CD9335-C115-9DCD-56FA-E2EB20EEA034" name="ETAPA PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:23:55 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>731575FC-0A1D-88CA-49DC-80251DC60E91</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

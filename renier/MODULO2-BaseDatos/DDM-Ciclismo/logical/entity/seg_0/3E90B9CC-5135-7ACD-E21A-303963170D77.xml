@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E90B9CC-5135-7ACD-E21A-303963170D77" name="PARTICIPACION_PUERTO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:54:06 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tiempo_empleado" id="AE1DB6FB-E430-312F-AC6A-E177AEC49938">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:54:22 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tiempo_excedido" id="D0CFF8F6-FDBC-3C5C-80AD-13A2132C2D1A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-17 11:54:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[aqui se registra la participacion de los corredores en un puerto
+]]></commentInRDBMS>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

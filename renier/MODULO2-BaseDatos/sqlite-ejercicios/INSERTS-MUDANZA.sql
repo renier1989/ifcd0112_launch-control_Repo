@@ -100,3 +100,42 @@ INSERT INTO Persona (Tipo_documento_codigo,numero,direccion,codigo_postal,Tipo_v
 		VALUES (1,'F-123123123','Calle principal de Moncloa','27615',2,1 , 'Paquito','Perez','Martinez',1,1),
 				(1,'F-675948234','Avenida de las americas 123','28761',1,1 , 'Alejandro','Gonzales','Casas',2,2),
 				(2,'Z-12312312-C','Calle de alcala 4A','28765',3,1 , 'MARIA','Fernandez','Olgin',3,3);
+				
+
+-- PERSONA, PARA CLIENTES
+INSERT INTO Persona (Tipo_documento_codigo,numero,direccion,codigo_postal,Tipo_via_codigo_via,Poblacion_id_poblacion,
+						nombre, apellido_pat,apellido_mat,cod_cliente)
+		VALUES (1,'C-43223123','Nuñez de balboa 1,1A','27611',2,1 , 'Fernando','Gutierrez','Maldonado',1),
+				(1,'H-57849233','Calle alacla de Henares 8B','28763',1,1 , 'Ana','Valera',NULL,2),
+				(2,'Z-4948594-C','Avenida Principal de Soria','30765',3,3 , 'Alejandra','de Arco','Soza',3);
+
+
+-- Contratacion
+INSERT INTO Contratacion 
+VALUES ('2026-01-01 00:00:00',NULL,'B-54545632','F-123123123',4,1),
+		('2026-03-01 00:00:00','2026-08-01 00:00:00','B-54545632','F-675948234',4,1),
+		('2026-06-01 00:00:00',NULL,'B-54734523','Z-12312312-C',4,2);
+		
+
+-- Telefono
+INSERT INTO Telefono VALUES 
+		(636456123, 1,'C-43223123',1),
+		(698745123, 2,'H-57849233',1),
+		(652632852, 2,'Z-4948594-C',2),
+		(963852741, 1,'F-123123123',1),
+		(951753159, 1,'F-675948234',1),
+		(684123852, 1,'Z-12312312-C',2),
+		(985963236, 1,'B-54545632',4),
+		(984752125, 1,'B-54734523',4);
+			
+
+-- Solicitud
+INSERT INTO Solicitud VALUES 
+		(1,'2026-01-02 12:20:25',NULL,NULL,1,'C-43223123',1,'Nuñez de balboa 1,1A','27611',1),
+		(2,'2026-03-11 08:44:32','2026-03-15 15:43:20','ENTREGADO EN LA TIENDA DE RECOJO ASIGNADA',3,'Z-4948594-C',2,'Avenida Principal de Soria','30765',3);
+
+
+-- PrestacionServicio
+INSERT INTO PrestacionServicio (Solicitud_cod_solicitud, Persona_Tipo_documento_codigo,Persona_numero,Servicio_Servicio_ID)
+VALUES 
+		(1,4,'B-54545632',1);

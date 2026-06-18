@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A28F0B76-ED2E-F8E6-D3DC-F0E5936922AE" containerWithKeyObject="46E19855-66CB-79DB-D567-EBF6C262D2E2" localFKIndex="19797273-96B8-CAB3-F0F5-D0AB6A64AA25" name="PARTICIPACION_PUERTO_PUERTOS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>D4283BEC-2841-C3B5-CDAC-AE29DDC7AA9D</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<referredTableLongName>PUERTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ADC736FE-735D-F7B0-0987-B54E45B4CD57</referredTableID>
+<keyObject>FCC5A72E-5E2D-22F7-6FEE-81FEA290DABC</keyObject>
+<referredKeyID>FCC5A72E-5E2D-22F7-6FEE-81FEA290DABC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_puerto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

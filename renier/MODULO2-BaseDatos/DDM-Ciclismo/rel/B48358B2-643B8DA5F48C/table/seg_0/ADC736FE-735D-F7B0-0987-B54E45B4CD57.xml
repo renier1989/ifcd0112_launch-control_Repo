@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADC736FE-735D-F7B0-0987-B54E45B4CD57" name="PUERTOS">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>0353AC8E-A83C-1A11-0166-273C6846C8BA</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_puerto" id="CB7A58E3-A387-92B2-8D04-E6B8EA726DF5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>F3ED75EF-F1B0-CE7A-7FD7-E2E189BBA572</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_puerto" id="F5B39BC4-5ECA-FDE7-6F3A-1E0BB8FC56CF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>0EE672EA-960F-8EB5-0C13-624B922C60A8</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="puntuacion" id="34754333-0A47-799E-0175-0BB8BCE033FC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[esto almacena la puntuacion total que tendra este puerto y se asignara a los corredores que particapen.]]></commentInRDBMS>
+<generatorID>B3A11526-558D-0D9E-4413-4995A7CE2D55</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FCC5A72E-5E2D-22F7-6FEE-81FEA290DABC" name="PUERTOS_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>4CB1DE41-503B-95A3-774D-EF6C3AFD7B83</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB7A58E3-A387-92B2-8D04-E6B8EA726DF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

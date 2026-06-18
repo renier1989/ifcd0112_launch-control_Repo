@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3803187D-0136-668B-F179-FC33D6C1C926" containerWithKeyObject="6786965D-C273-1E0C-5F03-1CAE1FA88AF6" localFKIndex="AF469FA7-16C6-1D63-89AE-BC01436F1BA9" name="EQUIPO_DIRECTOR_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>50995454-C4A1-F3D4-2F0B-039F93030D9D</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<referredTableLongName>DIRECTOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>48A0EE94-980F-DFC0-ED76-CCE546474509</referredTableID>
+<keyObject>E069D15E-3C57-0825-018D-7C6F27310C43</keyObject>
+<referredKeyID>E069D15E-3C57-0825-018D-7C6F27310C43</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nombre_directo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -11,7 +11,6 @@
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
 <growthPercent>0</growthPercent>
 <growthType>Year</growthType>
-<hierarchicalParent>95C64242-444A-F5AD-3AB2-A2FA82ABB7BE</hierarchicalParent>
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
@@ -28,16 +27,73 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="1F571EB3-C825-3225-4D93-F594A617F025" name="numero_dorsal_unique">
+<Attribute name="id_equipo" id="DB217DB7-590F-E1B0-A19D-CA88793CA0AB">
 <createdBy>manana</createdBy>
-<createdTime>2026-06-17 11:17:54 UTC</createdTime>
+<createdTime>2026-06-18 07:50:52 UTC</createdTime>
+<generatorID>9B07D2A7-9998-225C-D1B2-08AE85A0DE46</generatorID>
 <ownerDesignName>DDM-Ciclismo</ownerDesignName>
 <engineerTo>
 <item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
 </engineerTo>
-<newElementsIDs>73327F80-1ED3-8F3D-9CD6-166760D4E3FF</newElementsIDs>
+<referedAttribute>EA407B75-3AEE-1584-73B2-771F2AF90F40</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_corredor" id="69113514-6963-A059-1D24-4E322FE37640">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:01:45 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="puntos_totales" id="04645A79-3E02-A37D-77F2-5B38A3799FF0">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:27:32 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="00321702-343D-B4BC-43BB-784FD703B67F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:30:29 UTC</createdTime>
+<generatorID>2CAE2FAE-B025-6D52-CDFF-4FD046A7CC26</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>A1D6DBD8-F6DD-F802-E742-651E5EF0F85B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="34ABD547-71D4-F730-E856-6C727083C592" name="CORREDOR PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 07:52:32 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>73327F80-1ED3-8F3D-9CD6-166760D4E3FF</attributeRef>
+</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

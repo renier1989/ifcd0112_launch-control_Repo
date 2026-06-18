@@ -27,11 +27,23 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tiempo_excedido" id="D0CFF8F6-FDBC-3C5C-80AD-13A2132C2D1A">
+<Attribute name="numero_dorsal" id="ECC5CACD-0BCF-6E34-509E-66B9E84BB2E3">
 <createdBy>manana</createdBy>
-<createdTime>2026-06-17 11:54:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[aqui se registra la participacion de los corredores en un puerto
-]]></commentInRDBMS>
+<createdTime>2026-06-18 08:59:57 UTC</createdTime>
+<generatorID>DAEB29F7-487E-238E-7CAE-A66F29AF7BFC</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>73327F80-1ED3-8F3D-9CD6-166760D4E3FF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="orden" id="55F616BC-D9D8-520B-F5E8-810C4250B4B8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:39:37 UTC</createdTime>
 <ownerDesignName>DDM-Ciclismo</ownerDesignName>
 <engineerTo>
 <item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
@@ -39,8 +51,37 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_puerto" id="AE54EEA5-F60D-2A09-E172-6858D5AE5C1E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:00:41 UTC</createdTime>
+<generatorID>D4283BEC-2841-C3B5-CDAC-AE29DDC7AA9D</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>F3ED75EF-F1B0-CE7A-7FD7-E2E189BBA572</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B960BF99-E6FC-79C6-B84B-F444EB8B7E0A" name="PARTICIPACION_PUERTO PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:00:50 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AE54EEA5-F60D-2A09-E172-6858D5AE5C1E</attributeRef>
+<attributeRef>ECC5CACD-0BCF-6E34-509E-66B9E84BB2E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -40,6 +40,20 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_puerto" id="161AA24E-8B57-6A63-5F07-844CCDB88111">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:01:30 UTC</createdTime>
+<generatorID>3375E5DC-661C-833A-AD9A-46ED1E09D38E</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>F3ED75EF-F1B0-CE7A-7FD7-E2E189BBA572</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="19B1AAE6-5FE3-7C1A-2FD3-C4166C62D9F7" name="TIPO_PUERTO PK">

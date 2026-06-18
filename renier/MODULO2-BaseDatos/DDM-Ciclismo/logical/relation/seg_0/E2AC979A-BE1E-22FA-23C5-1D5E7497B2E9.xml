@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ciudad_origen" directorySegmentName="seg_0" id="E2AC979A-BE1E-22FA-23C5-1D5E7497B2E9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 07:46:54 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<sourcePk>02219167-A462-04D5-86B3-D03665A37FBE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>812CA0BE-FDAF-8F35-6207-9DC02B1E4B28</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F1BD6131-57D8-A08E-0B67-C1F695B9ACA1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

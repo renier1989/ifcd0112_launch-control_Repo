@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8B536C4-8EF3-2BE9-3208-409A0494D269" name="TIPO_ETAPA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>F4751135-5C0C-67B3-87C2-E08E610BA9C0</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_etapa" id="C03297CD-80F5-F25A-4DEF-B011D8B805FC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>75615151-B804-9F1F-F131-BF6767A1AC35</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_tipo_etapa" id="55D6F088-1FF9-430A-DDC8-C97B4E2458C9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>FB2D69E6-85A7-D150-7781-9506C2450D34</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="615C7689-1DDF-FF9C-C9F8-DBCD47033AA7" name="TIPO_ETAPA_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>911E3F7A-FA64-7D82-1211-6CE75F0C3E94</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C03297CD-80F5-F25A-4DEF-B011D8B805FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

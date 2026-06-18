@@ -64,6 +64,62 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_ciudad_origen" id="85233330-9BC6-5192-026A-7F9DACB91CC7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 07:46:54 UTC</createdTime>
+<generatorID>E2AC979A-BE1E-22FA-23C5-1D5E7497B2E9</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>010E98C9-BEF8-97F9-A07D-E39D88C2CE9E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ciudad_destino" id="B3719C25-C78F-1580-25CB-C64D42E25681">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 07:47:03 UTC</createdTime>
+<generatorID>D9FAC9D8-BA42-7517-3FB9-1040FF5304F1</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>010E98C9-BEF8-97F9-A07D-E39D88C2CE9E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_competicion" id="769C9581-00C0-A96E-1A12-3C6BFBFAA5C9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:19:55 UTC</createdTime>
+<generatorID>1A6FFAA5-D465-90E1-40E4-1939D56B62E2</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>C63D375D-1743-7829-8283-052B4879F787</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tipo_etapa" id="C5B9C6F2-D22D-3D06-C5EA-1659CE87DE36">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:22:18 UTC</createdTime>
+<generatorID>8CBE0624-A87F-B9D0-6859-A630E91D9F54</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>75615151-B804-9F1F-F131-BF6767A1AC35</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B2CD9335-C115-9DCD-56FA-E2EB20EEA034" name="ETAPA PK">

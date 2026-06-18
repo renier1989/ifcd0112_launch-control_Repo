@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4ADECA6-BFB1-A8E4-AD8F-A329C7CB79FA" name="COMPETICION">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>33F33678-BADA-F0AE-B16D-7549B905AFD9</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_competicion" id="936A364A-10F5-28E9-7A38-787C60F9C801">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>C63D375D-1743-7829-8283-052B4879F787</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_competicion" id="8F743143-471E-EA39-048D-06B8D4E931DE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>8CB5786E-D4BC-99D1-B14E-33A5FCB24128</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04B9AC7E-76AE-E859-EE5E-BE944D123897" name="COMPETICION_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>ED65C54B-0BAC-EFB7-399B-58F09CA58AE7</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="936A364A-10F5-28E9-7A38-787C60F9C801"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

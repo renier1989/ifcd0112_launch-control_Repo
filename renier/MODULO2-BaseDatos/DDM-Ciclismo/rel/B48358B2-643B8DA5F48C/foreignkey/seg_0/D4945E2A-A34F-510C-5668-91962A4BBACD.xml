@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D4945E2A-A34F-510C-5668-91962A4BBACD" containerWithKeyObject="254AED1E-F682-BDFA-A086-8F9A8BCAEBC6" localFKIndex="AB13A73A-3A9E-8B76-FB90-0E60A92F112A" name="CORREDOR_PAIS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>2CAE2FAE-B025-6D52-CDFF-4FD046A7CC26</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<referredTableLongName>PAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DE835AF9-1734-CC8E-6742-D401A1988CDC</referredTableID>
+<keyObject>6634AF3B-C80C-297A-2880-3E6473441D2B</keyObject>
+<referredKeyID>6634AF3B-C80C-297A-2880-3E6473441D2B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pais</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B63A9660-2E4C-AA39-4A27-B55E499401C0" containerWithKeyObject="6EC7DB70-3D73-5AC0-C71E-F2B4F6FFEB2E" localFKIndex="9F2D3E77-3BBD-7CCD-65DF-7CACFDD49E8B" name="ETAPA_TIPO_ETAPA_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>8CBE0624-A87F-B9D0-6859-A630E91D9F54</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<referredTableLongName>TIPO_ETAPA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E8B536C4-8EF3-2BE9-3208-409A0494D269</referredTableID>
+<keyObject>615C7689-1DDF-FF9C-C9F8-DBCD47033AA7</keyObject>
+<referredKeyID>615C7689-1DDF-FF9C-C9F8-DBCD47033AA7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_etapa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -40,7 +40,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="numero" id="E76B250E-2C8D-AA4D-4A79-FD72F143CBDD">
+<Attribute name="numero_empresa" id="E76B250E-2C8D-AA4D-4A79-FD72F143CBDD">
 <createdBy>manana</createdBy>
 <createdTime>2026-06-15 11:03:18 UTC</createdTime>
 <generatorID>7567CCCF-C68F-A42B-7C65-261B4F8811CA</generatorID>
@@ -54,7 +54,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="numero1" id="201E1237-C935-A989-7399-0FABAD16D14D">
+<Attribute name="numero_empleado" id="201E1237-C935-A989-7399-0FABAD16D14D">
 <createdBy>manana</createdBy>
 <createdTime>2026-06-15 11:03:30 UTC</createdTime>
 <generatorID>4799C42F-9225-0856-C99E-0E0C6F97BF2A</generatorID>

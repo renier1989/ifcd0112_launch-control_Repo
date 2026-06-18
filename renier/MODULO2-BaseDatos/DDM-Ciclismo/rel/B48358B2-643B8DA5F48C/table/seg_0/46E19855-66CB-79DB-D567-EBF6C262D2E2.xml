@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46E19855-66CB-79DB-D567-EBF6C262D2E2" name="PARTICIPACION_PUERTO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>3E90B9CC-5135-7ACD-E21A-303963170D77</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tiempo_empleado" id="31354BC3-A3C9-A177-6C59-56BA618F2084">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>AE1DB6FB-E430-312F-AC6A-E177AEC49938</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_dorsal" id="CCC70B5D-7D0D-256E-243D-FF5B8C4A89D8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>ECC5CACD-0BCF-6E34-509E-66B9E84BB2E3</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orden" id="22B45138-452E-C45D-8E11-31F1F9C2BB3E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>55F616BC-D9D8-520B-F5E8-810C4250B4B8</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PUERTOS_id_puerto" id="94457ACB-0B50-C528-E0A5-C24BCF0D58C3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>AE54EEA5-F60D-2A09-E172-6858D5AE5C1E</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A28F0B76-ED2E-F8E6-D3DC-F0E5936922AE" referredColumn="CB7A58E3-A387-92B2-8D04-E6B8EA726DF5"/>
+</associations>
+</Column>
+<Column name="PARTICIPACION_CORREDOR_numero_dorsal" id="ED8B1899-C77E-0FD7-E7B8-2278941679BC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 10:04:24 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="064C56DB-F594-B3DB-3392-C8BA024F9491" referredColumn="CE78326D-592E-F902-EB93-40FA889F1F9A"/>
+</associations>
+</Column>
+<Column name="PARTICIPACION_ETAPA_numero_etapa" id="2BE41261-BA84-260C-5B2E-5CD8D48D0D5B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 10:04:24 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="064C56DB-F594-B3DB-3392-C8BA024F9491" referredColumn="F08CFA78-0509-1045-F21A-BB1C97F970FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE0A206B-842E-6C07-BC63-2D78F8BC27D4" name="PARTICIPACION_PUERTO_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>B960BF99-E6FC-79C6-B84B-F444EB8B7E0A</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94457ACB-0B50-C528-E0A5-C24BCF0D58C3"/>
+<colUsage columnID="CCC70B5D-7D0D-256E-243D-FF5B8C4A89D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCAD2ECC-9D60-6E87-F491-43F8AA8E28BA" name="PARTICIPACION_PUERTO_PARTICIPACION_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>DAEB29F7-487E-238E-7CAE-A66F29AF7BFC</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED8B1899-C77E-0FD7-E7B8-2278941679BC"/>
+<colUsage columnID="2BE41261-BA84-260C-5B2E-5CD8D48D0D5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19797273-96B8-CAB3-F0F5-D0AB6A64AA25" name="PARTICIPACION_PUERTO_PUERTOS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>D4283BEC-2841-C3B5-CDAC-AE29DDC7AA9D</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94457ACB-0B50-C528-E0A5-C24BCF0D58C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

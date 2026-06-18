@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="507FAA74-B98C-D755-E92D-BF7BAF41020B" name="TIPO_PUERTO">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>AD877732-B31A-C3A6-787F-A76ADBF62A87</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_puerto" id="7DFBC1C2-9D85-A323-5C28-4E602AE6A95C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>E73587F8-A734-C8C4-B989-F8FBF7D75BF2</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_tipo_puerto" id="58D73A41-7757-8130-D3D1-F5EF7991DA4D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>75FD11C3-9770-723A-75BD-8DE376BF85AB</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PUERTOS_id_puerto" id="CFEF9269-3822-FBB5-8AFD-5D06992B61A0">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>161AA24E-8B57-6A63-5F07-844CCDB88111</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="745E8638-AFB9-54A8-A6CF-F54A7C1FF008" referredColumn="CB7A58E3-A387-92B2-8D04-E6B8EA726DF5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2D62D14-389D-192A-A380-9F64B4E67D8B" name="TIPO_PUERTO_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>19B1AAE6-5FE3-7C1A-2FD3-C4166C62D9F7</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DFBC1C2-9D85-A323-5C28-4E602AE6A95C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0A96431-8BC9-54B8-48FB-2ED8AAE837E6" name="TIPO_PUERTO_PUERTOS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>3375E5DC-661C-833A-AD9A-46ED1E09D38E</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFEF9269-3822-FBB5-8AFD-5D06992B61A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

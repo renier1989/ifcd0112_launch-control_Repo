@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="corredor_puerto" directorySegmentName="seg_0" id="DAEB29F7-487E-238E-7CAE-A66F29AF7BFC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:59:57 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<sourcePk>34ABD547-71D4-F730-E856-6C727083C592</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ACB39733-E164-76D9-0A70-607D0EF84B1F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E90B9CC-5135-7ACD-E21A-303963170D77</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -15,18 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_patrocinador" id="B7C3C477-279A-C2A1-1CCB-A80DE62EEECA">
-<createdBy>manana</createdBy>
-<createdTime>2026-06-17 11:22:25 UTC</createdTime>
-<ownerDesignName>DDM-Ciclismo</ownerDesignName>
-<engineerTo>
-<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="nombre_patrocinador" id="7E1A737A-411D-84A8-8521-19EBC56B6C0F">
 <createdBy>manana</createdBy>
 <createdTime>2026-06-17 11:22:34 UTC</createdTime>
@@ -51,7 +39,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>B7C3C477-279A-C2A1-1CCB-A80DE62EEECA</attributeRef>
+<attributeRef>7E1A737A-411D-84A8-8521-19EBC56B6C0F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

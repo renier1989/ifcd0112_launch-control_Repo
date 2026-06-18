@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="patrocinar" directorySegmentName="seg_0" id="1C343713-4EAE-0F4A-2D74-FF6BA5EFEA8F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 07:58:28 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<sourcePk>FF245BE3-C303-68D2-01A1-7A78ADD880F7</sourcePk>
+<targetPk>57758F0D-A9B4-0610-AECC-C3467ABCF593</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>97622644-3484-1680-BC8C-A19C8196622A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>07D69D07-5673-CCCD-8B11-41A792552052</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

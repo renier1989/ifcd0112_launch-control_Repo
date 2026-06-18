@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA4EFD08-9315-7AA4-A820-D86E79F906A6" name="PARTICIPACION">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>ACB39733-E164-76D9-0A70-607D0EF84B1F</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tiempo_empleado" id="46DADED7-BCB2-7B11-15BE-F3D53374A689">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[se almacena la participancion de cada etapa del corredor y el tiempo usado]]></commentInRDBMS>
+<generatorID>7594680C-3BC5-D682-73E7-5B5D1D57A4E6</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREDOR_numero_dorsal" id="CE78326D-592E-F902-EB93-40FA889F1F9A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>B8BADAE9-F56B-F04A-C942-5C7392366D39</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86032272-42E7-3694-FCD4-8D903090F470" referredColumn="4C86370F-1937-2A1F-CA80-07D756D640B7"/>
+</associations>
+</Column>
+<Column name="ETAPA_numero_etapa" id="F08CFA78-0509-1045-F21A-BB1C97F970FC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>F380FCEE-400B-EBDF-382A-5DAC94B947C3</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="196B4AEA-9FF0-54D1-4543-396A9C2C21FE" referredColumn="95695CA0-71FB-DB65-034D-F484BBB91FD7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE0BE9FB-7CD8-5310-DF11-9313392433AD" name="PARTICIPACION_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>FADB5F6C-CF88-6456-1C03-E0169A99FEA2</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE78326D-592E-F902-EB93-40FA889F1F9A"/>
+<colUsage columnID="F08CFA78-0509-1045-F21A-BB1C97F970FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68FA1F4F-8E55-457A-5601-0DC49D97EDA7" name="PARTICIPACION_CORREDOR_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>8572E14E-0E7F-A31F-9A8D-959F9D05930B</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE78326D-592E-F902-EB93-40FA889F1F9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1431B01-12E1-64FA-19D6-B6FC5BD7C65C" name="PARTICIPACION_ETAPA_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>A5411A0D-5CDD-5DAF-E657-E0DC2E8069FF</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F08CFA78-0509-1045-F21A-BB1C97F970FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

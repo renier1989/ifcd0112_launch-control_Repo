@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="254AED1E-F682-BDFA-A086-8F9A8BCAEBC6" name="CORREDOR">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>0C707863-0646-13B9-FA5E-BE8870435890</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero_dorsal" id="4C86370F-1937-2A1F-CA80-07D756D640B7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>73327F80-1ED3-8F3D-9CD6-166760D4E3FF</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EQUIPO_id_equipo" id="F452754C-5028-748C-E208-E400F0E0B35C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>DB217DB7-590F-E1B0-A19D-CA88793CA0AB</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AF8CA21-AA0D-FC38-58B6-E0A74731DF71" referredColumn="6424473B-14B3-020D-44E5-AB4765C76A47"/>
+</associations>
+</Column>
+<Column name="nombre_corredor" id="D19F0C23-D8EC-8E01-9A98-87DF928829F2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>69113514-6963-A059-1D24-4E322FE37640</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="puntos_totales" id="A1314AB6-CBEA-BDAB-FA08-30BAFCCB7C95">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>04645A79-3E02-A37D-77F2-5B38A3799FF0</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS_id_pais" id="0DCD2A57-5CBF-1716-88AC-13B35086E18B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>00321702-343D-B4BC-43BB-784FD703B67F</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4945E2A-A34F-510C-5668-91962A4BBACD" referredColumn="8357D5F2-C4B4-0C88-9FB8-C92E43151AEB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22E5D4A3-C823-4B24-D7BD-F4F752762DC2" name="CORREDOR_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>34ABD547-71D4-F730-E856-6C727083C592</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C86370F-1937-2A1F-CA80-07D756D640B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24D6C59E-0AB0-F687-9C91-9726618AA365" name="CORREDOR_EQUIPO_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>9B07D2A7-9998-225C-D1B2-08AE85A0DE46</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F452754C-5028-748C-E208-E400F0E0B35C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB13A73A-3A9E-8B76-FB90-0E60A92F112A" name="CORREDOR_PAIS_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 09:41:11 UTC</createdTime>
+<generatorID>2CAE2FAE-B025-6D52-CDFF-4FD046A7CC26</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DCD2A57-5CBF-1716-88AC-13B35086E18B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

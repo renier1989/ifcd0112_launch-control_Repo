@@ -27,6 +27,50 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="nombre_directo" id="8DFC3A0A-5679-BA6E-9F5B-0609338B3378">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 07:56:59 UTC</createdTime>
+<generatorID>50995454-C4A1-F3D4-2F0B-039F93030D9D</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>C083F5B7-9633-EDF2-AC8A-3FBDA0F48986</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_patrocinador" id="3FB41B09-71A0-22B9-F989-F64D957A6698">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 07:59:15 UTC</createdTime>
+<generatorID>1C343713-4EAE-0F4A-2D74-FF6BA5EFEA8F</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>7E1A737A-411D-84A8-8521-19EBC56B6C0F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="74943FB5-B026-0E02-2764-92D8A84BDA89">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:16:34 UTC</createdTime>
+<generatorID>10E36CCD-F02F-650F-75AD-C5308AAA930F</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>A1D6DBD8-F6DD-F802-E742-651E5EF0F85B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="FF245BE3-C303-68D2-01A1-7A78ADD880F7" name="EQUIPO PK">

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="participacion_etapa" directorySegmentName="seg_0" id="A5411A0D-5CDD-5DAF-E657-E0DC2E8069FF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:25:33 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<sourcePk>B2CD9335-C115-9DCD-56FA-E2EB20EEA034</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F1BD6131-57D8-A08E-0B67-C1F695B9ACA1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ACB39733-E164-76D9-0A70-607D0EF84B1F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

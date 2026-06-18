@@ -23,25 +23,53 @@
 <engineerTo>
 <item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tiempo_excedido" id="0CDF26BB-E14C-1F05-F878-816873043BB1">
+<Attribute name="numero_dorsal" id="B8BADAE9-F56B-F04A-C942-5C7392366D39">
 <createdBy>manana</createdBy>
-<createdTime>2026-06-17 11:37:45 UTC</createdTime>
-<commentInRDBMS><![CDATA[aqui se almacena el tiempo que uso adicional el corredor si fuera el caso]]></commentInRDBMS>
+<createdTime>2026-06-18 08:25:01 UTC</createdTime>
+<generatorID>8572E14E-0E7F-A31F-9A8D-959F9D05930B</generatorID>
 <ownerDesignName>DDM-Ciclismo</ownerDesignName>
 <engineerTo>
 <item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>73327F80-1ED3-8F3D-9CD6-166760D4E3FF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_etapa" id="F380FCEE-400B-EBDF-382A-5DAC94B947C3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:25:33 UTC</createdTime>
+<generatorID>A5411A0D-5CDD-5DAF-E657-E0DC2E8069FF</generatorID>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<referedAttribute>731575FC-0A1D-88CA-49DC-80251DC60E91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FADB5F6C-CF88-6456-1C03-E0169A99FEA2" name="PARTICIPACION PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-18 08:25:01 UTC</createdTime>
+<ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<engineerTo>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B8BADAE9-F56B-F04A-C942-5C7392366D39</attributeRef>
+<attributeRef>F380FCEE-400B-EBDF-382A-5DAC94B947C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

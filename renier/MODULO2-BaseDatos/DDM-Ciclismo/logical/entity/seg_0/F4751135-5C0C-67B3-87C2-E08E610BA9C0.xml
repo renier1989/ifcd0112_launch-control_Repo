@@ -36,7 +36,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -44,8 +46,9 @@
 <createdBy>manana</createdBy>
 <createdTime>2026-06-17 11:27:03 UTC</createdTime>
 <ownerDesignName>DDM-Ciclismo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="true"/>
+<item key="B48358B2-68DE-2CBD-708E-643B8DA5F48C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1AF56090-6BDA-BCA7-8646-C4DBAE5381FE" name="Examen">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:46:18 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>33E6ADF6-E17C-D954-5F3C-F49674901332</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="anio" id="C93E5B26-5A8E-4182-63CE-119C13F676CE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:46:23 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="convocatoria" id="C59A1C02-A34D-F854-9B59-991D2D2D359A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:47:11 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_asignatura" id="1A4A7CBB-8748-A575-8051-26E7FFD9FE12">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:56:09 UTC</createdTime>
+<generatorID>B408EE94-BDEA-A544-E82B-2884DFB00708</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<referedAttribute>618705C8-0191-B9D6-12E7-002D2568D9AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

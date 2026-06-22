@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54F0B1A9-8956-619B-2F69-B5AA7C1F655F" name="Factura">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:43:18 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="num_factura" id="5EF04C18-4663-63CA-4EBA-18B15FEA6F4B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:43:30 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fec_emision" id="0470936F-64AF-1558-E138-C16A8AD702DE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:44:14 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_copias" id="6B1BB515-18AA-159C-DB84-F528A7B62817">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:44:32 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="importe" id="06B6B743-C7D0-1EB1-1671-2ED023ED8204">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:44:49 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIF" id="BD27B7F4-3C4C-C565-BF53-E87A8FC9DBF0">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:54:21 UTC</createdTime>
+<generatorID>6090D639-E407-2B1F-1C0D-8A3531D9AA61</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<referedAttribute>E949497C-6776-008E-2F78-233F8058D38C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="93FDA6F8-7960-62B6-8A52-46FE3129D8B2" name="Factura PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:43:39 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5EF04C18-4663-63CA-4EBA-18B15FEA6F4B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

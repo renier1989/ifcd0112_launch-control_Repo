@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7FCD4C12-7CE5-6A06-4B3A-5A4DA38446FA" name="Alumno">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>A673B867-33A5-74E1-627B-16694FF8E5AF</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DNI" id="86F2B90E-23F4-52A5-DEB0-C92A76137302">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>43971BD2-83E8-046D-9B0E-7A02AB4BFFFF</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contrasenia" id="9E766D8F-1A6B-DA96-2F94-5F3D078F63FA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>BAC51FF4-6504-324E-EB14-309D1DDE7057</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIA" id="EC588391-A5E2-C721-6B42-B8EC719239EC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>A06CD8C6-3102-EA45-3D6B-E682CFA2858C</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_alumno" id="8B047CF4-8193-C5C2-D49A-65A00610565B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>B3F62DDE-A8E5-36F8-DE15-12EE2F630ECC</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="calle_alumno" id="8027657B-72B4-FF46-1032-A6F66FF217AD">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>A6C4494E-7714-7A74-98EF-0C93BD75071C</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_alumno" id="6C32840E-5C9E-AAC8-2BA9-3BD6665582E9">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>887DA7F3-DAEC-7BFB-E18D-FAE2AB31E08E</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ciudad" id="8DBFF6A7-DF17-0992-1CC4-EBB08C6F3D83">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>6D4F3C93-C8BA-629D-38B2-EEED2659898B</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D7C59B3-7ADE-5500-5773-1D1C395F7EA9" name="Alumno_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>44D2916F-7E38-964F-7B4E-E0F7A7D66F8B</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86F2B90E-23F4-52A5-DEB0-C92A76137302"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72CEAE26-EB67-FE19-CC1F-87B38882A675" name="Alumno__UN">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>E54A8D94-F91D-429B-5D6C-AF623CF14E58</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC588391-A5E2-C721-6B42-B8EC719239EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

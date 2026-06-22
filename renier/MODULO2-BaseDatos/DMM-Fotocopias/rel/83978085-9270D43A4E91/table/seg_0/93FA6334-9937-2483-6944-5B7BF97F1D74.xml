@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93FA6334-9937-2483-6944-5B7BF97F1D74" name="Matricula">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Asignatura_id_asignatura" id="E3129E84-3A4D-E110-3A9E-5AD447E4C7A7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FA33DE1-78E4-5646-617A-8A92C1FB696E" referredColumn="D3EFA85C-7B58-711A-35E6-AE403F9CC933"/>
+</associations>
+</Column>
+<Column name="Alumno_DNI" id="A2EB13F3-A883-CC91-D3A5-A343F1A5F3F0">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="182688CE-F76D-CEB7-75AF-6D09E9D1AF46" referredColumn="86F2B90E-23F4-52A5-DEB0-C92A76137302"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F71FACD5-B79D-D102-0631-BE00186EBB84" name="Matricula_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3129E84-3A4D-E110-3A9E-5AD447E4C7A7"/>
+<colUsage columnID="A2EB13F3-A883-CC91-D3A5-A343F1A5F3F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC14B7A5-7A36-23D0-DF72-39109C22ADEE" name="Matricula_Asignatura_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>1119BD4E-A4CE-3FB9-F4E2-2164D6D12CC9</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3129E84-3A4D-E110-3A9E-5AD447E4C7A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EF31CF5-1DF6-F446-0C64-52755006D48A" name="Matricula_Alumno_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>1119BD4E-A4CE-3FB9-F4E2-2164D6D12CC9</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2EB13F3-A883-CC91-D3A5-A343F1A5F3F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

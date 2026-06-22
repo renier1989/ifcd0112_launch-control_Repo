@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9FA33DE1-78E4-5646-617A-8A92C1FB696E" containerWithKeyObject="93FA6334-9937-2483-6944-5B7BF97F1D74" localFKIndex="DC14B7A5-7A36-23D0-DF72-39109C22ADEE" name="Matricula_Asignatura_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>1119BD4E-A4CE-3FB9-F4E2-2164D6D12CC9</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<referredTableLongName>Asignatura</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9844FC0E-A2EA-A89B-39F1-999717E5F075</referredTableID>
+<keyObject>BCC44615-1FAA-BF32-F731-5BB2903DAF54</keyObject>
+<referredKeyID>BCC44615-1FAA-BF32-F731-5BB2903DAF54</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_asignatura</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

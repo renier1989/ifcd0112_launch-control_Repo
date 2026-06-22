@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33475709-DED4-BE25-DB09-AA2573ACA7C2" name="Soluciones">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>AA0B480C-E8C1-4E89-EBA6-3436920954C3</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_solucion" id="4031A04D-DA4E-7730-5996-CE028ECD7816">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>F239CE1D-1DB5-17B9-1A0D-7FAE66C426F8</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="21A2DBD7-8E60-1332-E6E1-E4AE2AC52ABF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>741EC7E9-116E-9C61-1815-1CD2294E4D3C</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ejercicios_id_material" id="107D4235-55BA-4D61-35BC-C2B62BF2B99C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>C7D7A2DF-A65A-C94C-BA4C-055EA64056EA</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3FF7911-11D2-8C14-0E5B-ADFD5F3D8118" referredColumn="A50CF551-58EB-06FF-B042-3BD72E5D6FC5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9947AA90-DDDE-CF20-6FAF-D08777AAD435" name="Soluciones_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>ECE30116-453C-2BBF-4F63-9E6D66A10C3F</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4031A04D-DA4E-7730-5996-CE028ECD7816"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4790FCC1-EBC9-E8F9-345D-D6CD569E0568" name="Soluciones_Ejercicios_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>0D0A1E1C-1ED8-3ED9-1881-515725CBF9FB</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="107D4235-55BA-4D61-35BC-C2B62BF2B99C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

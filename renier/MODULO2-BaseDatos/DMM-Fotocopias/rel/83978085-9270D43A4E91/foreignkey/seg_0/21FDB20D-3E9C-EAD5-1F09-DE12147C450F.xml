@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="21FDB20D-3E9C-EAD5-1F09-DE12147C450F" containerWithKeyObject="9EF25F5C-8719-11FC-46E6-00202AA3F342" localFKIndex="138C13DF-F9E1-44B7-54AF-ECDDEB741D11" name="Ficha_Material_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>B8E98EF1-932F-2306-13D6-86A7923C0D89</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<referredTableLongName>Material</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>54D75F97-EF55-1C38-FC4C-C6D8D784E09F</referredTableID>
+<keyObject>0C7A5DAF-8377-EC28-4988-3092A49BA45D</keyObject>
+<referredKeyID>0C7A5DAF-8377-EC28-4988-3092A49BA45D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_material</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

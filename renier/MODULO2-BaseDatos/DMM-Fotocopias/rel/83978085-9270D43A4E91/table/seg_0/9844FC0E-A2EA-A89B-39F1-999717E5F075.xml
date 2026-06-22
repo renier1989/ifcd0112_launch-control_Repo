@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9844FC0E-A2EA-A89B-39F1-999717E5F075" name="Asignatura">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>2B50D713-EF7E-3A27-E873-6319A1851C68</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_asignatura" id="D3EFA85C-7B58-711A-35E6-AE403F9CC933">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>618705C8-0191-B9D6-12E7-002D2568D9AA</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="curso" id="21A838DC-9B16-899F-28CE-C505B78FFC2F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>BF06934C-FC12-67DD-9FE3-3E587C8A5B3A</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_curso" id="EDE42F1C-DB1C-CA54-D4F6-A42C092D9D22">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>DA1BD2A5-6311-D227-3170-86A18DB4ACF7</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulacion" id="3E8333E2-2D4D-2948-83EB-73066EE0C80E">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>7F3088F0-6354-5380-45A7-F3599F7F5C7C</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BCC44615-1FAA-BF32-F731-5BB2903DAF54" name="Asignatura_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>05C81BC0-91D6-AE2F-EBF4-B3670ECB2C5D</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3EFA85C-7B58-711A-35E6-AE403F9CC933"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

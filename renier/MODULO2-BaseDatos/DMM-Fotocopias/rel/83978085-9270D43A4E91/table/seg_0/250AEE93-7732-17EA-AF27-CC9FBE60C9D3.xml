@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="250AEE93-7732-17EA-AF27-CC9FBE60C9D3" name="Examen">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>1AF56090-6BDA-BCA7-8646-C4DBAE5381FE</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_material" id="30B6A907-BCD0-5A4F-EFFD-A1F510E04FB0">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>61C1BC5A-26F0-148C-7303-724E777FB047</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72FEA0F8-524A-8F8A-9ED3-4948E8F0EB3E" referredColumn="B51E726D-B4F3-AD0E-8F9E-543D435875E0"/>
+</associations>
+</Column>
+<Column name="anio" id="9F7F558C-DCA8-9C30-0273-116C2292B546">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>C93E5B26-5A8E-4182-63CE-119C13F676CE</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="convocatoria" id="5A70AE1E-0377-4663-F151-4F80ACECB126">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>C59A1C02-A34D-F854-9B59-991D2D2D359A</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Asignatura_id_asignatura" id="DA595C17-B22E-2830-3D6D-DC70E81BB54B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>1A4A7CBB-8748-A575-8051-26E7FFD9FE12</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1853547B-3485-1278-8D6E-F5FB40836D77" referredColumn="D3EFA85C-7B58-711A-35E6-AE403F9CC933"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE5E0B5E-71BC-7F05-992B-8CB412ED4392" name="Examen_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>6407800B-073E-43A6-18DA-3FAC8A57A251</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30B6A907-BCD0-5A4F-EFFD-A1F510E04FB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="459F89DE-1C0A-AEF1-A1DB-ED9E45F48265" name="Examen_Material_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>5436FAFD-94D6-0226-49D2-6C9252A707FB</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30B6A907-BCD0-5A4F-EFFD-A1F510E04FB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B8FEBD7-F60D-4A10-EE53-28DE0DED7897" name="Examen_Asignatura_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>B408EE94-BDEA-A544-E82B-2884DFB00708</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA595C17-B22E-2830-3D6D-DC70E81BB54B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

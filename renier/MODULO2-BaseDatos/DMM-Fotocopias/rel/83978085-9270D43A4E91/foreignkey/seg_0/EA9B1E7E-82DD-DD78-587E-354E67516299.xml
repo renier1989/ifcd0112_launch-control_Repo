@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EA9B1E7E-82DD-DD78-587E-354E67516299" containerWithKeyObject="FF220D34-27C0-F8AA-B39B-F3FA2ED56474" localFKIndex="CB166AE9-0EB8-E053-2F92-9F8D74D5CD7A" name="Apuntes_Tema_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>08921723-4E8D-D7B7-18DC-C8A3B612C7EF</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<referredTableLongName>Tema</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FDBD86CA-2F9C-FA59-80F7-EFB238EBADB0</referredTableID>
+<keyObject>314A0C72-425F-5B1D-5256-E0E71F2DF407</keyObject>
+<referredKeyID>314A0C72-425F-5B1D-5256-E0E71F2DF407</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_tema</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

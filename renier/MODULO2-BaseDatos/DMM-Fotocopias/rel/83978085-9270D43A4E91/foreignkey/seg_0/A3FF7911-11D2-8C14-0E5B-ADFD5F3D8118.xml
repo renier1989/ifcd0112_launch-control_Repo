@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A3FF7911-11D2-8C14-0E5B-ADFD5F3D8118" containerWithKeyObject="33475709-DED4-BE25-DB09-AA2573ACA7C2" localFKIndex="4790FCC1-EBC9-E8F9-345D-D6CD569E0568" name="Soluciones_Ejercicios_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>0D0A1E1C-1ED8-3ED9-1881-515725CBF9FB</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<referredTableLongName>Ejercicios</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>76FD5494-0791-84BC-09E6-02619531D58F</referredTableID>
+<keyObject>303471EF-30A5-5862-EB28-C1330B7F1362</keyObject>
+<referredKeyID>303471EF-30A5-5862-EB28-C1330B7F1362</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_material</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

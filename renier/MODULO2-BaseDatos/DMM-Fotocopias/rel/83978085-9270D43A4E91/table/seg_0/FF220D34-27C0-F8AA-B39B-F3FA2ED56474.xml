@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF220D34-27C0-F8AA-B39B-F3FA2ED56474" name="Apuntes">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>23C63F06-D083-4AE2-6A20-B411CAAC461A</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_material" id="576BBFDB-137B-E488-2AE0-668A76F53371">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>61C1BC5A-26F0-148C-7303-724E777FB047</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F370CCB5-BC9F-5262-10BD-37BDEA9FF5A4" referredColumn="B51E726D-B4F3-AD0E-8F9E-543D435875E0"/>
+</associations>
+</Column>
+<Column name="num_paginas" id="8499AC63-6C8B-87AF-840D-CD0F16254EA1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>F7AD81B2-6A98-B2E4-B35F-300BF8BD0D56</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tema_cod_tema" id="0E2F1D41-835C-5194-9588-C0C5C2E87ECD">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>40E06B41-B1D8-6495-F0AC-B0097E5F88DD</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA9B1E7E-82DD-DD78-587E-354E67516299" referredColumn="61CE3A3E-1E75-2A8C-BD71-1C32F65B34F8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A654C574-408D-0255-9180-D41D2BAC35FE" name="Apuntes_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>6407800B-073E-43A6-18DA-3FAC8A57A251</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576BBFDB-137B-E488-2AE0-668A76F53371"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA5913E0-F13B-9ADB-164C-41DBB652E64C" name="Apuntes_Material_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>94B9BBDB-B07D-FBF7-12AC-D7CE4FCADA7F</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576BBFDB-137B-E488-2AE0-668A76F53371"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB166AE9-0EB8-E053-2F92-9F8D74D5CD7A" name="Apuntes_Tema_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>08921723-4E8D-D7B7-18DC-C8A3B612C7EF</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E2F1D41-835C-5194-9588-C0C5C2E87ECD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

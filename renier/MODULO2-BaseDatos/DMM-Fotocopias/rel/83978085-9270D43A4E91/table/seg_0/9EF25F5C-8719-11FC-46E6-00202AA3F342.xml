@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EF25F5C-8719-11FC-46E6-00202AA3F342" name="Ficha">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>294DE8D8-9781-CCF6-A52F-DD2209BA3D3B</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="num_copias" id="46EEE688-C498-3DE2-E7A6-3D2B64F1EF73">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>BAB146EA-A189-A5E5-5CE4-A0AAC14886B5</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="4B437A00-4A42-C97D-6F13-09494AF771DE">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>17BB1CDA-E23F-7FBF-70F7-33DA6CD0EE63</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="7FE8BBB5-EA27-E97A-931C-A48AADA80E1A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>1609FFC3-B086-FF26-8261-C75E09D0C09C</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="A63E082D-0B11-DC5B-1F23-F95228033066">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>AD85AD3A-FBC3-6B50-6E3A-8D79C2988773</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Alumno_DNI" id="7F885389-C89E-F556-77A0-DC49DEEF2C9D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>52AA198F-BFE9-D667-980F-AAB5ECADD587</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7631326A-D5E9-C290-6138-633D5BD465D1" referredColumn="86F2B90E-23F4-52A5-DEB0-C92A76137302"/>
+</associations>
+</Column>
+<Column name="Aviso_cod_aviso" id="D27664BC-DF68-C20C-7902-2622FEF563BA">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>7F7671FF-703A-6F5A-631C-B57CCBF19A71</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21583DFE-93F4-17FA-2208-AF5D83613C14" referredColumn="C3D2FF88-F65F-03A1-C532-A35AADEAD6FB"/>
+</associations>
+</Column>
+<Column name="Material_id_material" id="8A044F6D-3743-3649-7BD8-91AEAF1084AB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>9FCDD27B-8FB0-064F-7E79-E85C8757D240</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21FDB20D-3E9C-EAD5-1F09-DE12147C450F" referredColumn="B51E726D-B4F3-AD0E-8F9E-543D435875E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4AD862B5-9741-A97F-CCDF-C0A4C9D496BD" name="Ficha_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>F422EA14-0121-950D-1673-30BB1379E568</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46EEE688-C498-3DE2-E7A6-3D2B64F1EF73"/>
+<colUsage columnID="4B437A00-4A42-C97D-6F13-09494AF771DE"/>
+<colUsage columnID="7F885389-C89E-F556-77A0-DC49DEEF2C9D"/>
+<colUsage columnID="8A044F6D-3743-3649-7BD8-91AEAF1084AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB0C481D-678E-37E2-D880-A4569E24030B" name="Ficha_Aviso_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>AE8E116C-737B-7D64-F122-B2CB1CB29CF3</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D27664BC-DF68-C20C-7902-2622FEF563BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48893D07-CDED-BB23-9635-FC7CD89BDCE5" name="Ficha_Alumno_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>B567AF3E-D798-66D7-3082-0A993738F4D1</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F885389-C89E-F556-77A0-DC49DEEF2C9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="138C13DF-F9E1-44B7-54AF-ECDDEB741D11" name="Ficha_Material_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>B8E98EF1-932F-2306-13D6-86A7923C0D89</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A044F6D-3743-3649-7BD8-91AEAF1084AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

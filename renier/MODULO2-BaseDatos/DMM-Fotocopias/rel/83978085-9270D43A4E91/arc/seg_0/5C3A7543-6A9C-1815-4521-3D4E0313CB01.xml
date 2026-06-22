@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="5C3A7543-6A9C-1815-4521-3D4E0313CB01" name="FKArc_1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>54D75F97-EF55-1C38-FC4C-C6D8D784E09F</table>
+<fkeys>
+<fkeyID>F370CCB5-BC9F-5262-10BD-37BDEA9FF5A4</fkeyID>
+<fkeyID>72FEA0F8-524A-8F8A-9ED3-4948E8F0EB3E</fkeyID>
+<fkeyID>D02F48B0-F27C-F9A7-C215-4D5C8EDEEB70</fkeyID>
+</fkeys>
+</FKArc>

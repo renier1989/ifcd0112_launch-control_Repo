@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ser_de" directorySegmentName="seg_0" id="B408EE94-BDEA-A544-E82B-2884DFB00708">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:56:09 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<sourcePk>05C81BC0-91D6-AE2F-EBF4-B3670ECB2C5D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2B50D713-EF7E-3A27-E873-6319A1851C68</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1AF56090-6BDA-BCA7-8646-C4DBAE5381FE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

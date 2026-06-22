@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D02F48B0-F27C-F9A7-C215-4D5C8EDEEB70" containerWithKeyObject="76FD5494-0791-84BC-09E6-02619531D58F" localFKIndex="58136996-10B7-6069-AA0E-214D8797E875" name="Ejercicios_Material_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>F5775B34-B25C-4EED-D786-89C2DF9CDF5A</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<referredTableLongName>Material</referredTableLongName>
+<arc>5C3A7543-6A9C-1815-4521-3D4E0313CB01</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>54D75F97-EF55-1C38-FC4C-C6D8D784E09F</referredTableID>
+<keyObject>0C7A5DAF-8377-EC28-4988-3092A49BA45D</keyObject>
+<referredKeyID>0C7A5DAF-8377-EC28-4988-3092A49BA45D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_material</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

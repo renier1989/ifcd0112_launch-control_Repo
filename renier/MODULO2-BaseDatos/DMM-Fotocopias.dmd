@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DMM-Fotocopias" id="B3C6A81C-8C1E-0044-EA94-ED2084DB4B64" version="3.5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:23:22 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B3C6A81C-8C1E-0044-EA94-ED2084DB4B64</designId>
+</OSDM_Design>

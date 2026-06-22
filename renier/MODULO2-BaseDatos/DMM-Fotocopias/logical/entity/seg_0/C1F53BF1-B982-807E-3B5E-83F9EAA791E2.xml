@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1F53BF1-B982-807E-3B5E-83F9EAA791E2" name="Telefono">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:25:28 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero_telefono" id="E35EC33B-147C-EB52-6243-E6EE2584D690">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:25:36 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNI" id="FFC174BB-32B7-760B-10AD-8D41402A81CC">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:51:30 UTC</createdTime>
+<generatorID>CA89E6E2-4569-54CF-0C73-3DD8D7AD4ADC</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<referedAttribute>43971BD2-83E8-046D-9B0E-7A02AB4BFFFF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9B796778-287F-017A-EB06-CBCE34AEC8DB" name="Telefono PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 10:25:48 UTC</createdTime>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<engineerTo>
+<item key="83978085-5CBB-D68E-C86C-9270D43A4E91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E35EC33B-147C-EB52-6243-E6EE2584D690</attributeRef>
+<attributeRef>FFC174BB-32B7-760B-10AD-8D41402A81CC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

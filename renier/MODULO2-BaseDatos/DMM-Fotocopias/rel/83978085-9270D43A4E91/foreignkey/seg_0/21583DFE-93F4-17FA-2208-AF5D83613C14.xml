@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="21583DFE-93F4-17FA-2208-AF5D83613C14" containerWithKeyObject="9EF25F5C-8719-11FC-46E6-00202AA3F342" localFKIndex="EB0C481D-678E-37E2-D880-A4569E24030B" name="Ficha_Aviso_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-22 11:05:02 UTC</createdTime>
+<generatorID>AE8E116C-737B-7D64-F122-B2CB1CB29CF3</generatorID>
+<ownerDesignName>DMM-Fotocopias</ownerDesignName>
+<referredTableLongName>Aviso</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>251FDD35-31C7-AABD-7219-42EF3353E51A</referredTableID>
+<keyObject>300C5611-0C64-0EC6-3697-0651E1BF51CB</keyObject>
+<referredKeyID>300C5611-0C64-0EC6-3697-0651E1BF51CB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>cod_aviso</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

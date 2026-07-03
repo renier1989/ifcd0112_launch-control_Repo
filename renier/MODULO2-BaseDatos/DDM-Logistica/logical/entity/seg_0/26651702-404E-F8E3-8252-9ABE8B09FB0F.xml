@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26651702-404E-F8E3-8252-9ABE8B09FB0F" name="Contrato">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:46:40 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="referencia" id="434360AE-59A8-5738-D26C-FA141028118B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:18:25 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaInicio" id="B90476DE-D369-0AE8-B509-AE19D57EA0EB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:51:42 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaFin" id="A592C7B0-7E5B-9C14-3803-C24843756E73">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:58:06 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A6448B0-1C7B-54F4-1B9F-B95A31D7D17E" name="Contrato PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:18:32 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>434360AE-59A8-5738-D26C-FA141028118B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

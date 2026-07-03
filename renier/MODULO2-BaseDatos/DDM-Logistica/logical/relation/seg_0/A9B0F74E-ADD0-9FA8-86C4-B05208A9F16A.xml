@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cubrir" directorySegmentName="seg_0" id="A9B0F74E-ADD0-9FA8-86C4-B05208A9F16A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:31:54 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<sourcePk>51159DFE-2F14-0D6F-9BE7-1690B1C646D1</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7D6D36A0-B8D5-611B-377B-8F12171E23A4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3F5A0AA2-D3BA-F2CF-DD0C-110754ED2204</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

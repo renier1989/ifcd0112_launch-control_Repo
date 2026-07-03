@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBFDF38B-DD86-0A64-62E8-C68B2158C1CA" name="Vehiculo">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>3DA5CDEB-646C-2548-B031-FF1D1DD458BE</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="matricula" id="7DCB68D5-AC9B-943F-6D47-36F99B7A91A6">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>38950D09-1D7B-DF63-FF27-0E870EE5EE9C</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoVehiculo_idTipoVehiculo" id="492F0ECB-2EA0-3DEC-4099-843D6645E9D8">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>7E43F8F5-AE80-D9AD-EE1B-25BAE8471296</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2D0FF09-F393-A4B0-2DFA-57C894775EAA" referredColumn="BA863648-FAB3-9053-2806-79BB3CA31E47"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CF373DC-40FD-3E73-CB57-04D21ACB41D1" name="Vehiculo_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>15D4C7C2-8C36-374E-F54B-10CA9D8822FF</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DCB68D5-AC9B-943F-6D47-36F99B7A91A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31ED68A0-6820-5C6D-A243-F5C113C64E0F" name="Vehiculo_TipoVehiculo_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>98705B97-76B2-B2D2-9F4E-6D505C4CD0DA</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="492F0ECB-2EA0-3DEC-4099-843D6645E9D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

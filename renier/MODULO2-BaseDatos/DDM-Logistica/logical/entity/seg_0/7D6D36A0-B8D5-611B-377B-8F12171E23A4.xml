@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D6D36A0-B8D5-611B-377B-8F12171E23A4" name="Trayecto">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:46:46 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="origen" id="2BB7D5FE-2B1C-A543-368C-9F3C77A48EC3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:53:21 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="destino" id="2DBECF5E-4726-C6FD-F439-C4C4E0115937">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:53:39 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kilometros" id="63D7CBD5-F61E-8389-160E-27D4871D18B7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:53:58 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="51159DFE-2F14-0D6F-9BE7-1690B1C646D1" name="Trayecto PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 09:53:37 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2BB7D5FE-2B1C-A543-368C-9F3C77A48EC3</attributeRef>
+<attributeRef>2DBECF5E-4726-C6FD-F439-C4C4E0115937</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2BB7378-C93C-359E-CF92-6F1515C5768D" name="TipoVehiculo">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>82536342-60AA-89FF-1C43-EF7E0C0FA977</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idTipoVehiculo" id="BA863648-FAB3-9053-2806-79BB3CA31E47">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>D04558FA-BC34-C573-6A98-64396D97F33B</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="A24B4E33-0FB8-0125-2150-97957AF85EA1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>7643BDDA-6EF6-51C8-4F63-370186A41AA8</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF0B819C-8512-B1FF-7691-A5249561BB1F" name="TipoVehiculo_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>086FFB7A-14C9-8B4C-70C2-C53F0125EE9F</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA863648-FAB3-9053-2806-79BB3CA31E47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

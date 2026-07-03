@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C44A7A4-9254-0D6B-DF8C-E11EA66465AA" name="CubrirTrayecto">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>3F5A0AA2-D3BA-F2CF-DD0C-110754ED2204</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="costeTrayecto" id="1D4B6A47-EE40-1961-2FAF-1693410D045F">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>61DED368-6C38-3342-6B6E-A55308FF0232</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Trayecto_origen" id="546B4A59-27B0-2656-B91D-22203E86B099">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>817B4AF6-CAED-2485-505D-05503F8686B5</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00BF8C7F-6DC3-32C4-7A18-1F2BA42A7924" referredColumn="A63BD656-CA67-E07C-ED77-F5B1D284E39B"/>
+</associations>
+</Column>
+<Column name="Trayecto_destino" id="061D407F-1E0B-595B-97C4-54005E58DCC7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>33961305-DEB9-F762-A4A4-980B77568706</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00BF8C7F-6DC3-32C4-7A18-1F2BA42A7924" referredColumn="C761B8EF-485F-03A4-9289-723AA13D4E7D"/>
+</associations>
+</Column>
+<Column name="Vehiculo_matricula" id="129569CF-F432-926C-F5E5-6F99CC771123">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>37BDDE60-8D6E-3B0E-1C26-6FB6D9BD6828</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A4A9CAC-0C23-F432-E61F-6A68CBF10B28" referredColumn="7DCB68D5-AC9B-943F-6D47-36F99B7A91A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CB01DB2-435C-4857-3CD9-C2A8CAA1971E" name="CubrirTrayecto_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>937AD97F-B62B-DEE7-1155-A16080356190</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="546B4A59-27B0-2656-B91D-22203E86B099"/>
+<colUsage columnID="061D407F-1E0B-595B-97C4-54005E58DCC7"/>
+<colUsage columnID="129569CF-F432-926C-F5E5-6F99CC771123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BD60B59-BC6B-57B7-F8EE-614E0D4F0AF4" name="CubrirTrayecto_Vehiculo_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>CBB2636D-D8ED-3EED-7E7B-43006373843D</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="129569CF-F432-926C-F5E5-6F99CC771123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F6ED67C-9660-60FC-FA44-639BFBB182FF" name="CubrirTrayecto_Trayecto_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>A9B0F74E-ADD0-9FA8-86C4-B05208A9F16A</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="546B4A59-27B0-2656-B91D-22203E86B099"/>
+<colUsage columnID="061D407F-1E0B-595B-97C4-54005E58DCC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

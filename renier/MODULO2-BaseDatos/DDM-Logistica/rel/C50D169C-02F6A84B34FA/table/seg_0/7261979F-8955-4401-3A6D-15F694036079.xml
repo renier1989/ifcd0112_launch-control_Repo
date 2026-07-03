@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7261979F-8955-4401-3A6D-15F694036079" name="Servicio">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>E06D2F3D-F489-1A61-1745-F3AA981706EC</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idServicio" id="A872145D-DA62-A8DC-18FE-AD521AD224D1">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>E0123101-5B6E-4BB0-17EF-4AD9420591B7</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="F1B73BA9-BE49-3FA2-6D7B-E3D14CC215E3">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>386603E5-62A8-4E4F-EE29-268B943324CB</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_referencia" id="193ACAEE-27F6-752A-48CD-224FACBAFE2D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>AB2F5AA2-1C3C-F4EC-7B82-A991CEEB1967</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F4C7BB9-20CC-0E0A-FDE9-1765B919F9CC" referredColumn="8DFB846E-8B0A-8951-E53B-24E9091C70A0"/>
+</associations>
+</Column>
+<Column name="CubrirTrayecto_Trayecto_origen" id="7BF85C1F-F126-4427-D158-43480AD5C52C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>E7E0A7DC-F928-785F-215F-526132AD9CF4</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86CACC30-047B-19AA-090D-AA3EE4C47251" referredColumn="546B4A59-27B0-2656-B91D-22203E86B099"/>
+</associations>
+</Column>
+<Column name="CubrirTrayecto_Trayecto_destino" id="DDB44EED-6FFC-B624-D03F-09879C09196A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>C001F189-1D16-A92E-827F-46A845D445CF</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86CACC30-047B-19AA-090D-AA3EE4C47251" referredColumn="061D407F-1E0B-595B-97C4-54005E58DCC7"/>
+</associations>
+</Column>
+<Column name="CubrirTrayecto_Vehiculo_matricula" id="6EDDE07F-88D0-43DB-56A4-A4EDEEEB9415">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>E951E4C9-EB79-DC63-D642-8D0E28BFF22C</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86CACC30-047B-19AA-090D-AA3EE4C47251" referredColumn="129569CF-F432-926C-F5E5-6F99CC771123"/>
+</associations>
+</Column>
+<Column name="fechaRealizacion" id="E3110B94-56A0-3797-F44C-B922B5CC93B4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>43FF2192-FCC1-5B57-4F0A-AE1133A5C9B5</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2091ED63-461A-0F47-88E2-1C7D62EB410A" name="Servicio_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>A90F0284-3D43-EA52-8107-E94B928C68ED</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A872145D-DA62-A8DC-18FE-AD521AD224D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6D3471E-3EB0-A546-DE29-9F9DC6CB5D15" name="Servicio_CubrirTrayecto_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>ED5C6E72-3354-3EF1-E4F5-286EF23D7E70</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BF85C1F-F126-4427-D158-43480AD5C52C"/>
+<colUsage columnID="DDB44EED-6FFC-B624-D03F-09879C09196A"/>
+<colUsage columnID="6EDDE07F-88D0-43DB-56A4-A4EDEEEB9415"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD030C3F-8A6F-7386-C393-ED7DD44E4112" name="Servicio_Contrato_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>3B36CD60-5F34-64E6-11FB-271C49FC7FCE</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="193ACAEE-27F6-752A-48CD-224FACBAFE2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

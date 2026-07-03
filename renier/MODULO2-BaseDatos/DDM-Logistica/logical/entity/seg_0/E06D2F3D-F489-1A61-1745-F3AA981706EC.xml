@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E06D2F3D-F489-1A61-1745-F3AA981706EC" name="Servicio">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:12:59 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idServicio" id="E0123101-5B6E-4BB0-17EF-4AD9420591B7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:13:11 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="386603E5-62A8-4E4F-EE29-268B943324CB">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:13:55 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="referencia" id="AB2F5AA2-1C3C-F4EC-7B82-A991CEEB1967">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:33:46 UTC</createdTime>
+<generatorID>3B36CD60-5F34-64E6-11FB-271C49FC7FCE</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<referedAttribute>434360AE-59A8-5738-D26C-FA141028118B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="origen" id="E7E0A7DC-F928-785F-215F-526132AD9CF4">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:33:56 UTC</createdTime>
+<generatorID>ED5C6E72-3354-3EF1-E4F5-286EF23D7E70</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<referedAttribute>817B4AF6-CAED-2485-505D-05503F8686B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="destino" id="C001F189-1D16-A92E-827F-46A845D445CF">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:33:56 UTC</createdTime>
+<generatorID>ED5C6E72-3354-3EF1-E4F5-286EF23D7E70</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<referedAttribute>33961305-DEB9-F762-A4A4-980B77568706</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="matricula" id="E951E4C9-EB79-DC63-D642-8D0E28BFF22C">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:33:56 UTC</createdTime>
+<generatorID>ED5C6E72-3354-3EF1-E4F5-286EF23D7E70</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<referedAttribute>37BDDE60-8D6E-3B0E-1C26-6FB6D9BD6828</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaRealizacion" id="43FF2192-FCC1-5B57-4F0A-AE1133A5C9B5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:35:29 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A90F0284-3D43-EA52-8107-E94B928C68ED" name="Servicio PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:13:48 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0123101-5B6E-4BB0-17EF-4AD9420591B7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

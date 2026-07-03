@@ -1,0 +1,47 @@
+
+USE northwind;
+SELECT * FROM employees e
+INNER JOIN orders o ON e.id = o.employee_id
+INNER JOIN purchase_orders po ON po.approved_by = e.id;
+
+USE northwind2;
+SELECT c.CategoryName, c.`Description` FROM categories c ORDER BY c.CategoryName; -- 1
+SELECT c.ContactName, c.CompanyName, c.ContactTitle, c.Phone FROM customers c ORDER BY c.Phone;-- 2
+SELECT UPPER(e.FirstName) FirstName, UPPER(e.LastName) LastName, e.HireDate FROM employees e ORDER BY e.HireDate DESC; -- 3
+SELECT o.OrderID, o.OrderDate, o.ShippedDate, o.CustomerID, o.Freight FROM orders o ORDER BY o.Freight DESC LIMIT 10; -- 4
+SELECT LOWER(c.CustomerID) ID FROM customers c ; -- 5
+SELECT s.CompanyName, s.Fax, s.Phone, s.Country, s.HomePage FROM suppliers s ORDER BY s.Country DESC ,  s.CompanyName ASC; -- 6
+SELECT c.CompanyName, c.ContactName FROM customers c WHERE c.City = 'Buenos Aires'; -- 7
+SELECT p.ProductName, p.UnitPrice, p.QuantityPerUnit FROM products p WHERE p.UnitsInStock = 0; -- 8
+SELECT c.ContactName, c.Address, c.City FROM customers c WHERE c.Country NOT IN ('Germany', 'Mexico','Spain'); -- 9
+SELECT o.OrderDate, o.ShippedDate, o.CustomerID FROM orders o WHERE DATE_FORMAT(o.OrderDate, '%Y-%m-%d') = '1996-05-21'; -- 10
+SELECT o.OrderDate, o.ShippedDate, o.CustomerID FROM orders o WHERE DATE_FORMAT(o.OrderDate, '%d %M %Y') = '04 July 1996'; -- 10
+SELECT e.FirstName, e.LastName, e.Country FROM employees e WHERE e.Country <> 'USA'; -- 11
+SELECT o.EmployeeID, o.OrderID, o.CustomerID,o.RequiredDate, o.ShippedDate FROM orders o WHERE o.ShippedDate > o.RequiredDate; -- 12
+SELECT c.City, c.CompanyName, c.ContactName FROM customers c WHERE c.City LIKE 'A%' OR c.City LIKE 'B%' ORDER BY c.City; -- 13
+SELECT o.OrderID FROM orders o WHERE o.OrderID % 2 = 0 ORDER BY 1; -- 14
+SELECT * FROM orders o WHERE o.Freight > 500; -- 15
+SELECT p.ProductName, p.UnitsInStock, p.UnitsOnOrder, p.ReorderLevel FROM products p WHERE p.UnitsInStock + p.UnitsOnOrder <=  p.ReorderLevel; -- 16
+SELECT c.CompanyName, c.ContactName FROM customers c WHERE c.Fax IS NULL; -- 17
+SELECT e.FirstName, e.LastName FROM employees e WHERE e.ReportsTo IS NULL; -- 18
+SELECT o.OrderID FROM orders o WHERE o.OrderID % 2 != 0 ORDER BY 1; -- 19
+SELECT c.CompanyName, c.ContactName, c.Fax FROM customers c WHERE c.Fax IS NULL ORDER BY c.ContactName; -- 20
+SELECT c.City, c.CompanyName, c.ContactName FROM customers c WHERE c.City LIKE '%L%' ORDER BY c.ContactName; -- 21
+SELECT e.FirstName, e.LastName , e.BirthDate FROM employees e WHERE YEAR(e.BirthDate) = '1950'; -- 22
+SELECT e.FirstName, e.LastName , YEAR(e.BirthDate) AS "Birth Year" FROM employees e; -- 23
+SELECT od.OrderID, COUNT(od.OrderID) AS "NumberofOrders" FROM orderdetails od GROUP BY od.OrderID ORDER BY NumberofOrders; -- 24
+SELECT p.SupplierID,p.ProductName, s.CompanyName  FROM products p INNER JOIN suppliers s ON s.SupplierID = p.SupplierID 
+WHERE s.CompanyName IN ('Exotic Liquids', 'Specialty Biscuits, Ltd.','Escargots Nouveaux') ORDER BY p.SupplierID; -- 25
+SELECT o.ShipPostalCode,o.OrderID, o.RequiredDate, o.ShippedDate FROM orders o WHERE o.ShipPostalCode LIKE '98124%'; -- 26
+SELECT c.ContactName, c.ContactTitle, c.CompanyName FROM customers c WHERE c.ContactTitle LIKE '%Sales%'; -- 27
+SELECT e.FirstName, e.LastName, e.City FROM employees e WHERE e.City <> 'Seattle'; -- 28
+SELECT c.CompanyName, c.ContactTitle, c.City, c.Country FROM customers c 
+WHERE c.Country = 'Mexico' OR (c.Country = 'Spain' AND c.City !='Madrid'); -- 29
+SELECT CONCAT(e.FirstName,' ', e.LastName, ' can be reached at x',e.Extension) AS ContactInfo FROM employees e ; -- 30
+
+SELECT * FROM customers;
+SELECT * FROM employees;
+SELECT * FROM orders;
+SELECT * FROM products;
+
+SELECT o.OrderDate, DATE_FORMAT(o.OrderDate, '%d %M %Y') FROM orders o 

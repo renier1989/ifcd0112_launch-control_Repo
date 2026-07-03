@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8590130E-23C7-C7E8-20C1-D0C0025495C4" name="Trayecto">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>7D6D36A0-B8D5-611B-377B-8F12171E23A4</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="origen" id="A63BD656-CA67-E07C-ED77-F5B1D284E39B">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>2BB7D5FE-2B1C-A543-368C-9F3C77A48EC3</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino" id="C761B8EF-485F-03A4-9289-723AA13D4E7D">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>2DBECF5E-4726-C6FD-F439-C4C4E0115937</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kilometros" id="97075894-DCC5-36D3-E690-CF784DB95836">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>63D7CBD5-F61E-8389-160E-27D4871D18B7</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E29369E-8AF8-45EF-8A42-251DDAECF98A" name="Trayecto_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>51159DFE-2F14-0D6F-9BE7-1690B1C646D1</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A63BD656-CA67-E07C-ED77-F5B1D284E39B"/>
+<colUsage columnID="C761B8EF-485F-03A4-9289-723AA13D4E7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

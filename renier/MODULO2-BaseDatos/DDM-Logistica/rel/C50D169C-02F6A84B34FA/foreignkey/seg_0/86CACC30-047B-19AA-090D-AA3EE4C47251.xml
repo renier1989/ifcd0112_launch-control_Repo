@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="86CACC30-047B-19AA-090D-AA3EE4C47251" containerWithKeyObject="7261979F-8955-4401-3A6D-15F694036079" localFKIndex="A6D3471E-3EB0-A546-DE29-9F9DC6CB5D15" name="Servicio_CubrirTrayecto_FK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>ED5C6E72-3354-3EF1-E4F5-286EF23D7E70</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<referredTableLongName>CubrirTrayecto</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4C44A7A4-9254-0D6B-DF8C-E11EA66465AA</referredTableID>
+<keyObject>5CB01DB2-435C-4857-3CD9-C2A8CAA1971E</keyObject>
+<referredKeyID>5CB01DB2-435C-4857-3CD9-C2A8CAA1971E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Trayecto_origen,Trayecto_destino,Vehiculo_matricula</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

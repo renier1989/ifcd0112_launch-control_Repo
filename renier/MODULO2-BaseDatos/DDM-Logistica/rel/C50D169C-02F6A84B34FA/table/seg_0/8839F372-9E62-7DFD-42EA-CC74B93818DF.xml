@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8839F372-9E62-7DFD-42EA-CC74B93818DF" name="Empresa">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>8DEE6E86-F64A-7616-52FC-A964D8708E42</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idEmpresa" id="EABFBB90-9CF5-AF32-9C47-8BE5232ADB8A">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>AA2AA637-15B0-E404-46D2-42394A423380</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombreEmpresa" id="84DA2306-0495-8DA5-123A-B5FC5D128491">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>63C10C82-DDA4-AF0C-B771-16308FCEB0B3</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CifNif" id="7D8D5E5F-E460-85B2-5D42-7B5DB80FBAA7">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:39:03 UTC</createdTime>
+<generatorID>8A4B3302-1920-C222-9BDD-E6DEB9CFB9D9</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="606489A5-AC29-4D53-6F34-8F2C6B43C28E" name="Empresa_PKv2">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:46:49 UTC</createdTime>
+<generatorID>A1A5E5D8-1E5C-CF07-1DDA-FE9B113F8F0C</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EABFBB90-9CF5-AF32-9C47-8BE5232ADB8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56EE9D70-DED0-5AE6-ED42-AD566D63761D" name="Empresa_PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:37:33 UTC</createdTime>
+<generatorID>DB302B9F-1E6F-F97D-0124-02195F72BD74</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EABFBB90-9CF5-AF32-9C47-8BE5232ADB8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CD1B2F5-9C01-520F-A931-4E53C2701037" name="Empresa_CifNif_UN">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:39:03 UTC</createdTime>
+<generatorID>8DB0C500-978D-CD34-F237-D9CCB616035F</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D8D5E5F-E460-85B2-5D42-7B5DB80FBAA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

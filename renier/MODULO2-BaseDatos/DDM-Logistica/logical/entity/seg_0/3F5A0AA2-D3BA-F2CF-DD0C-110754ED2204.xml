@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F5A0AA2-D3BA-F2CF-DD0C-110754ED2204" name="CubrirTrayecto">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:31:01 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="costeTrayecto" id="61DED368-6C38-3342-6B6E-A55308FF0232">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:31:11 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="origen" id="817B4AF6-CAED-2485-505D-05503F8686B5">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:31:54 UTC</createdTime>
+<generatorID>A9B0F74E-ADD0-9FA8-86C4-B05208A9F16A</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<referedAttribute>2BB7D5FE-2B1C-A543-368C-9F3C77A48EC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="destino" id="33961305-DEB9-F762-A4A4-980B77568706">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:31:54 UTC</createdTime>
+<generatorID>A9B0F74E-ADD0-9FA8-86C4-B05208A9F16A</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<referedAttribute>2DBECF5E-4726-C6FD-F439-C4C4E0115937</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="matricula" id="37BDDE60-8D6E-3B0E-1C26-6FB6D9BD6828">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:32:09 UTC</createdTime>
+<generatorID>CBB2636D-D8ED-3EED-7E7B-43006373843D</generatorID>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="true"/>
+</engineerTo>
+<referedAttribute>38950D09-1D7B-DF63-FF27-0E870EE5EE9C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="937AD97F-B62B-DEE7-1155-A16080356190" name="CubrirTrayecto PK">
+<createdBy>manana</createdBy>
+<createdTime>2026-06-24 10:32:33 UTC</createdTime>
+<ownerDesignName>DDM-Logistica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C50D169C-B815-6FE4-0EF3-02F6A84B34FA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>817B4AF6-CAED-2485-505D-05503F8686B5</attributeRef>
+<attributeRef>33961305-DEB9-F762-A4A4-980B77568706</attributeRef>
+<attributeRef>37BDDE60-8D6E-3B0E-1C26-6FB6D9BD6828</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

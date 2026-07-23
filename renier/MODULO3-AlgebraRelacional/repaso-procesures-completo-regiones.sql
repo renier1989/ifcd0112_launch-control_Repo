@@ -5,6 +5,7 @@ BEGIN
 	DECLARE done INT DEFAULT FALSE;
 	DECLARE regionId VARCHAR(50);
 	DECLARE regionName VARCHAR(50);
+	DECLARE sumRegInComes FLOAT(10,2) DEFAULT 0;
 	DECLARE result VARCHAR(10000) DEFAULT '';
 	
 	DECLARE cur_reg CURSOR FOR SELECT r.RegionId, r.regionDescription FROM region r;
@@ -12,10 +13,15 @@ BEGIN
 	
 	OPEN cur_reg;
 		fetch cur_reg INTO regionId,regionName ;
+		CALL calculateIncomes(regionId,0,@r,@t);
+		SET sumRegInComes = @r;
 		while (NOT done) DO 
 			SET result = CONCAT(result ,'Region: ', regionName, CHAR(10));
 			SET result = CONCAT(result , getTerritoryName(regionId),CHAR(10));
+			SET result = CONCAT(result, CHAR(9),'Total Ingresos: ',LPAD(sumRegInComes,LENGTH('Total Ingresos: '),'.'),CHAR(10),CHAR(10));
 			fetch cur_reg INTO regionId,regionName ;
+					CALL calculateIncomes(regionId,0,@r,@t);
+					SET sumRegInComes = @r;
 		END while;
 		
 	close cur_reg;

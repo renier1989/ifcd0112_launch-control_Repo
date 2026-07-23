@@ -5,7 +5,7 @@ idTerr INT
 RETURNS INT 
 BEGIN 
 	DECLARE cantOrder INT;
-	SELECT count(*) FROM orders o 
+	SELECT COUNT(DISTINCT o.OrderID) FROM orders o 
 	left JOIN employees e ON e.EmployeeID = o.EmployeeID
 	left JOIN employeeterritories et ON et.EmployeeID = e.EmployeeID
 	WHERE et.TerritoryID = idTerr

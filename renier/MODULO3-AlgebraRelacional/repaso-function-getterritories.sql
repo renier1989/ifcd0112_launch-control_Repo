@@ -44,8 +44,8 @@ BEGIN
 		while (NOT done) DO 
 			
 			SET result = CONCAT(result,CHAR(9), RPAD(terrName,widthTerr),' '
-														 , LPAD(getCantEmpleados(terrId),widthNEmp)
- 														 , LPAD(getCantOrders(terrId),widthNOrd)
+														 , LPAD(getCantEmpleados(terrId),widthNEmp),' '
+ 														 , LPAD(getCantOrders(terrId),widthNOrd),' '
  														 , LPAD(getNCustomers(terrId),widthNCus)
 														 , CHAR(10));		
 			fetch cur_ter INTO terrId, terrName;
@@ -57,4 +57,4 @@ BEGIN
 END 
 $$
 
-SELECT getTerritoryName(4);
+SELECT getTerritoryName(2);

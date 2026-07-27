@@ -308,9 +308,15 @@ IN valor_inicial INT UNSIGNED
 )
 BEGIN 
 	
+	
 	DECLARE vValor INT;
 	SET vValor = valor_inicial;
 	DELETE FROM ejercicio;
+	
+	FOR vValorIndex IN REVERSE 1..vValor DO        
+			INSERT INTO ejercicio VALUES (vValorIndex);
+	END FOR; 
+	
 	
 	/*
 	--	solucion con WHILE
@@ -327,6 +333,8 @@ BEGIN
 	until vValor <= 0
 	END repeat;
 	*/
+	
+	/*
 	-- Solucion con LOOP
 	read_loop : loop
 		if vValor = 0 then
@@ -335,11 +343,12 @@ BEGIN
 		INSERT INTO ejercicio VALUES (vValor);
 		SET vValor = vValor - 1;		
 	END loop;
+	*/
 	
 END 
 $$
 
-CALL calcular_numeros(22);
+CALL calcular_numeros(10);
 SELECT * FROM ejercicio;
 
 

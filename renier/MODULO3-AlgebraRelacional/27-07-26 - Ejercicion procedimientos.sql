@@ -1,0 +1,40 @@
+CREATE  DATABASE IF NOT EXISTS cine;
+USE cine;
+
+DELIMITER $$
+CREATE OR REPLACE PROCEDURE initBDCine()
+BEGIN
+	
+	DROP TABLE if EXISTS cuentas;
+	DROP TABLE if EXISTS entradas;
+	
+	CREATE TABLE cuentas(
+		id_cuenta INT UNSIGNED PRIMARY KEY,
+		saldo FLOAT NOT  NULL  DEFAULT 0
+	);
+	
+	INSERT INTO cuentas VALUES
+	(11,1000),
+	(22,DEFAULT),
+	(33,10);
+	
+	CREATE TABLE entradas(
+		id_butaca INT UNSIGNED PRIMARY KEY CHECK(id_butaca BETWEEN 1 AND 100),
+		nif VARCHAR(9) NOT NULL);
+
+	ALTER TABLE entradas 
+		ADD  CONSTRAINT chk_nif CHECK(
+				nif REGEXP '^[0-9]{8}[A-Z]$' 
+					AND  
+				SUBSTRING('TRWAGMYFPDXBNJZSQVHLCKE',
+								MOD(CAST(SUBSTRING(nif,1,8) AS UNSIGNED),23)+1
+								,1) = SUBSTRING(nif,9,1)
+	);
+	
+	
+
+END
+$$
+
+CALL initBDCine();
+

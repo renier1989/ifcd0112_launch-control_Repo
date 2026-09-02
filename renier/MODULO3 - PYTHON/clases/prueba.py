@@ -1,3 +1,4 @@
+import math
 space_odyssey = 2001
 print(space_odyssey)
 
@@ -28,5 +29,9 @@ print(d)
 
 print(id('hola'))
 
+print(math.pi)
 
 
+
+siglo = ( 2000 - 1 ) //  100 + 1 
+print('siglo = ', siglo) 

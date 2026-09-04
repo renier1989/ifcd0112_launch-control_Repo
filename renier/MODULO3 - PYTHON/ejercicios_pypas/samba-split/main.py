@@ -1,8 +1,7 @@
 def run(smb_path: str) -> tuple:
-    clean = smb_path.strip('//')
-    posi = clean.find('/')
-    host = clean[:posi]
-    path = clean[posi:]
+    posi = smb_path.find('/',3)
+    host = smb_path[2:posi]
+    path = smb_path[posi:]
     return host, path
 
 

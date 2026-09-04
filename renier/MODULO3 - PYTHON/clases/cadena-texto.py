@@ -93,13 +93,119 @@
 
 
 
-smb_path = '//192.168.24.77/scratch/data'
-clean = smb_path.strip('//')
-# print(clean.find('/'))
-posi = clean.find('/')
-host = clean[:posi]
-path = clean[posi:]
-print(host, path)
+# smb_path = '//192.168.24.77/scratch/data'
+# # clean = smb_path.strip('//')
+# # print(clean.find('/'))
+# posi = smb_path.find('/',3)
+# host = smb_path[2:posi]
+# path = smb_path[posi:]
+# print(host, path)
+
+
+
+
+# nif = 12345678
+# control = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E']
+# calculo = nif % 23
+# wnif = f'{nif}{control[calculo]}'
+# print(wnif)
+
+
+
+# n = 5
+# n2 = int(str(n)*2)
+# n3 = int(str(n)*3)
+# result = n + n2 + n3
+# print(result)
+
+
+
+
+# text = 'ordenador'
+# n_text = text.lower()
+# count_a = n_text.count('a')
+# count_e = n_text.count('e')
+# count_i = n_text.count('i')
+# count_o = n_text.count('o')
+# count_u = n_text.count('u')
+# sum_vocales = count_a + count_e + count_i + count_o + count_u
+# metric = len(text) * sum_vocales
+# print(metric)
+
+
+
+# html =  '<h2>Test</h2>'
+# corte1 = html.find('>')
+# corte2 = html.find('<',1)
+# corte3 = html.find('h')
+# mark = '#'
+# numero = html[corte3+1:corte1]
+# text = html[corte1+1:corte2]
+# markdown = f'{mark*int(numero)} {text}'
+# print(markdown)
+
+
+
+# num_sheeps = 4
+# text = 'sheep'
+# multi = f'{text:.<9s}'*num_sheeps
+# print(multi)
+
+
+
+# can_fly= True
+# is_human= False 
+# has_mask= False
+
+# if can_fly and is_human and has_mask:
+#     character = 'Ironman'
+# elif can_fly and is_human and not has_mask:
+#     character = 'Capitan Marvel'
+# elif can_fly and not is_human and has_mask:
+#     character = 'Ronnan Accuser'
+# elif can_fly and not is_human and not has_mask:
+#     character = 'Vision'
+# elif not can_fly and is_human and has_mask:
+#     character = 'Spiderman'
+# elif not can_fly and is_human and not has_mask:
+#     character = 'Hulk'
+# elif not can_fly and not is_human and has_mask:
+#     character = 'Black Bolt'
+# else:
+#     character = 'Thanos'
+
+# character = 'Ironman' if (can_fly and is_human and has_mask) else 'Capitan Marvel' if (can_fly and is_human and not has_mask) else 'Ronnan Accuser' if (can_fly and not is_human and has_mask) else 'Vision' if (can_fly and not is_human and not has_mask) else 'Spiderman' if (not can_fly and is_human and has_mask) else 'Hulk' if (not can_fly and is_human and not has_mask) else 'Black Bolt' if (not can_fly and not is_human and has_mask) else 'Thanos'
+
+# print(character)
+
+
+# winner = 0
+# jugador1 = 'rock'
+# jugador2 = 'paper'
+
+
+# if (jugador1.lower() == 'paper' and jugador2.lower() == 'scissors'):
+#     winner = 2
+# elif (jugador1.lower() == 'paper' and jugador2.lower() == 'rock'):
+#     winner = 1
+# elif (jugador1.lower() == 'scissors' and jugador2.lower() == 'paper'):
+#     winner = 1
+# elif (jugador1.lower() == 'scissors' and jugador2.lower() == 'rock'):
+#     winner = 2
+# elif (jugador1.lower() == 'rock' and jugador2.lower() == 'paper'):
+#     winner = 2
+# elif (jugador1.lower() == 'rock' and jugador2.lower() == 'scissors'):
+#     winner = 1
+
+# player1 = player1.lower()
+# player2 = player2.lower()
+
+# # Mapea cada opción con la jugada a la que vence
+# beats = {'paper': 'rock', 'rock': 'scissors', 'scissors': 'paper'}
+
+# winner = 0 if player1 == player2 else (1 if beats[player1] == player2 else 2)
+
+# print(winner)
 
 
 

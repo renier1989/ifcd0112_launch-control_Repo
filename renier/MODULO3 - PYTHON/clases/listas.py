@@ -55,9 +55,29 @@
 # fecha_separada = input_date.split('/')
 # year = int(fecha_separada[2]) + base_year
 # output_date = f'{fecha_separada[1]:0>2s}-{fecha_separada[0]:0>2s}-{str(year):0>4s}'
-    
-
 # print(output_date)
 
 
-print('Algo nuevo')
+
+# u = [4, 3, 8, 1]
+# v = [9, 2, 7, 3]
+
+# dprod = 0
+# if len(u) != len(v):
+#     dprod = None
+# else:
+#     for pu,pv in zip(u,v):
+#         dprod += pu * pv
+
+# print(dprod)
+
+
+
+
+x_min = 0
+x_max = 4
+
+resultado = [3 * x + 2 for x in range(x_min, x_max + 1)]
+
+print(resultado)
+

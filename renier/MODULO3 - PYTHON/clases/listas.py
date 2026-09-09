@@ -50,11 +50,14 @@
 
 
 
-input_date = '12/31/23'
-base_year = 2000
-fecha_separada = input_date.split('/')
-year = int(fecha_separada[2]) + base_year
-output_date = f'{fecha_separada[1]:0>2s}-{fecha_separada[0]:0>2s}-{str(year):0>4s}'
+# input_date = '12/31/23'
+# base_year = 2000
+# fecha_separada = input_date.split('/')
+# year = int(fecha_separada[2]) + base_year
+# output_date = f'{fecha_separada[1]:0>2s}-{fecha_separada[0]:0>2s}-{str(year):0>4s}'
     
 
-print(output_date)
+# print(output_date)
+
+
+print('Algo nuevo')

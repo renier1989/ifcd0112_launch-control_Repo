@@ -51,9 +51,9 @@ cliente1 = Cliente(dni="002232985", nombre="Renier Josue", apellidos="Vargas Mej
 cliente2 = Cliente(dni="98754123", nombre="Andrea Sara", apellidos="Ortiz Flanco")
 # print(cliente2.nombre_completo_getter(), " DNI: ", cliente2.get_dni())
 
-cuentaCliente1 = Cuenta(cliente1)
-print(cuentaCliente1.get_titular())
-print(cuentaCliente1.get_saldo())
-cuentaCliente1.set_movimiento('Ingreso',300)
-print(cuentaCliente1.get_saldo())
+# cuentaCliente1 = Cuenta(cliente1)
+# print(cuentaCliente1.get_titular())
+# print(cuentaCliente1.get_saldo())
+# cuentaCliente1.set_movimiento('Ingreso',300)
+# print(cuentaCliente1.get_saldo())
 
